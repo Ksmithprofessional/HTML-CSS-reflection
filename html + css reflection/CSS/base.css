@@ -1,4 +1,21 @@
-@use "SCSS/footer.scss";
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footnote {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  width: 100px;
+}
+
 body {
   font-family: 'Lato', sans-serif;
 }
@@ -22,17 +39,6 @@ footer {
   color: white;
 }
 
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.footnote {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.social {
-  place-content: flex-end;
+.partner-2 {
+  display: none;
 }

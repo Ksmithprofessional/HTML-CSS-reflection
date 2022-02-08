@@ -1,5 +1,5 @@
 //  imports
-@use "SCSS/footer.scss";
+@import "footer";
  
  
  body {
@@ -29,20 +29,28 @@
    
  }
 
- .footer {
+//  .footer {
  
- display: flex;
- flex-wrap: wrap;
- justify-content: space-around;
- }
+//  display: flex;
+//  flex-wrap: wrap;
+//  justify-content: space-around;
+//  }
 
- .footnote {
-    display: flex;
-    flex-wrap: wrap;
+//  .footnote {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+    
+//  }
 
- }
+//  .social {
+//    display: flex;
+//    justify-content: flex-end;
+//    width: 100px;
 
- .social {
-    place-content: flex-end;
+//  }
+
+ .partner-2 {
+    display:none;
 
  }

@@ -1,7 +1,17 @@
-footer {
-  background-color: #121818;
-  display: grid;
-  text-decoration: double;
-  color: pink;
-  background-image: url(../images/f-logo.png);
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footnote {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  width: 100px;
 }
