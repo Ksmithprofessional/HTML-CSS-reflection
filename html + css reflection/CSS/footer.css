@@ -1,0 +1,7 @@
+footer {
+  background-color: #121818;
+  display: grid;
+  text-decoration: double;
+  color: pink;
+  background-image: url(../images/f-logo.png);
+}
