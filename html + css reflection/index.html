@@ -133,12 +133,18 @@
 
 <form>
     <fieldset>
-        <legend>Email Newsletter Sign-Up</legend>
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name">
+        <h2>Email Newsletter Sign-Up</h2>
+        <span class="name">
+        <label for="name"><span class="asterisk">Your Name</span><br>
+        <input type="text" id="name" name="name" required>
+        </span>
+        </label>
 
-        <label for="email">Your Email</label>
-        <input type="text" id="email" name="email">
+        <span class="email">
+        <label for="email"><span class="asterisk">Your Email</span><br>
+        <input type="text" id="email" name="email" required>
+        </span>
+        </label>
 
         <br>
         <input type="checkbox" id="marketing" name="marketing">
