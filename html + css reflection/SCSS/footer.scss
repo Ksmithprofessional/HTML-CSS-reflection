@@ -7,6 +7,7 @@
         // background-color: #333645;
         // color: white;
         padding: 20px 0;
+        font-size: 0.85rem;
         }
 
         .footer h3 {
@@ -23,6 +24,12 @@
           //  justify-content: space-around;
           font-size: 14px;
            
+        }
+
+        p a:hover,
+        .tel:hover {
+
+          text-decoration: underline;
         }
        
         .social {
@@ -44,6 +51,7 @@
           border: 9px solid #3b5998;
           background-color:#3b5998;
           border-radius: 50%;
+          animation: none;
           
         }
 

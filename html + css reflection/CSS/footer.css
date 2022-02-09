@@ -2,6 +2,7 @@
   display: grid;
   justify-content: space-around;
   padding: 20px 0;
+  font-size: 0.85rem;
 }
 
 .footer h3 {
@@ -14,6 +15,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   font-size: 14px;
+}
+
+p a:hover,
+.tel:hover {
+  text-decoration: underline;
 }
 
 .social {
@@ -31,6 +37,7 @@
   border: 9px solid #3b5998;
   background-color: #3b5998;
   border-radius: 50%;
+  animation: none;
 }
 
 .fa-twitter:hover {

@@ -6,14 +6,26 @@ form {
     font-size: 1.2rem;
 }
 
+fieldset {
+
+    border-style: none;
+}
+
+legend {
+
+    font-size: 2rem;
+}
+
 input[type=text] {
     border: none;
-    margin: 5px 20px 20px 20px;
+    margin: 5px 20px 20px 0px;
     padding: 8px;
+    
 }
 input[type=text]:focus {
 
-    border: 1px rgba(60, 88, 197, 0.021);
+    outline: #5bc0de solid 1px;
+    box-shadow: 0 0 5px 1px rgba(91, 192, 222, 0.8)
 }
 
 .asterisk:after {
@@ -32,10 +44,12 @@ input[type=submit] {
 
     background-color: #333645;
     color: white;
-    padding: 10px 15px;
-    border-radius: 10%;
-    margin: 20px;
+    padding: 20px 15px;
+    border-radius: 5%;
+    margin: 20px 0px;
     text-transform: uppercase;
+    border-style: none;
+    font-size: 0.95rem;
 
 }
 
@@ -43,6 +57,13 @@ input[type=checkbox],
 label[for=marketing] {
 
     cursor: pointer;
+}
+
+label {
+    
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 2rem;
 }
 
 form a {
@@ -54,3 +75,28 @@ form a {
         color: black;
     }
 }
+
+input[type=checkbox] {
+    width: 27px;
+    height: 27px;
+    appearance: none;
+    margin-right: 10px;
+    background-color: #ddd;
+    outline: #333645 solid 3px;
+    outline-offset: -2px;
+    display: inline-block;
+    // box-shadow: none;
+    accent-color: #333645;
+  }
+  
+  input[type=checkbox]:focus {
+    box-shadow: none;
+    border: none;
+  }
+  
+  input[type=checkbox]:checked {
+    background-color: #333645;
+    color: #333645;
+    line-height: 15px;
+    content: "U+2713";
+  }
