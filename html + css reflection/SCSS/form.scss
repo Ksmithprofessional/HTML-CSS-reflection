@@ -20,6 +20,7 @@ input[type=text] {
     border: none;
     margin: 5px 20px 20px 0px;
     padding: 8px;
+    width: 320px;
     
 }
 input[type=text]:focus {
@@ -44,7 +45,7 @@ input[type=submit] {
 
     background-color: #333645;
     color: white;
-    padding: 20px 15px;
+    padding: 15px 17px;
     border-radius: 5%;
     margin: 20px 0px;
     text-transform: uppercase;
@@ -79,9 +80,9 @@ form a {
 input[type=checkbox] {
     width: 27px;
     height: 27px;
-    appearance: none;
+    // appearance: none;
     margin-right: 10px;
-    background-color: #ddd;
+    // background-color: #ddd;
     outline: #333645 solid 3px;
     outline-offset: -2px;
     display: inline-block;
@@ -94,9 +95,9 @@ input[type=checkbox] {
     border: none;
   }
   
-  input[type=checkbox]:checked {
-    background-color: #333645;
-    color: #333645;
-    line-height: 15px;
-    content: "U+2713";
-  }
+//   input[type=checkbox]:checked {
+//     background-color: #333645;
+//     color: #333645;
+//     line-height: 15px;
+//     content: "U+2713";
+//   }

@@ -1,0 +1,37 @@
+.bio {
+  
+    background-color: #333645;
+    color: white;
+    padding: 25px 5px 40px 20px;
+    line-height: 2rem;
+
+    & h2 {
+
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+
+    & p {
+
+        font-size: .96rem;
+    }
+}
+
+.lead-para {
+
+    font-weight: bold;
+}
+
+.culture-but {
+
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    text-transform: uppercase;
+
+    &:after {
+
+        content: '\2192';
+        padding-left: 10px;
+    }
+}

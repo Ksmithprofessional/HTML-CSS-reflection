@@ -77,6 +77,7 @@ input[type=text] {
   border: none;
   margin: 5px 20px 20px 0px;
   padding: 8px;
+  width: 320px;
 }
 
 input[type=text]:focus {
@@ -97,7 +98,7 @@ input[type=text]:focus {
 input[type=submit] {
   background-color: #333645;
   color: white;
-  padding: 20px 15px;
+  padding: 15px 17px;
   border-radius: 5%;
   margin: 20px 0px;
   text-transform: uppercase;
@@ -127,9 +128,7 @@ form a:hover {
 input[type=checkbox] {
   width: 27px;
   height: 27px;
-  appearance: none;
   margin-right: 10px;
-  background-color: #ddd;
   outline: #333645 solid 3px;
   outline-offset: -2px;
   display: inline-block;
@@ -141,11 +140,36 @@ input[type=checkbox]:focus {
   border: none;
 }
 
-input[type=checkbox]:checked {
+.bio {
   background-color: #333645;
-  color: #333645;
-  line-height: 15px;
-  content: "U+2713";
+  color: white;
+  padding: 25px 5px 40px 20px;
+  line-height: 2rem;
+}
+
+.bio h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.bio p {
+  font-size: .96rem;
+}
+
+.lead-para {
+  font-weight: bold;
+}
+
+.culture-but {
+  padding: 10px 10px 10px 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.culture-but:after {
+  content: '\2192';
+  padding-left: 10px;
 }
 
 body {
