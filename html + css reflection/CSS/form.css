@@ -46,6 +46,10 @@ input[type=submit] {
   font-size: 0.95rem;
 }
 
+input[type=checkbox] {
+  float: left;
+}
+
 input[type=checkbox],
 label[for=marketing] {
   cursor: pointer;
