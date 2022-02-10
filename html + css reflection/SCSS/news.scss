@@ -1,0 +1,36 @@
+.latest {
+
+    background-color: white;
+    padding: 30px 10px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.news-wrapper {
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    margin: 30px auto;
+}
+
+.news-1,
+.news-2,
+.news-3 {
+
+    border: 1px solid gray;
+    border-radius: 1%;
+    margin: 10px;
+    
+    
+    & h3 {
+
+        color: purple;
+
+        &:hover {
+
+            text-decoration: underline;
+        }
+    }
+    
+}

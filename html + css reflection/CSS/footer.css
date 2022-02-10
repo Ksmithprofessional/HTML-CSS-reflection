@@ -15,6 +15,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   font-size: 14px;
+  padding: 7px;
 }
 
 p a:hover,
@@ -37,7 +38,6 @@ p a:hover,
   border: 9px solid #3b5998;
   background-color: #3b5998;
   border-radius: 50%;
-  animation: none;
 }
 
 .fa-twitter:hover {
