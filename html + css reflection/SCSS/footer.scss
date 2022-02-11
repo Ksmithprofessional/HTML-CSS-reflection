@@ -1,3 +1,9 @@
+footer {
+  background-color: #333645;
+  color: white;
+}
+// this doesn't override the other footer colours because of the cascade
+
 .footer {
  
         display: grid;

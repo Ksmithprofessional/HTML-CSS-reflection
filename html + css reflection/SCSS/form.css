@@ -22,7 +22,8 @@ input[type=text] {
 
 input[type=text]:focus {
   outline: #5bc0de solid 1px;
-  box-shadow: 0 0 5px 1px rgba(91, 192, 222, 0.8);
+  -webkit-box-shadow: 0 0 5px 1px rgba(91, 192, 222, 0.8);
+          box-shadow: 0 0 5px 1px rgba(91, 192, 222, 0.8);
 }
 
 .asterisk:after {
@@ -32,6 +33,8 @@ input[type=text]:focus {
 }
 
 .name, .email {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -80,6 +83,8 @@ input[type=checkbox] {
 }
 
 input[type=checkbox]:focus {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: none;
 }
+/*# sourceMappingURL=form.css.map */
