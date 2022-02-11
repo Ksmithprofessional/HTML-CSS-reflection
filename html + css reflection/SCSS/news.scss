@@ -56,11 +56,10 @@
         }
     }
 
-    & img {
+    // & img {
 
-        height: 50%;
-        width: 100%;
-    }
+    // //   position: relative;
+    // }
     
     
     & h3 {
@@ -79,6 +78,8 @@
         background-color: white;
         color: black;
         border-top: 1px solid rgb(189, 189, 189);
+        margin-top: 10px;
+        line-height: 1rem;
     }
 
     & h3,
@@ -99,3 +100,44 @@
 //     color: white;
 // }
 
+// .name:before {
+
+//     background-image: url("../Images/netmatters-ltd-VXAv\ \(1\).webp");
+// }
+
+.poster-img {
+
+    height: 40px;
+    width: 40px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.news-img {
+
+    height: 50%;
+    width: 100%;
+}
+
+.poster {
+
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.date {
+
+    color: gray;
+}
+
+.news-link {
+    // position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: #926fb1;
+    color: white;
+    width: 50px;
+    font-weight: bold;
+
+}

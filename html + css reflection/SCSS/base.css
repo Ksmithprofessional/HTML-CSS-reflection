@@ -121,6 +121,10 @@ input[type=submit] {
   font-size: 0.95rem;
 }
 
+input[type=submit]:hover {
+  background-color: #242424;
+}
+
 input[type=checkbox] {
   float: left;
 }
@@ -251,13 +255,6 @@ input[type=checkbox]:focus {
   background-color: #7949a3;
 }
 
-.news-1 img,
-.news-2 img,
-.news-3 img {
-  height: 50%;
-  width: 100%;
-}
-
 .news-1 h3,
 .news-2 h3,
 .news-3 h3 {
@@ -276,6 +273,8 @@ input[type=checkbox]:focus {
   background-color: white;
   color: black;
   border-top: 1px solid #bdbdbd;
+  margin-top: 10px;
+  line-height: 1rem;
 }
 
 .news-1 h3,
@@ -292,6 +291,37 @@ input[type=checkbox]:focus {
 .news-3 button {
   margin-left: 25px;
   margin-right: 25px;
+}
+
+.poster-img {
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.news-img {
+  height: 50%;
+  width: 100%;
+}
+
+.poster {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.date {
+  color: gray;
+}
+
+.news-link {
+  top: 20px;
+  right: 0;
+  background-color: #926fb1;
+  color: white;
+  width: 50px;
+  font-weight: bold;
 }
 
 body {

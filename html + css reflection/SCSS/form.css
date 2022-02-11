@@ -49,6 +49,10 @@ input[type=submit] {
   font-size: 0.95rem;
 }
 
+input[type=submit]:hover {
+  background-color: #242424;
+}
+
 input[type=checkbox] {
   float: left;
 }
