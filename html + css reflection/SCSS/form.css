@@ -16,8 +16,8 @@ legend {
 input[type=text] {
   border: none;
   margin: 5px 20px 20px 0px;
-  padding: 8px;
-  width: 320px;
+  padding: 12px 8px;
+  min-width: 75vw;
 }
 
 input[type=text]:focus {

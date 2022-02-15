@@ -88,8 +88,8 @@ legend {
 input[type=text] {
   border: none;
   margin: 5px 20px 20px 0px;
-  padding: 8px;
-  width: 320px;
+  padding: 12px 8px;
+  min-width: 75vw;
 }
 
 input[type=text]:focus {
@@ -198,16 +198,12 @@ input[type=checkbox]:focus {
 
 .latest {
   background-color: white;
-  padding: 30px 10px;
+  padding: 30px 10px 20px 0;
   font-weight: 300;
   text-transform: uppercase;
-  border-bottom: 5px solid black;
+  border-bottom: 4px solid black;
   width: 50px;
   margin-left: 10px;
-}
-
-.latest h3 {
-  margin-left: 0px;
 }
 
 .news-wrapper {
@@ -215,7 +211,8 @@ input[type=checkbox]:focus {
   display: grid;
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-  margin: 30px 0;
+  margin: 0 0 30px 0;
+  padding-top: 10px;
   background: #dadada;
   background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(white));
   background: linear-gradient(180deg, #f3f3f3 0%, white 100%);
@@ -224,6 +221,7 @@ input[type=checkbox]:focus {
 .news-1,
 .news-2,
 .news-3 {
+  position: relative;
   border: 1px solid #bdbdbd;
   border-radius: 1%;
   margin: 30px 10px;
@@ -313,15 +311,34 @@ input[type=checkbox]:focus {
 
 .date {
   color: gray;
+  margin-top: -5px;
 }
 
 .news-link {
-  top: 20px;
+  position: absolute;
+  top: 15px;
   right: 0;
   background-color: #926fb1;
   color: white;
   width: 50px;
   font-weight: bold;
+  padding-left: 10px;
+  padding-right: -5px;
+}
+
+.news-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.read-more-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.bespoke {
+  border: 1px solid gray;
+  margin: auto;
 }
 
 body {

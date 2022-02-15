@@ -1,0 +1,10 @@
+.read-more-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.bespoke {
+  border: 1px solid gray;
+  margin: auto;
+}
+/*# sourceMappingURL=read-more-grid.css.map */
