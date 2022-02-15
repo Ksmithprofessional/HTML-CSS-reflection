@@ -334,11 +334,317 @@ input[type=checkbox]:focus {
 .read-more-grid {
   display: -ms-grid;
   display: grid;
+  background-color: #f1f1f1;
 }
 
-.bespoke {
-  border: 1px solid gray;
-  margin: auto;
+.bespoke,
+.it-support,
+.marketing,
+.telecoms,
+.web,
+.security,
+.developer {
+  border: 1px solid #b9b9b9;
+  border-radius: 1%;
+  background-color: white;
+  color: #333645;
+  margin: 30px 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 20px;
+}
+
+.bespoke h3,
+.it-support h3,
+.marketing h3,
+.telecoms h3,
+.web h3,
+.security h3,
+.developer h3 {
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  padding: 0 20px 15px;
+}
+
+.bespoke button,
+.it-support button,
+.marketing button,
+.telecoms button,
+.web button,
+.security button,
+.developer button {
+  padding: 13px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  color: white;
+  border: 1px solid;
+  border-radius: 5%;
+}
+
+.header-border {
+  border-bottom: 1px solid black;
+}
+
+.bespoke button {
+  background-color: #67809f;
+  border-color: #67809f;
+}
+
+.bespoke .bespoke-icon {
+  border: 2px solid #67809f;
+  border-radius: 50%;
+  background-color: #67809f;
+  padding: 20px;
+  color: white;
+  font-size: 1rem;
+}
+
+.bespoke:hover {
+  background-color: #67809f;
+  cursor: pointer;
+  color: white;
+}
+
+.bespoke:hover h3 {
+  border-color: white;
+}
+
+.bespoke:hover button {
+  background-color: white;
+  border-color: white;
+  color: #67809f;
+  cursor: pointer;
+}
+
+.bespoke:hover .bespoke-icon {
+  border-color: white;
+  background-color: white;
+  color: #67809f;
+}
+
+.it-support button {
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+
+.it-support .it-icon {
+  border: 2px solid #4183d7;
+  border-radius: 50%;
+  background-color: #4183d7;
+  padding: 20px;
+  color: white;
+  font-size: 1rem;
+}
+
+.it-support:hover {
+  background-color: #4183d7;
+  cursor: pointer;
+  color: white;
+}
+
+.it-support:hover h3 {
+  border-color: white;
+}
+
+.it-support:hover button {
+  background-color: white;
+  border-color: white;
+  color: #4183d7;
+  cursor: pointer;
+}
+
+.it-support:hover .it-icon {
+  border-color: white;
+  background-color: white;
+  color: #4183d7;
+}
+
+.marketing button {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+.marketing .market-icon {
+  border: 2px solid #2ecc71;
+  border-radius: 50%;
+  background-color: #2ecc71;
+  padding: 20px;
+  color: white;
+  font-size: 1rem;
+}
+
+.marketing:hover {
+  background-color: #2ecc71;
+  cursor: pointer;
+  color: white;
+}
+
+.marketing:hover h3 {
+  border-color: white;
+}
+
+.marketing:hover button {
+  background-color: white;
+  border-color: white;
+  color: #2ecc71;
+  cursor: pointer;
+}
+
+.marketing:hover .market-icon {
+  border-color: white;
+  background-color: white;
+  color: #2ecc71;
+}
+
+.telecoms button {
+  background-color: #d64541;
+  border-color: #d64541;
+}
+
+.telecoms .tele-icon {
+  border: 2px solid #d64541;
+  border-radius: 50%;
+  background-color: #d64541;
+  padding: 20px;
+  color: white;
+  font-size: 1rem;
+}
+
+.telecoms:hover {
+  background-color: #d64541;
+  cursor: pointer;
+  color: white;
+}
+
+.telecoms:hover h3 {
+  border-color: white;
+}
+
+.telecoms:hover button {
+  background-color: white;
+  border-color: white;
+  color: #d64541;
+  cursor: pointer;
+}
+
+.telecoms:hover .tele-icon {
+  border-color: white;
+  background-color: white;
+  color: #d64541;
+}
+
+.web button {
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
+.web .web-icon {
+  border: 2px solid #926fb1;
+  border-radius: 50%;
+  background-color: #926fb1;
+  padding: 20px;
+  color: white;
+  font-size: 1rem;
+}
+
+.web:hover {
+  background-color: #926fb1;
+  cursor: pointer;
+  color: white;
+}
+
+.web:hover h3 {
+  border-color: white;
+}
+
+.web:hover button {
+  background-color: white;
+  border-color: white;
+  color: #926fb1;
+  cursor: pointer;
+}
+
+.web:hover .web-icon {
+  border-color: white;
+  background-color: white;
+  color: #926fb1;
+}
+
+.security button {
+  background-color: #f62459;
+  border-color: #f62459;
+}
+
+.security .security-icon {
+  border: 2px solid #f62459;
+  border-radius: 50%;
+  background-color: #f62459;
+  padding: 20px;
+  color: white;
+  font-size: 1rem;
+}
+
+.security:hover {
+  background-color: #f62459;
+  cursor: pointer;
+  color: white;
+}
+
+.security:hover h3 {
+  border-color: white;
+}
+
+.security:hover button {
+  background-color: white;
+  border-color: white;
+  color: #f62459;
+  cursor: pointer;
+}
+
+.security:hover .security-icon {
+  border-color: white;
+  background-color: white;
+  color: #f62459;
+}
+
+.developer button {
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
+.developer .developer-icon {
+  border: 2px solid #926fb1;
+  border-radius: 50%;
+  background-color: #926fb1;
+  padding: 20px;
+  color: white;
+  font-size: 1rem;
+}
+
+.developer:hover {
+  background-color: #926fb1;
+  cursor: pointer;
+  color: white;
+}
+
+.developer:hover h3 {
+  border-color: white;
+}
+
+.developer:hover button {
+  background-color: white;
+  border-color: white;
+  color: #926fb1;
+  cursor: pointer;
+}
+
+.developer:hover .developer-icon {
+  border-color: white;
+  background-color: white;
+  color: #926fb1;
 }
 
 body {

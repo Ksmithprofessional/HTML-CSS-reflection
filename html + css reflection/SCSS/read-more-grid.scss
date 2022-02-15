@@ -1,10 +1,374 @@
 .read-more-grid {
 
     display: grid;
+    background-color: rgb(241, 241, 241);
+}
+
+.bespoke, 
+.it-support,
+.marketing,
+.telecoms,
+.web,
+.security,
+.developer {
+
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 1%;
+    background-color: white;
+    color: #333645;
+    margin: 30px 10px;
+    // width: auto;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 20px;
+
+    & h3 {
+
+        font-weight: 300;
+        font-size: 1.1rem;
+        // border-bottom: 2px solid black;
+        margin-bottom: 10px;
+        padding: 0 20px 15px;
+
+    }
+
+    & button {
+
+        padding: 13px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: 0.05rem;
+        color: white;
+        border: 1px solid;
+        border-radius: 5%;
+        
+    }
+}
+
+.header-border {
+
+    border-bottom: 1px solid black;
 }
 
 .bespoke {
 
-    border: 1px solid gray;
-    margin:auto;
+    & button {
+
+        background-color: #67809f;
+        border-color: #67809f;
+    }
+
+    & .bespoke-icon {
+
+        border: 2px solid #67809f;
+        border-radius: 50%;
+        background-color: #67809f;
+        padding: 20px;
+        color: white;
+        font-size: 1rem;
+    }
+
+    &:hover {
+
+        background-color: #67809f;
+        cursor: pointer;
+        color: white;
+
+        & h3 {
+
+            border-color: white;
+        }
+
+        & button {
+
+            background-color: white;
+            border-color: white;
+            color: #67809f;
+            cursor: pointer;
+        }
+
+        & .bespoke-icon {
+
+            border-color: white;
+            background-color: white;
+            color: #67809f;
+        }
+    }
+}
+
+.it-support {
+
+    & button {
+
+        background-color: #4183d7;
+        border-color: #4183d7;
+    }
+
+    & .it-icon {
+
+        border: 2px solid #4183d7;
+        border-radius: 50%;
+        background-color: #4183d7;
+        padding: 20px;
+        color: white;
+        font-size: 1rem;
+    }
+
+    &:hover {
+
+        background-color: #4183d7;
+        cursor: pointer;
+        color: white;
+
+        & h3 {
+
+            border-color: white;
+        }
+
+        & button {
+
+            background-color: white;
+            border-color: white;
+            color: #4183d7;
+            cursor: pointer;
+        }
+
+        & .it-icon {
+
+            border-color: white;
+            background-color: white;
+            color: #4183d7;
+        }
+    }
+}
+
+.marketing {
+
+    & button {
+
+        background-color: #2ecc71;
+        border-color: #2ecc71;
+    }
+
+    & .market-icon {
+
+        border: 2px solid #2ecc71;
+        border-radius: 50%;
+        background-color: #2ecc71;
+        padding: 20px;
+        color: white;
+        font-size: 1rem;
+    }
+
+    &:hover {
+
+        background-color: #2ecc71;
+        cursor: pointer;
+        color: white;
+
+        & h3 {
+
+            border-color: white;
+        }
+
+        & button {
+
+            background-color: white;
+            border-color: white;
+            color: #2ecc71;
+            cursor: pointer;
+        }
+
+        & .market-icon {
+
+            border-color: white;
+            background-color: white;
+            color: #2ecc71;
+        }
+    }
+}
+
+.telecoms {
+
+    & button {
+
+        background-color: #d64541;
+        border-color: #d64541;
+    }
+
+    & .tele-icon {
+
+        border: 2px solid #d64541;
+        border-radius: 50%;
+        background-color: #d64541;
+        padding: 20px;
+        color: white;
+        font-size: 1rem;
+    }
+
+    &:hover {
+
+        background-color: #d64541;
+        cursor: pointer;
+        color: white;
+
+        & h3 {
+
+            border-color: white;
+        }
+
+        & button {
+
+            background-color: white;
+            border-color: white;
+            color: #d64541;
+            cursor: pointer;
+        }
+
+        & .tele-icon {
+
+            border-color: white;
+            background-color: white;
+            color: #d64541;
+        }
+    }
+}
+
+.web {
+
+    & button {
+
+        background-color: #926fb1;
+        border-color: #926fb1;
+    }
+
+    & .web-icon {
+
+        border: 2px solid #926fb1;
+        border-radius: 50%;
+        background-color: #926fb1;
+        padding: 20px;
+        color: white;
+        font-size: 1rem;
+    }
+
+    &:hover {
+
+        background-color: #926fb1;
+        cursor: pointer;
+        color: white;
+
+        & h3 {
+
+            border-color: white;
+        }
+
+        & button {
+
+            background-color: white;
+            border-color: white;
+            color: #926fb1;
+            cursor: pointer;
+        }
+
+        & .web-icon {
+
+            border-color: white;
+            background-color: white;
+            color: #926fb1;
+        }
+    }
+}
+
+.security {
+
+    & button {
+
+        background-color: #f62459;
+        border-color: #f62459;
+    }
+
+    & .security-icon {
+
+        border: 2px solid #f62459;
+        border-radius: 50%;
+        background-color: #f62459;
+        padding: 20px;
+        color: white;
+        font-size: 1rem;
+    }
+
+    &:hover {
+
+        background-color: #f62459;
+        cursor: pointer;
+        color: white;
+
+        & h3 {
+
+            border-color: white;
+        }
+
+        & button {
+
+            background-color: white;
+            border-color: white;
+            color: #f62459;
+            cursor: pointer;
+        }
+
+        & .security-icon {
+
+            border-color: white;
+            background-color: white;
+            color: #f62459;
+        }
+    }
+}
+
+.developer {
+
+    & button {
+
+        background-color: #926fb1;
+        border-color: #926fb1;
+    }
+
+    & .developer-icon {
+
+        border: 2px solid #926fb1;
+        border-radius: 50%;
+        background-color: #926fb1;
+        padding: 20px;
+        color: white;
+        font-size: 1rem;
+    }
+
+    &:hover {
+
+        background-color: #926fb1;
+        cursor: pointer;
+        color: white;
+
+        & h3 {
+
+            border-color: white;
+        }
+
+        & button {
+
+            background-color: white;
+            border-color: white;
+            color: #926fb1;
+            cursor: pointer;
+        }
+
+        & .developer-icon {
+
+            border-color: white;
+            background-color: white;
+            color: #926fb1;
+        }
+    }
 }
