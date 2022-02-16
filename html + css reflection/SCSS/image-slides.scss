@@ -1,0 +1,62 @@
+.image-slideshow {
+
+    position: relative;
+    background-image: url("../images/placeholder stock.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 83vh;
+
+    & h1, 
+    p {
+
+        position: absolute;
+        color: white;
+        text-align: center;
+    }
+
+    & h1 {
+
+        top: 25%;
+        left: 15%;
+        left: 15%;
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+
+    & p {
+
+        top: 35%;
+        left: 15%;
+        font-size: 1.2rem;
+    }
+
+
+    & button {
+
+        text-transform: uppercase;
+        position: absolute;
+        top: 60%;
+        right: 25%;
+        left: 25%;
+        padding: 20px 20px;
+        background-color: #67809f;
+        color: white;
+        border-color: #67809f;
+        border-style: none;
+        border-radius: 3%;
+        font-size: 1rem;
+        font-weight: bold;
+
+        &:after {
+
+            content: "→";
+            padding-left: 15px;
+        }
+
+        &:hover {
+
+            cursor: pointer;
+            background-color: #4e647e;
+        }
+    }
+}
