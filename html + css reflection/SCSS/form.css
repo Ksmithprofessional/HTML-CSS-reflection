@@ -43,7 +43,7 @@ input[type=submit] {
   color: white;
   padding: 15px 17px;
   border-radius: 5%;
-  margin: 20px 0px;
+  margin: 22px 0px;
   text-transform: uppercase;
   border-style: none;
   font-size: 0.95rem;
@@ -55,6 +55,7 @@ input[type=submit]:hover {
 
 input[type=checkbox] {
   float: left;
+  margin-bottom: 67px;
 }
 
 input[type=checkbox],
@@ -66,6 +67,11 @@ label {
   font-weight: bold;
   font-size: 15px;
   line-height: 2rem;
+}
+
+label[for=marketing] {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 form a {

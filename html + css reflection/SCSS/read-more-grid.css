@@ -345,4 +345,8 @@
 .developer:hover .header-border {
   border-color: white;
 }
+
+.move-up {
+  margin-top: -25px;
+}
 /*# sourceMappingURL=read-more-grid.css.map */

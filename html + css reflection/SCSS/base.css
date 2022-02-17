@@ -4,6 +4,11 @@ footer {
   color: white;
 }
 
+hr {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
 .footer {
   display: -ms-grid;
   display: grid;
@@ -11,6 +16,7 @@ footer {
       justify-content: space-around;
   padding: 20px 0;
   font-size: 0.85rem;
+  margin: 0 10px;
 }
 
 .footer h3 {
@@ -26,6 +32,7 @@ footer {
       grid-template-columns: 1fr 1fr 1fr;
   font-size: 14px;
   padding: 7px;
+  margin: 0 10px;
 }
 
 p a:hover,
@@ -39,8 +46,11 @@ p a:hover,
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 120px;
+  height: 22px;
   -ms-grid-column-align: end;
       justify-self: end;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .footer-lists {
@@ -116,7 +126,7 @@ input[type=submit] {
   color: white;
   padding: 15px 17px;
   border-radius: 5%;
-  margin: 20px 0px;
+  margin: 22px 0px;
   text-transform: uppercase;
   border-style: none;
   font-size: 0.95rem;
@@ -128,6 +138,7 @@ input[type=submit]:hover {
 
 input[type=checkbox] {
   float: left;
+  margin-bottom: 67px;
 }
 
 input[type=checkbox],
@@ -139,6 +150,11 @@ label {
   font-weight: bold;
   font-size: 15px;
   line-height: 2rem;
+}
+
+label[for=marketing] {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 form a {
@@ -217,6 +233,9 @@ input[type=checkbox]:focus {
   background: #dadada;
   background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(white));
   background: linear-gradient(180deg, #f3f3f3 0%, white 100%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .news-1,
@@ -225,7 +244,7 @@ input[type=checkbox]:focus {
   position: relative;
   border: 1px solid #bdbdbd;
   border-radius: 1%;
-  margin: 30px 10px;
+  margin: 30px 0px;
   height: 620px;
   width: 93vw;
   background-color: white;
@@ -680,49 +699,51 @@ input[type=checkbox]:focus {
   border-color: white;
 }
 
+.move-up {
+  margin-top: -25px;
+}
+
 .image-slideshow {
   position: relative;
   background-image: url("../images/placeholder stock.avif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 83vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 400px;
 }
 
 .image-slideshow h1,
 .image-slideshow p {
-  position: absolute;
   color: white;
   text-align: center;
 }
 
 .image-slideshow h1 {
-  top: 25%;
-  left: 15%;
-  left: 15%;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: 400;
+  line-height: 3.3rem;
+  text-transform: uppercase;
 }
 
 .image-slideshow p {
-  top: 35%;
-  left: 15%;
-  font-size: 1.2rem;
+  font-size: 1.17rem;
 }
 
 .image-slideshow button {
   text-transform: uppercase;
-  position: absolute;
-  top: 60%;
-  right: 25%;
-  left: 25%;
-  padding: 20px 20px;
+  padding: 21px 20px;
   background-color: #67809f;
   color: white;
   border-color: #67809f;
   border-style: none;
   border-radius: 3%;
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .image-slideshow button:after {
@@ -735,10 +756,24 @@ input[type=checkbox]:focus {
   background-color: #4e647e;
 }
 
+.image-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+}
+
+.center-button {
+  margin: 45px auto 0;
+  width: 210px;
+}
+
 header {
   display: relative;
   margin-bottom: 5px;
-  max-height: 17vh;
+  height: 103px;
 }
 
 header form {
@@ -753,12 +788,18 @@ header form {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
+  top: 95px;
+  position: absolute;
+  width: 90vw;
 }
 
 header img {
   width: 65vw;
   max-width: 400px;
-  margin: 28px 15px 10px 10px;
+  margin: 56px 15px 0 10px;
+  display: block;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 header input[type=text] {
@@ -767,6 +808,12 @@ header input[type=text] {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
+}
+
+header input[type=text]:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 header button[type=submit] {

@@ -3,6 +3,11 @@ footer {
   color: white;
 }
 
+hr {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
 .footer {
   display: -ms-grid;
   display: grid;
@@ -10,6 +15,7 @@ footer {
       justify-content: space-around;
   padding: 20px 0;
   font-size: 0.85rem;
+  margin: 0 10px;
 }
 
 .footer h3 {
@@ -25,6 +31,7 @@ footer {
       grid-template-columns: 1fr 1fr 1fr;
   font-size: 14px;
   padding: 7px;
+  margin: 0 10px;
 }
 
 p a:hover,
@@ -38,8 +45,11 @@ p a:hover,
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 120px;
+  height: 22px;
   -ms-grid-column-align: end;
       justify-self: end;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .footer-lists {

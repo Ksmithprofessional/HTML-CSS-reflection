@@ -4,6 +4,12 @@ footer {
 }
 // this doesn't override the other footer colours because of the cascade
 
+hr {
+
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
 .footer {
  
         display: grid;
@@ -14,6 +20,7 @@ footer {
         // color: white;
         padding: 20px 0;
         font-size: 0.85rem;
+        margin: 0 10px;
         }
 
         .footer h3 {
@@ -30,6 +37,7 @@ footer {
           //  justify-content: space-around;
           font-size: 14px;
           padding: 7px;
+          margin: 0 10px;
            
         }
 
@@ -44,7 +52,10 @@ footer {
           grid-template-columns: 1fr 1fr 1fr 1fr;
           // justify-content: flex-end;
           width: 120px;
+          height: 22px;
           justify-self: end;
+          margin-top: 10px;
+          text-align: center;
           
         }
 
@@ -84,3 +95,4 @@ footer {
           border-radius: 50%;
           
         }
+

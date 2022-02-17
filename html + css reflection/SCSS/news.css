@@ -18,6 +18,9 @@
   background: #dadada;
   background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(white));
   background: linear-gradient(180deg, #f3f3f3 0%, white 100%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .news-1,
@@ -26,7 +29,7 @@
   position: relative;
   border: 1px solid #bdbdbd;
   border-radius: 1%;
-  margin: 30px 10px;
+  margin: 30px 0px;
   height: 620px;
   width: 93vw;
   background-color: white;

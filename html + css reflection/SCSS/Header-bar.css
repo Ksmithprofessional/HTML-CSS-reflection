@@ -1,7 +1,7 @@
 header {
   display: relative;
   margin-bottom: 5px;
-  max-height: 17vh;
+  height: 103px;
 }
 
 header form {
@@ -16,12 +16,18 @@ header form {
   margin: 0;
   padding-top: 0;
   padding-bottom: 0;
+  top: 95px;
+  position: absolute;
+  width: 90vw;
 }
 
 header img {
   width: 65vw;
   max-width: 400px;
-  margin: 28px 15px 10px 10px;
+  margin: 56px 15px 0 10px;
+  display: block;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 header input[type=text] {
@@ -30,6 +36,12 @@ header input[type=text] {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
+}
+
+header input[type=text]:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 header button[type=submit] {
