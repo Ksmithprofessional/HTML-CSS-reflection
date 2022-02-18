@@ -1,6 +1,9 @@
 .read-more-grid {
   display: -ms-grid;
   display: grid;
+}
+
+.background-fix {
   background-color: #f1f1f1;
 }
 

@@ -1,6 +1,186 @@
-// first break point 768px
+// first break point 768px. search bar changes, phone disappears, grid becomes 3 columns + 2x2,
+// news becomes two side by side, partners appear, footer 2x3
 
-// second 992
+@media screen and (min-width: 768px) {
+    
+    main {
 
-// third 1260
+        width: 740px;
+        margin: 0 auto;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    header {
+
+        align-content: center;
+        height: 55px;
+    }
+
+    header form {
+
+        display: block;
+        width: 250px;
+        height: 40px;
+        z-index: 0;
+        top: -35px;
+        right: 72px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    header input[type=text] {
+
+        width: 158px;
+        min-width: 20px;
+        height: 31px;
+        margin-right: 0;
+        border: 1px solid #999aa2;
+        background-color: white;
+        color: #999aa2;
+        font-size: 1.1rem;
+
+        &:focus {
+
+            outline: #5bc0de solid 1px;
+            box-shadow: 0 0 5px 1px rgba(91, 192, 222, 0.8)
+        }
+    }
+
+    header button[type=submit] {
+        margin-left: -6px;
+        height: 58px;
+        width: 60px;
+        background-color: #999aa2;
+        border-radius: 0 5% 5% 0;
+        color: white;
+
+        &:hover {
+
+            background-color: #82838a;
+            cursor: pointer;
+        }
+        
+    }
+
+    .center {
+
+        margin: 0 auto;
+        width: 740px;
+        position: relative;
+    }
+
+    .menu {
+
+        top: -26px;
+    }
+
+    header img {
+
+        max-width: 350px;
+    }
+
+    // .read-more-grid {
+
+    //     width: 740px;
+    //     margin: 0 auto;
+    // }
+
+    .move-up {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        // width: 768px;
+        // margin-right: auto;
+        // margin-left: auto;
+    }
+
+    .security,
+    .developer {
+
+        margin-top: 10px;
+    }
+
+    // .bio {
+
+    //     width: 740px;
+    //     margin: 0 auto;
+    // }
+
+    .partner-1,
+    .partner-2 {
+
+        display: inline;
+    }
+
+    .news-wrapper {
+
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+      padding-top: 55px;
+      padding-bottom: 20px;
+    }
+
+    .news-1,
+    .news-2 {
+
+        width: auto;
+        margin: 0 15px;
+        height: 560px;
+
+        & footer {
+
+            margin-top: 42px;
+        }
+
+        & h3 {
+
+            margin-top: 15px;
+        }
+
+        & article {
+
+            margin-top: 30px;
+        }
+    }
+
+    .news-3 {
+
+        display: none;
+    }
+
+    .news-img {
+
+        height: 35%;
+    }
+
+    form {
+
+        width: 740px;
+        height: 460px;
+        margin: 0 auto;
+
+        & legend {
+
+            margin-top: 20px;
+        }
+    }
+
+    #name,
+    #email,
+    label[for=checkbox] {
+
+        width: 650px;
+        min-width: 650px;
+    }
+    
+}
+
+// second 992. support/contact header appear, search changes again, drop down header appears,
+// image overlay left align, grid 3 in a row + 2x2, bio background logo, form inline name+email
+
+// third 1260. search changes again, grid 3x4, news 3 in a row, footer in row
 
