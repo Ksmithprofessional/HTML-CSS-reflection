@@ -104,6 +104,26 @@
         margin-top: 10px;
     }
 
+    .web,
+    .developer {
+
+        margin-left: 15px;
+    }
+
+    .telecoms,
+    .security {
+
+        margin-right: 15px;
+    }
+
+    .web,
+    .developer,
+    .telecoms,
+    .security {
+
+        height: 260px;
+    }
+
     // .bio {
 
     //     width: 740px;
@@ -113,7 +133,7 @@
     .partner-1,
     .partner-2 {
 
-        display: inline;
+        display: grid;
     }
 
     .news-wrapper {
@@ -171,11 +191,52 @@
 
     #name,
     #email,
-    label[for=checkbox] {
+    label[for=marketing] {
 
         width: 650px;
         min-width: 650px;
     }
+
+    label[for=marketing] {
+
+        padding-right: 10px;
+    }
+
+    // .footer {
+
+    //     display: block;
+    // }
+
+    .footer-lists {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 0 auto;
+        width: 740px;
+    }
+
+    .footer-address {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        margin: 0 auto 40px;
+        width: 740px;
+    }
+
+    hr {
+
+       margin: 10px auto -10px;
+       width: 740px;
+      }
+
+      .footnote {
+
+        grid-template-columns: 370px 1fr 1fr;
+        width: 740px;
+        margin: 0 auto;
+      }
     
 }
 

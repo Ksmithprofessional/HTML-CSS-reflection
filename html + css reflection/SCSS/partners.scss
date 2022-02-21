@@ -1,0 +1,129 @@
+.partner-1,
+.partner-2 {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 740px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.partner-2 {
+
+    grid-gap: 20px;
+    padding-top: 40px;
+}
+
+.busseys,
+.crane,
+.diver {
+
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.busseys {
+
+    width: 120px;
+}
+
+.beat {
+
+    width: 50px;
+}
+
+.crane {
+
+    width: 190px;
+}
+
+.diver {
+
+    width: 200px;
+}
+
+.crane,
+.diver {
+
+    padding-left: 30px;
+}
+
+.beat,
+.busseys,
+.crane,
+.diver {
+
+    padding-bottom: 40px;
+}
+
+// .partner-1 {
+
+//     background-color: rgb(204, 204, 204);
+// }
+
+// .partners-2 {
+
+//     width: 140px;
+//     margin: 0 auto;
+//     padding: 20px;
+// }
+
+// .partners-2-small {
+
+//     width: 100px;
+//     margin: 0 auto;
+//     padding: 20px;
+// }
+
+// .partners-2-payment {
+
+//     width: 150px;
+//     margin: 0 auto;
+//     padding: 20px;
+// }
+
+.silver-micro {
+
+    width: 130px;
+    margin-left: 100px;
+}
+
+.future-50 {
+
+    width: 70px;
+}
+
+.qms {
+
+    width: 90px;
+}
+
+.silver-norfolk {
+
+    width: 190px;
+    margin-right: 90px;
+}
+
+.investing-future,
+.skills-of-tomorrow {
+
+    width: 130px;
+}
+
+.investing-future {
+
+    margin-left: -50px;
+}
+
+.princess-royal {
+
+    width: 140px;
+    margin-left: -35px;
+}
+
+.payment-code {
+
+    width: 190px;
+    margin-left: -30px;
+    margin-top: -25px;
+}

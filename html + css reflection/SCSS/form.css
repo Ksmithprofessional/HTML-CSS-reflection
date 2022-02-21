@@ -11,13 +11,14 @@ fieldset {
 
 legend {
   font-size: 2rem;
+  padding-top: 30px;
 }
 
 input[type=text] {
   border: none;
   margin: 5px 20px 20px 0px;
   padding: 12px 8px;
-  min-width: 75vw;
+  min-width: 85vw;
 }
 
 input[type=text]:focus {
@@ -56,6 +57,7 @@ input[type=submit]:hover {
 input[type=checkbox] {
   float: left;
   margin-bottom: 67px;
+  margin-left: -1px;
 }
 
 input[type=checkbox],
@@ -71,7 +73,7 @@ label {
 
 label[for=marketing] {
   font-size: 1rem;
-  font-weight: 400;
+  margin-left: 5px;
 }
 
 form a {

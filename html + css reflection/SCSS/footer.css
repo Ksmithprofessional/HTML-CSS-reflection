@@ -6,11 +6,10 @@ footer {
 hr {
   margin-left: 15px;
   margin-right: 10px;
+  margin-top: 20px;
 }
 
 .footer {
-  display: -ms-grid;
-  display: grid;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 20px 0;
@@ -78,5 +77,19 @@ p a:hover,
   border: 9px solid #0077b5;
   background-color: #0077b5;
   border-radius: 50%;
+}
+
+.footer-lists,
+.footer-address {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-grid-columns: (200px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 200px);
+}
+
+.footer-address {
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=footer.css.map */

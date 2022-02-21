@@ -71,9 +71,24 @@
   .developer {
     margin-top: 10px;
   }
+  .web,
+  .developer {
+    margin-left: 15px;
+  }
+  .telecoms,
+  .security {
+    margin-right: 15px;
+  }
+  .web,
+  .developer,
+  .telecoms,
+  .security {
+    height: 260px;
+  }
   .partner-1,
   .partner-2 {
-    display: inline;
+    display: -ms-grid;
+    display: grid;
   }
   .news-wrapper {
     -ms-grid-columns: 1fr 1fr;
@@ -117,9 +132,40 @@
   }
   #name,
   #email,
-  label[for=checkbox] {
+  label[for=marketing] {
     width: 650px;
     min-width: 650px;
+  }
+  label[for=marketing] {
+    padding-right: 10px;
+  }
+  .footer-lists {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin: 0 auto;
+    width: 740px;
+  }
+  .footer-address {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 0 auto 40px;
+    width: 740px;
+  }
+  hr {
+    margin: 10px auto -10px;
+    width: 740px;
+  }
+  .footnote {
+    -ms-grid-columns: 370px 1fr 1fr;
+        grid-template-columns: 370px 1fr 1fr;
+    width: 740px;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=media-queries.css.map */
