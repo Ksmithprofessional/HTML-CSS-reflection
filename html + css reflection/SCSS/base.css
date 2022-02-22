@@ -886,11 +886,12 @@ header button[type=submit]:hover {
   background-color: #333645;
   color: white;
   text-transform: uppercase;
-  width: 60px;
+  width: 65px;
   height: 60px;
   border-color: #333645;
-  border-radius: 2%;
+  border-radius: 5%;
   padding: 0px;
+  z-index: 1;
 }
 
 .menu:hover {
@@ -947,6 +948,7 @@ header button[type=submit]:hover {
 .crane,
 .diver {
   padding-bottom: 40px;
+  padding-top: 10px;
 }
 
 .silver-micro {
@@ -1051,12 +1053,15 @@ a {
             box-shadow: 0 0 5px 1px rgba(91, 192, 222, 0.8);
   }
   header button[type=submit] {
-    margin-left: -6px;
+    position: absolute;
+    top: -5px;
+    right: 15px;
     height: 58px;
     width: 60px;
     background-color: #999aa2;
     border-radius: 0 5% 5% 0;
     color: white;
+    font-size: 1.3rem;
   }
   header button[type=submit]:hover {
     background-color: #82838a;
@@ -1068,7 +1073,7 @@ a {
     position: relative;
   }
   .menu {
-    top: -26px;
+    top: -30px;
   }
   header img {
     max-width: 350px;
@@ -1152,6 +1157,10 @@ a {
   }
   label[for=marketing] {
     padding-right: 10px;
+    display: inline-block;
+  }
+  input[type=checkbox] {
+    margin-bottom: 20px;
   }
   .footer-lists {
     display: -ms-grid;
@@ -1161,6 +1170,9 @@ a {
     justify-items: center;
     margin: 0 auto;
     width: 740px;
+  }
+  .our-services {
+    margin-left: -130px;
   }
   .footer-address {
     display: -ms-grid;
@@ -1180,6 +1192,186 @@ a {
         grid-template-columns: 370px 1fr 1fr;
     width: 740px;
     margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    width: 950px;
+  }
+  header {
+    height: 50px;
+  }
+  .support,
+  .contact {
+    position: absolute;
+    display: inline-block;
+    width: 140px;
+    color: white;
+    border: 1px solid;
+    border-radius: 5%;
+    z-index: 1;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+  }
+  .support:hover,
+  .contact:hover {
+    cursor: pointer;
+  }
+  .support,
+  .contact,
+  .menu {
+    height: 55px;
+    top: -27px;
+  }
+  .menu {
+    right: 0px;
+  }
+  .support {
+    right: 35%;
+    background-color: #4183d7;
+    border-color: #4183d7;
+  }
+  .support:hover {
+    background-color: #3265a8;
+    border-color: #3265a8;
+  }
+  .contact {
+    right: 162px;
+    background-color: #999aa2;
+    border-color: #999aa2;
+  }
+  .contact:hover {
+    background-color: #77787e;
+    border-color: #77787e;
+  }
+  .fa-mouse:before,
+  .fa-paper-plane:before {
+    padding-right: 8px;
+  }
+  header .center {
+    width: 920px;
+  }
+  header input[type=text] {
+    display: none;
+  }
+  header button[type=submit] {
+    border-radius: 5%;
+    position: absolute;
+    right: 10px;
+    top: -3px;
+    height: 55px;
+  }
+  .image-content h1,
+  .image-content p {
+    text-align: left;
+  }
+  .image-content .center-button {
+    margin: 45px 0 0;
+  }
+  .grid-top-row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .it-support {
+    height: 278px;
+  }
+  .background-fix-2 {
+    background-image: url(../images/logo-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .news-img {
+    height: 40%;
+  }
+  .news-1,
+  .news-2 {
+    height: 600px;
+  }
+  .news-1 button,
+  .news-2 button {
+    margin-top: 60px;
+    margin-bottom: -7px;
+  }
+  .news-1 article,
+  .news-2 article {
+    margin-top: 40px;
+  }
+  .partner-1,
+  .partner-2,
+  form,
+  .footer-lists,
+  .footer-address,
+  hr,
+  .footnote {
+    width: 950px;
+  }
+  form {
+    height: 350px;
+  }
+  #name,
+  #email {
+    width: 420px;
+    min-width: 420px;
+  }
+  label[for=marketing] {
+    width: 850px;
+  }
+  .busseys,
+  .crane,
+  .beat,
+  .diver {
+    height: 60px;
+  }
+  .busseys {
+    width: 160px;
+  }
+  .beat {
+    width: 60px;
+  }
+  .crane {
+    width: 240px;
+  }
+  .diver {
+    width: 300px;
+  }
+  .partner-2 {
+    grid-gap: 30px;
+    padding-top: 60px;
+  }
+  .silver-micro {
+    width: 180px;
+    height: 110px;
+  }
+  .future-50 {
+    width: 110px;
+    height: 170px;
+    margin-left: 25px;
+  }
+  .qms {
+    width: 130px;
+    margin-left: -45px;
+  }
+  .silver-norfolk {
+    width: 250px;
+    margin-left: -45px;
+  }
+  .investing-future,
+  .skills-of-tomorrow {
+    width: 200px;
+  }
+  .skills-of-tomorrow {
+    margin-left: 10px;
+  }
+  .princess-royal {
+    width: 180px;
+  }
+  .payment-code {
+    width: 300px;
+    margin-top: -36px;
+    margin-left: -60px;
   }
 }
 /*# sourceMappingURL=base.css.map */
