@@ -18,6 +18,10 @@ hr {
   margin: 0 10px;
 }
 
+.footer address {
+  font-style: normal;
+}
+
 .footer h3 {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -1015,7 +1019,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  main {
+  .read-more-grid,
+  .bio,
+  .news-wrapper {
     width: 740px;
     margin: 0 auto;
   }
@@ -1117,6 +1123,10 @@ a {
     padding-top: 55px;
     padding-bottom: 20px;
   }
+  .background-fix-3 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(white));
+    background: linear-gradient(180deg, #f3f3f3 0%, white 100%);
+  }
   .news-1,
   .news-2 {
     width: auto;
@@ -1142,12 +1152,14 @@ a {
     height: 35%;
   }
   form {
-    width: 740px;
     height: 460px;
-    margin: 0 auto;
   }
   form legend {
     margin-top: 20px;
+  }
+  fieldset {
+    width: 740px;
+    margin: 0 auto;
   }
   #name,
   #email,
@@ -1196,7 +1208,9 @@ a {
 }
 
 @media screen and (min-width: 992px) {
-  main {
+  .read-more-grid,
+  .bio,
+  .news-wrapper {
     width: 950px;
   }
   header {
@@ -1275,8 +1289,40 @@ a {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
   }
-  .it-support {
+  .it-support,
+  .bespoke,
+  .marketing {
     height: 278px;
+  }
+  .it-support button,
+  .bespoke button,
+  .marketing button {
+    right: 85px;
+  }
+  .bespoke,
+  .it-support,
+  .marketing,
+  .telecoms,
+  .web,
+  .security,
+  .developer {
+    position: relative;
+  }
+  .bespoke button,
+  .it-support button,
+  .marketing button,
+  .telecoms button,
+  .web button,
+  .security button,
+  .developer button {
+    position: absolute;
+    bottom: 15px;
+  }
+  .telecoms button,
+  .web button,
+  .security button,
+  .developer button {
+    right: 158px;
   }
   .background-fix-2 {
     background-image: url(../images/logo-background.png);
@@ -1299,9 +1345,13 @@ a {
   .news-2 article {
     margin-top: 40px;
   }
+  .news-1 footer,
+  .news-2 footer {
+    font-size: 0.9rem;
+  }
   .partner-1,
   .partner-2,
-  form,
+  fieldset,
   .footer-lists,
   .footer-address,
   hr,
@@ -1372,6 +1422,122 @@ a {
     width: 300px;
     margin-top: -36px;
     margin-left: -60px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .read-more-grid,
+  .bio,
+  .news-wrapper {
+    width: 1200px;
+  }
+  header .center {
+    width: 1180px;
+  }
+  header input[type=text] {
+    display: inline-block;
+    position: absolute;
+    right: 69px;
+    width: 230px;
+    height: 29px;
+    top: 2px;
+  }
+  .support {
+    right: 49%;
+  }
+  .contact {
+    right: 35%;
+  }
+  .image-content {
+    width: 90vw;
+  }
+  .move-up {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .security,
+  .developer {
+    margin-top: 29px;
+  }
+  .telecoms, .security {
+    margin-right: 10;
+  }
+  .security button,
+  .developer button,
+  .telecoms button,
+  .web button {
+    right: 63px;
+  }
+  .bespoke button,
+  .it-support button,
+  .marketing button {
+    right: 123px;
+  }
+  .bio p {
+    width: 550px;
+  }
+  .news-wrapper {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .news-3 {
+    display: block;
+    margin: 0 15px;
+    height: 600px;
+    width: auto;
+  }
+  .news-3 button {
+    margin-top: 60px;
+    margin-bottom: -7px;
+  }
+  .news-3 article {
+    margin-top: 40px;
+  }
+  .news-1 button,
+  .news-2 button,
+  .news-3 button {
+    margin-top: 45px;
+  }
+  .news-1 footer,
+  .news-2 footer,
+  .news-3 footer {
+    margin-top: 37px;
+    font-size: 0.9rem;
+  }
+  #name,
+  #email {
+    width: 530px;
+  }
+  label[for=marketing] {
+    width: 1080px;
+  }
+  .partner-1,
+  .partner-2,
+  fieldset,
+  .footer-lists,
+  .footer-address,
+  hr,
+  .footnote {
+    width: 1200px;
+  }
+  .footer {
+    width: 1250px;
+    margin: 0 auto;
+  }
+  .footer-lists,
+  .footer-address {
+    display: -ms-inline-grid;
+    display: inline-grid;
+  }
+  .footer-lists {
+    width: 500px;
+  }
+  .footer-address {
+    width: 700px;
+  }
+  .our-services {
+    margin-left: -100px;
   }
 }
 /*# sourceMappingURL=base.css.map */

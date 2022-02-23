@@ -3,7 +3,11 @@
 
 @media screen and (min-width: 768px) {
     
-    main {
+    // main {
+
+    .read-more-grid,
+    .bio,
+    .news-wrapper {
 
         width: 740px;
         margin: 0 auto;
@@ -147,6 +151,11 @@
       padding-bottom: 20px;
     }
 
+    .background-fix-3 {
+
+        background: linear-gradient(180deg, rgb(243, 243, 243) 0%, rgba(255,255,255,1) 100%); 
+    }
+
     .news-1,
     .news-2 {
 
@@ -182,14 +191,18 @@
 
     form {
 
-        width: 740px;
         height: 460px;
-        margin: 0 auto;
 
         & legend {
 
             margin-top: 20px;
         }
+    }
+
+    fieldset {
+
+        width: 740px;
+        margin: 0 auto;
     }
 
     #name,
@@ -259,7 +272,11 @@
 
 @media screen and (min-width: 992px) {
     
-main {
+// main {
+
+    .read-more-grid,
+    .bio,
+    .news-wrapper {
 
     width: 950px;
 }
@@ -379,9 +396,44 @@ main {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .it-support {
+    .it-support,
+    .bespoke,
+    .marketing {
 
         height: 278px;
+
+        & button {
+
+            right: 85px;
+        }
+    }
+
+    .bespoke,
+    .it-support,
+    .marketing,
+    .telecoms,
+    .web,
+    .security,
+    .developer {
+
+        position: relative;
+
+        & button {
+
+            position: absolute;
+            bottom: 15px;
+        }
+    }
+
+    .telecoms,
+    .web,
+    .security,
+    .developer {
+
+        & button {
+
+        right: 158px;
+        }
     }
 
     .background-fix-2 {
@@ -412,11 +464,16 @@ main {
 
             margin-top: 40px;
         }
+
+        & footer {
+
+            font-size: 0.9rem;
+        }
     }
 
     .partner-1,
     .partner-2,
-    form,
+    fieldset,
     .footer-lists,
     .footer-address,
     hr,
@@ -528,3 +585,179 @@ main {
 
 // third 1260. search changes again, grid 3x4, news 3 in a row, footer in row
 
+@media screen and (min-width: 1260px) {
+
+    // main {
+
+    .read-more-grid,
+    .bio,
+    .news-wrapper {
+
+        width: 1200px;
+    }
+
+    header {
+
+        & .center {
+
+            width: 1180px;
+        }
+
+        & input[type=text] {
+
+            display: inline-block;
+            position: absolute;
+            right: 69px;
+            width: 230px;
+            height: 29px;
+            top: 2px;
+        }
+    }
+
+    .support {
+
+        right: 49%;
+    }
+
+    .contact {
+
+        right: 35%
+    }
+
+    .image-content {
+
+        width: 90vw;
+    }
+
+    .move-up {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .security,
+    .developer {
+        
+        margin-top: 29px;
+    }
+
+    .telecoms, .security {
+        margin-right: 10;
+    }
+
+    .security,
+    .developer, 
+    .telecoms, 
+    .web {
+
+        & button {
+
+            right: 63px;
+        }
+    }
+
+    .bespoke,
+    .it-support,
+    .marketing {
+
+        & button {
+
+            right: 123px;
+        }
+    }
+
+    .bio p {
+
+        width: 550px;
+    }
+
+    .news-wrapper {
+
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .news-3 {
+
+        display: block;
+        margin: 0 15px;
+        height: 600px;
+        width: auto;
+
+        & button {
+
+            margin-top: 60px;
+            margin-bottom: -7px;
+        }
+
+        & article {
+
+            margin-top: 40px;
+        }
+    }
+
+    .news-1,
+    .news-2,
+    .news-3 {
+
+        & button {
+
+            margin-top: 45px;
+        }
+
+        & footer {
+
+            margin-top: 37px;
+            font-size: 0.9rem;
+        }
+    }
+
+    #name,
+    #email {
+
+        width: 530px;
+    }
+
+    label[for=marketing] {
+
+        width: 1080px;
+    }
+
+    .partner-1,
+    .partner-2,
+    fieldset,
+    .footer-lists,
+    .footer-address,
+    hr,
+    .footnote {
+
+        width: 1200px;
+    }
+
+    .footer {
+
+        width: 1250px;
+        margin: 0 auto;
+    }
+
+    .footer-lists,
+    .footer-address {
+
+        display: inline-grid;
+    }
+
+    .footer-lists {
+
+        width: 500px;
+    }
+
+    .footer-address {
+
+        width: 700px;
+    }
+
+    .our-services {
+
+        margin-left: -100px;
+    }
+
+}

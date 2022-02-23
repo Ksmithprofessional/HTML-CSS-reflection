@@ -12,6 +12,11 @@ hr {
 }
 
 .footer {
+
+        & address {
+
+          font-style: normal;
+        }
  
         // display: grid;
 
