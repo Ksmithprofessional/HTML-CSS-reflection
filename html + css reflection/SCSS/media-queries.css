@@ -1,7 +1,8 @@
 @media screen and (min-width: 768px) {
   .read-more-grid,
   .bio,
-  .news-wrapper {
+  .news-wrapper,
+  .latest-fix {
     width: 740px;
     margin: 0 auto;
   }
@@ -90,6 +91,12 @@
   .security {
     height: 260px;
   }
+  .bio p {
+    width: 740px;
+  }
+  .latest {
+    width: 50px;
+  }
   .partner-1,
   .partner-2 {
     display: -ms-grid;
@@ -138,18 +145,18 @@
     margin-top: 20px;
   }
   fieldset {
-    width: 740px;
+    width: 720px;
     margin: 0 auto;
   }
   #name,
-  #email,
-  label[for=marketing] {
+  #email {
     width: 650px;
     min-width: 650px;
   }
   label[for=marketing] {
     padding-right: 10px;
     display: inline-block;
+    width: 600px;
   }
   input[type=checkbox] {
     margin-bottom: 20px;
@@ -177,12 +184,12 @@
   }
   hr {
     margin: 10px auto -10px;
-    width: 740px;
+    width: 700px;
   }
   .footnote {
     -ms-grid-columns: 370px 1fr 1fr;
         grid-template-columns: 370px 1fr 1fr;
-    width: 740px;
+    width: 700px;
     margin: 0 auto;
   }
 }
@@ -190,7 +197,8 @@
 @media screen and (min-width: 992px) {
   .read-more-grid,
   .bio,
-  .news-wrapper {
+  .news-wrapper,
+  .latest-fix {
     width: 950px;
   }
   header {
@@ -309,6 +317,9 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .bio p {
+    width: 950px;
+  }
   .news-img {
     height: 40%;
   }
@@ -408,7 +419,8 @@
 @media screen and (min-width: 1260px) {
   .read-more-grid,
   .bio,
-  .news-wrapper {
+  .news-wrapper,
+  .latest-fix {
     width: 1200px;
   }
   header .center {

@@ -50,6 +50,15 @@
   padding-top: 10px;
 }
 
+.background-fix-4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(white));
+  background: linear-gradient(180deg, #f3f3f3 0%, white 100%);
+}
+
+.partner-1 {
+  padding-top: 40px;
+}
+
 .silver-micro {
   width: 130px;
   margin-left: 100px;
@@ -86,5 +95,37 @@
   width: 190px;
   margin-left: -30px;
   margin-top: -25px;
+}
+
+.beat,
+.busseys,
+.crane,
+.diver,
+.silver-micro,
+.future-50,
+.qms,
+.silver-norfolk,
+.investing-future,
+.princess-royal,
+.skills-of-tomorrow,
+.payment-code {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.beat:hover,
+.busseys:hover,
+.crane:hover,
+.diver:hover,
+.silver-micro:hover,
+.future-50:hover,
+.qms:hover,
+.silver-norfolk:hover,
+.investing-future:hover,
+.princess-royal:hover,
+.skills-of-tomorrow:hover,
+.payment-code:hover {
+  -webkit-filter: none;
+          filter: none;
 }
 /*# sourceMappingURL=partners.css.map */

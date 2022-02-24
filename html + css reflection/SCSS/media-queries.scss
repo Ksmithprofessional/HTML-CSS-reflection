@@ -7,7 +7,8 @@
 
     .read-more-grid,
     .bio,
-    .news-wrapper {
+    .news-wrapper,
+    .latest-fix {
 
         width: 740px;
         margin: 0 auto;
@@ -131,11 +132,18 @@
         height: 260px;
     }
 
-    // .bio {
+    .bio {
 
-    //     width: 740px;
-    //     margin: 0 auto;
-    // }
+      & p {
+
+        width: 740px;
+      }
+    }
+
+    .latest {
+
+        width: 50px;
+    }
 
     .partner-1,
     .partner-2 {
@@ -201,13 +209,12 @@
 
     fieldset {
 
-        width: 740px;
+        width: 720px;
         margin: 0 auto;
     }
 
     #name,
-    #email,
-    label[for=marketing] {
+    #email {
 
         width: 650px;
         min-width: 650px;
@@ -217,6 +224,7 @@
 
         padding-right: 10px;
         display: inline-block;
+        width: 600px;
     }
 
     input[type=checkbox] {
@@ -255,13 +263,13 @@
     hr {
 
        margin: 10px auto -10px;
-       width: 740px;
+       width: 700px;
       }
 
       .footnote {
 
         grid-template-columns: 370px 1fr 1fr;
-        width: 740px;
+        width: 700px;
         margin: 0 auto;
       }
     
@@ -276,7 +284,8 @@
 
     .read-more-grid,
     .bio,
-    .news-wrapper {
+    .news-wrapper,
+    .latest-fix {
 
     width: 950px;
 }
@@ -443,6 +452,14 @@
         background-size: cover;
     }
 
+    .bio {
+
+        & p {
+  
+          width: 950px;
+        }
+      }
+
     .news-img {
 
         height: 40%;
@@ -591,7 +608,8 @@
 
     .read-more-grid,
     .bio,
-    .news-wrapper {
+    .news-wrapper,
+    .latest-fix {
 
         width: 1200px;
     }
