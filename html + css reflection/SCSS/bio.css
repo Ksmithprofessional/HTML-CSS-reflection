@@ -36,4 +36,8 @@
   content: '\2192';
   padding-left: 10px;
 }
+
+.culture-but:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=bio.css.map */

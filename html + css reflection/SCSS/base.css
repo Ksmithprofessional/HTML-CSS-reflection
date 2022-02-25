@@ -251,6 +251,10 @@ input[type=checkbox]:focus {
   padding-left: 10px;
 }
 
+.culture-but:hover {
+  cursor: pointer;
+}
+
 .latest {
   background-color: white;
   padding: 30px 10px 20px 0;
@@ -1308,7 +1312,7 @@ a {
     width: 740px;
   }
   hr {
-    margin: 10px auto -10px;
+    margin: 10px auto -5px;
     width: 700px;
   }
   .footnote {
@@ -1633,7 +1637,6 @@ a {
     width: 1080px;
   }
   .partner-1,
-  .partner-2,
   fieldset,
   .footer-lists,
   .footer-address,
@@ -1658,6 +1661,32 @@ a {
   }
   .our-services {
     margin-left: -100px;
+  }
+  .partner-2 {
+    width: 1100px;
+    grid-gap: 30px 80px;
+  }
+  .silver-micro {
+    width: 120px;
+    height: 70px;
+  }
+  .future-50 {
+    width: 55px;
+    height: 90px;
+  }
+  .qms {
+    width: 70px;
+  }
+  .silver-norfolk {
+    width: 180px;
+  }
+  .investing-future,
+  .skills-of-tomorrow {
+    width: 170px;
+  }
+  .payment-code {
+    width: 270px;
+    margin-top: -50px;
   }
 }
 /*# sourceMappingURL=base.css.map */
