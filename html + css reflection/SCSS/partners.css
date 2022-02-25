@@ -128,4 +128,54 @@
   -webkit-filter: none;
           filter: none;
 }
+
+.hover {
+  position: relative;
+  display: inline-block;
+}
+
+.hover .hover-text {
+  visibility: hidden;
+  width: 200px;
+  background-color: #333645;
+  color: white;
+  text-align: center;
+  padding: 5px 20px;
+  position: absolute;
+  z-index: 1;
+  bottom: 138%;
+  left: 50%;
+  margin-left: -110px;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #333645;
+}
+
+.hover:hover .hover-text {
+  visibility: visible;
+}
+
+.hover .hover-text::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 36%;
+  margin-left: -5px;
+  border-width: 30px;
+  border-style: solid;
+  border-color: #333645 transparent transparent transparent;
+}
+
+.hover-text h4 {
+  position: relative;
+}
+
+.hover-text h4::after {
+  content: "";
+  background: white;
+  position: absolute;
+  bottom: -10px;
+  left: 85px;
+  height: 3px;
+  width: 15%;
+}
 /*# sourceMappingURL=partners.css.map */
