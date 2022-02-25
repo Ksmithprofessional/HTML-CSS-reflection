@@ -65,8 +65,8 @@ p a:hover,
   background-color: #3b5998;
   border-radius: 50%;
   width: 12px;
-  -webkit-transform: translateY(-6px);
-          transform: translateY(-6px);
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
 }
 
 .fa-twitter:hover {
@@ -74,8 +74,8 @@ p a:hover,
   background-color: #00aced;
   border-radius: 50%;
   width: 12px;
-  -webkit-transform: translateY(-6px);
-          transform: translateY(-6px);
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
 }
 
 .fa-instagram:hover {
@@ -83,8 +83,8 @@ p a:hover,
   background-color: #d93175;
   border-radius: 50%;
   width: 12px;
-  -webkit-transform: translateY(-6px);
-          transform: translateY(-6px);
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
 }
 
 .fa-linkedin-in:hover {
@@ -92,8 +92,8 @@ p a:hover,
   background-color: #0077b5;
   border-radius: 50%;
   width: 12px;
-  -webkit-transform: translateY(-6px);
-          transform: translateY(-6px);
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
 }
 
 .footer-lists,
@@ -415,8 +415,9 @@ input[type=checkbox]:focus {
   color: #333645;
   margin: 30px 10px;
   text-align: center;
-  font-size: 0.8rem;
-  padding: 20px;
+  font-size: 0.85rem;
+  line-height: 1.1rem;
+  padding: 30px;
 }
 
 .bespoke h3,
@@ -426,7 +427,7 @@ input[type=checkbox]:focus {
 .web h3,
 .security h3,
 .developer h3 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.1rem;
   margin-bottom: 3px;
   padding: 0 20px;
@@ -750,7 +751,7 @@ input[type=checkbox]:focus {
 
 .image-slideshow {
   position: relative;
-  background-image: url("../images/placeholder stock.avif");
+  background-image: url("../Images/placeholder stock.avif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 83vh;
@@ -853,6 +854,7 @@ header input[type=text] {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
+  margin-right: 0;
 }
 
 header input[type=text]:focus {
@@ -1442,7 +1444,7 @@ a {
     right: 158px;
   }
   .background-fix-2 {
-    background-image: url(../images/logo-background.png);
+    background-image: url(../Images/logo-background.png);
     background-repeat: no-repeat;
     background-size: cover;
   }

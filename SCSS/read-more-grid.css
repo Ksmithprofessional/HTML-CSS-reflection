@@ -20,8 +20,9 @@
   color: #333645;
   margin: 30px 10px;
   text-align: center;
-  font-size: 0.8rem;
-  padding: 20px;
+  font-size: 0.85rem;
+  line-height: 1.1rem;
+  padding: 30px;
 }
 
 .bespoke h3,
@@ -31,7 +32,7 @@
 .web h3,
 .security h3,
 .developer h3 {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.1rem;
   margin-bottom: 3px;
   padding: 0 20px;

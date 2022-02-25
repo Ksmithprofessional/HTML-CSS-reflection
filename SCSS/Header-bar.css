@@ -36,6 +36,7 @@ header input[type=text] {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
+  margin-right: 0;
 }
 
 header input[type=text]:focus {
