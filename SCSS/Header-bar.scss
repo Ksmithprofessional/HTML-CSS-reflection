@@ -12,11 +12,13 @@ header form {
     flex-flow: row no-wrap;
     background-color: white;
     margin: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
     top: 95px;
     position: absolute;
-    width: 90vw;
+    // width: 90vw;
+    right: 13px;
+    left: 10px;
+    height: 70px;
 
 }
 
@@ -36,6 +38,7 @@ header input[type=text] {
     border: 2px solid rgb(201, 201, 201);
     flex-grow: 2;
     margin-right: 0;
+    width: 95%;
 
     &:focus {
 
@@ -47,10 +50,14 @@ header input[type=text] {
 header button[type=submit] {
 
     height: 35px;
-    margin-left: -50px;
+    // margin-left: -50px;
     margin-top: 10px;
     border-style: none;
     font-size: 1.2rem;
+    position: absolute;
+    right: 10px;
+    // top: 5px;
+    background-color: rgb(231, 231, 231);
 
     &:hover {
 

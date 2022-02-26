@@ -98,12 +98,13 @@ p a:hover,
 
 .footer-lists,
 .footer-address {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-grid-columns: (200px)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 200px);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-address {
@@ -832,11 +833,12 @@ header form {
           flex-flow: row no-wrap;
   background-color: white;
   margin: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
   top: 95px;
   position: absolute;
-  width: 90vw;
+  right: 13px;
+  left: 10px;
+  height: 70px;
 }
 
 header img {
@@ -855,6 +857,7 @@ header input[type=text] {
       -ms-flex-positive: 2;
           flex-grow: 2;
   margin-right: 0;
+  width: 95%;
 }
 
 header input[type=text]:focus {
@@ -865,10 +868,12 @@ header input[type=text]:focus {
 
 header button[type=submit] {
   height: 35px;
-  margin-left: -50px;
   margin-top: 10px;
   border-style: none;
   font-size: 1.2rem;
+  position: absolute;
+  right: 10px;
+  background-color: #e7e7e7;
 }
 
 header button[type=submit]:hover {
@@ -1068,7 +1073,7 @@ header button[type=submit]:hover {
   position: absolute;
   z-index: 1;
   bottom: 138%;
-  left: 50%;
+  left: 47%;
   margin-left: -110px;
   font-size: 0.85rem;
   border-bottom: 1px solid #333645;
@@ -1082,7 +1087,7 @@ header button[type=submit]:hover {
   content: " ";
   position: absolute;
   top: 100%;
-  left: 36%;
+  left: 39%;
   margin-left: -5px;
   border-width: 30px;
   border-style: solid;
@@ -1153,6 +1158,7 @@ a {
     right: 72px;
     padding-left: 0;
     padding-right: 0;
+    left: unset;
   }
   header input[type=text] {
     width: 158px;
@@ -1395,6 +1401,10 @@ a {
     top: -3px;
     height: 55px;
   }
+  .image-content {
+    width: 950px;
+    left: 25px;
+  }
   .image-content h1,
   .image-content p {
     text-align: left;
@@ -1575,7 +1585,7 @@ a {
     right: 35%;
   }
   .image-content {
-    width: 90vw;
+    width: 1180px;
   }
   .move-up {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;

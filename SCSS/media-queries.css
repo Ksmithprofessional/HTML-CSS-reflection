@@ -23,6 +23,7 @@
     right: 72px;
     padding-left: 0;
     padding-right: 0;
+    left: unset;
   }
   header input[type=text] {
     width: 158px;
@@ -265,6 +266,10 @@
     top: -3px;
     height: 55px;
   }
+  .image-content {
+    width: 950px;
+    left: 25px;
+  }
   .image-content h1,
   .image-content p {
     text-align: left;
@@ -445,7 +450,7 @@
     right: 35%;
   }
   .image-content {
-    width: 90vw;
+    width: 1180px;
   }
   .move-up {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;

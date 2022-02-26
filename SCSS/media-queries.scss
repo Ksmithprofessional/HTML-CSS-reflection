@@ -34,6 +34,7 @@
         right: 72px;
         padding-left: 0;
         padding-right: 0;
+        left: unset;
     }
 
     header input[type=text] {
@@ -384,9 +385,9 @@
 
     .image-content {
 
-        // width: 950px;
-        // margin-left: 3%;
-        // margin-right: 0;
+        width: 950px;
+        left: 25px;
+        
         
         & h1,
         & p {
@@ -636,6 +637,11 @@
             height: 29px;
             top: 2px;
         }
+
+        // & form {
+
+        //     left: unset;
+        // }
     }
 
     .support {
@@ -650,7 +656,7 @@
 
     .image-content {
 
-        width: 90vw;
+        width: 1180px;
     }
 
     .move-up {

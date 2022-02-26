@@ -97,12 +97,13 @@ p a:hover,
 
 .footer-lists,
 .footer-address {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -ms-grid-columns: (200px)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 200px);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-address {

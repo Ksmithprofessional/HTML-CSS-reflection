@@ -114,9 +114,10 @@ hr {
   .footer-lists,
   .footer-address {
 
-    display: grid;
+    display: flex;
     justify-content: space-around;
-    grid-template-columns: repeat(auto-fit, 200px);
+    // grid-template-columns: repeat(auto-fit, 200px);
+    flex-wrap: wrap;
   }
 
   .footer-address {
