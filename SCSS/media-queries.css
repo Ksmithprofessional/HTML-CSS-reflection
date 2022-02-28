@@ -1,6 +1,5 @@
 @media screen and (min-width: 768px) {
   .read-more-grid,
-  .bio,
   .news-wrapper,
   .latest-fix {
     width: 740px;
@@ -92,8 +91,12 @@
   .security {
     height: 260px;
   }
+  .bio {
+    width: 720px;
+    margin: 0 auto;
+  }
   .bio p {
-    width: 740px;
+    width: 700px;
   }
   .latest {
     width: 50px;
@@ -147,7 +150,7 @@
     margin-top: 20px;
   }
   fieldset {
-    width: 720px;
+    width: 700px;
     margin: 0 auto;
   }
   #name,

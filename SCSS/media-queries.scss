@@ -6,7 +6,6 @@
     // main {
 
     .read-more-grid,
-    .bio,
     .news-wrapper,
     .latest-fix {
 
@@ -135,9 +134,12 @@
 
     .bio {
 
+        width: 720px;
+        margin: 0 auto;
+
       & p {
 
-        width: 740px;
+        width: 700px;
       }
     }
 
@@ -211,7 +213,7 @@
 
     fieldset {
 
-        width: 720px;
+        width: 700px;
         margin: 0 auto;
     }
 
