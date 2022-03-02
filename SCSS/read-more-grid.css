@@ -38,13 +38,13 @@
   padding: 0 20px;
 }
 
-.bespoke button,
-.it-support button,
-.marketing button,
-.telecoms button,
-.web button,
-.security button,
-.developer button {
+.bespoke .read-more-btn,
+.it-support .read-more-btn,
+.marketing .read-more-btn,
+.telecoms .read-more-btn,
+.web .read-more-btn,
+.security .read-more-btn,
+.developer .read-more-btn {
   padding: 13px;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -53,6 +53,8 @@
   color: white;
   border: 1px solid;
   border-radius: 5%;
+  width: 100px;
+  margin: 0 auto;
 }
 
 .header-border {
@@ -63,7 +65,7 @@
   padding-top: 0px;
 }
 
-.bespoke button {
+.bespoke .read-more-btn {
   background-color: #67809f;
   border-color: #67809f;
 }
@@ -87,7 +89,7 @@
   border-color: white;
 }
 
-.bespoke:hover button {
+.bespoke:hover .read-more-btn {
   background-color: white;
   border-color: white;
   color: #67809f;
@@ -104,7 +106,7 @@
   border-color: white;
 }
 
-.it-support button {
+.it-support .read-more-btn {
   background-color: #4183d7;
   border-color: #4183d7;
 }
@@ -128,7 +130,7 @@
   border-color: white;
 }
 
-.it-support:hover button {
+.it-support:hover .read-more-btn {
   background-color: white;
   border-color: white;
   color: #4183d7;
@@ -145,7 +147,7 @@
   border-color: white;
 }
 
-.marketing button {
+.marketing .read-more-btn {
   background-color: #2ecc71;
   border-color: #2ecc71;
 }
@@ -169,7 +171,7 @@
   border-color: white;
 }
 
-.marketing:hover button {
+.marketing:hover .read-more-btn {
   background-color: white;
   border-color: white;
   color: #2ecc71;
@@ -186,7 +188,7 @@
   border-color: white;
 }
 
-.telecoms button {
+.telecoms .read-more-btn {
   background-color: #d64541;
   border-color: #d64541;
 }
@@ -210,7 +212,7 @@
   border-color: white;
 }
 
-.telecoms:hover button {
+.telecoms:hover .read-more-btn {
   background-color: white;
   border-color: white;
   color: #d64541;
@@ -227,7 +229,7 @@
   border-color: white;
 }
 
-.web button {
+.web .read-more-btn {
   background-color: #926fb1;
   border-color: #926fb1;
 }
@@ -251,7 +253,7 @@
   border-color: white;
 }
 
-.web:hover button {
+.web:hover .read-more-btn {
   background-color: white;
   border-color: white;
   color: #926fb1;
@@ -268,7 +270,7 @@
   border-color: white;
 }
 
-.security button {
+.security .read-more-btn {
   background-color: #f62459;
   border-color: #f62459;
 }
@@ -292,7 +294,7 @@
   border-color: white;
 }
 
-.security:hover button {
+.security:hover .read-more-btn {
   background-color: white;
   border-color: white;
   color: #f62459;
@@ -309,7 +311,7 @@
   border-color: white;
 }
 
-.developer button {
+.developer .read-more-btn {
   background-color: #926fb1;
   border-color: #926fb1;
 }
@@ -333,7 +335,7 @@
   border-color: white;
 }
 
-.developer:hover button {
+.developer:hover .read-more-btn {
   background-color: white;
   border-color: white;
   color: #926fb1;

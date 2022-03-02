@@ -31,7 +31,7 @@
   font-size: 1.17rem;
 }
 
-.image-slideshow button {
+.image-slideshow .image-btn {
   text-transform: uppercase;
   padding: 21px 18px;
   background-color: #67809f;
@@ -42,12 +42,12 @@
   font-size: 1.1rem;
 }
 
-.image-slideshow button:after {
+.image-slideshow .image-btn:after {
   content: "→";
   padding-left: 15px;
 }
 
-.image-slideshow button:hover {
+.image-slideshow .image-btn:hover {
   cursor: pointer;
   background-color: #4e647e;
 }

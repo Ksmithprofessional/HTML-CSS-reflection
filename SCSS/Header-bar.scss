@@ -107,11 +107,13 @@ header button[type=submit] {
     color: white;
     text-transform: uppercase;
     width: 65px;
-    height: 60px;
+    height: 55px;
     border-color:#333645;
     border-radius: 5%;
     padding: 0px;
+    padding-top: 5px;
     z-index: 1;
+    text-align: center;
 
     &:hover {
 

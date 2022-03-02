@@ -41,7 +41,7 @@
     font-size: 0.8rem;
     line-height: 1.5rem;
 
-    & button {
+    & .read-more {
 
         background-color: #926fb1;
         color: white;
@@ -49,9 +49,11 @@
         border-style: none;
         padding: 11px 15px;
         border-radius: 5%;
-        font-size: 1rem;
+        font-size: 1.05rem;
         margin-top: 22px;
         margin-bottom: 22px;
+        width: 100px;
+        text-align: center;
 
         &:hover {
 
@@ -87,8 +89,8 @@
 
     & h3,
     & footer,
-    & article,
-    & button {
+    & p,
+    & .read-more {
 
         margin-left: 25px;
         margin-right: 25px;

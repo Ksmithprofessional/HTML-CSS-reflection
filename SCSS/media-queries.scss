@@ -130,6 +130,15 @@
     .security {
 
         height: 260px;
+        position: relative;
+
+        & .read-more-btn {
+
+            position: absolute;
+            bottom: 30px;
+            right: 114px;
+            
+        }
     }
 
     .bio {
@@ -185,7 +194,7 @@
             margin-top: 15px;
         }
 
-        & article {
+        & article p {
 
             margin-top: 30px;
         }
@@ -229,6 +238,7 @@
         padding-right: 10px;
         display: inline-block;
         width: 600px;
+        max-width: 90vw;
     }
 
     input[type=checkbox] {
@@ -287,7 +297,6 @@
 // main {
 
     .read-more-grid,
-    .bio,
     .news-wrapper,
     .latest-fix {
 
@@ -304,13 +313,15 @@
 
         position: absolute;
         display: inline-block;
-        width: 140px;
+        width: 135px;
         color: white;
         border: 1px solid;
         border-radius: 5%;
         z-index: 1;
         font-size: 1.15rem;
         text-transform: uppercase;
+        text-align: center;
+        padding-top: 15px;
 
         &:hover {
 
@@ -319,16 +330,17 @@
     }
 
     .support,
-    .contact,
-    .menu {
+    .contact {
 
-        height: 55px;
+        height: 37px;
         top: -27px;
     }
 
     .menu {
 
         right: 0px;
+        top: -27px;
+        height: 50px;
     }
 
     .support {
@@ -414,27 +426,13 @@
     .marketing {
 
         height: 278px;
-
-        & button {
-
-            right: 85px;
-        }
-    }
-
-    .bespoke,
-    .it-support,
-    .marketing,
-    .telecoms,
-    .web,
-    .security,
-    .developer {
-
         position: relative;
 
-        & button {
+        .read-more-btn {
 
             position: absolute;
-            bottom: 15px;
+            right: 85px;
+            bottom: 30px;
         }
     }
 
@@ -443,7 +441,7 @@
     .security,
     .developer {
 
-        & button {
+        & .read-more-btn {
 
         right: 158px;
         }
@@ -458,9 +456,11 @@
 
     .bio {
 
+        width: 920px;
+
         & p {
   
-          width: 950px;
+          width: 900px;
         }
       }
 
@@ -475,13 +475,13 @@
 
         height: 600px;
 
-        & button {
+        & .read-more {
 
             margin-top: 60px;
             margin-bottom: -7px;
         }
 
-        & article {
+        & article p {
 
             margin-top: 40px;
         }
@@ -494,7 +494,6 @@
 
     .partner-1,
     .partner-2,
-    fieldset,
     .footer-lists,
     .footer-address,
     hr,
@@ -506,6 +505,11 @@
     form {
 
         height: 350px;
+    }
+
+    fieldset {
+
+        width: 920px;
     }
 
     #name,
@@ -587,7 +591,7 @@
     .investing-future,
     .skills-of-tomorrow {
     
-        width: 200px;
+        width: 170px;
     }
 
     .skills-of-tomorrow {
@@ -602,7 +606,7 @@
     
     .payment-code {
     
-        width: 300px;
+        width: 270px;
         margin-top: -36px;
         margin-left: -60px;
     }
@@ -664,7 +668,7 @@
     .move-up {
 
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 20px;
+        grid-gap: 10px;
     }
 
     .security,
@@ -674,7 +678,7 @@
     }
 
     .telecoms, .security {
-        margin-right: 10;
+        margin-right: 10px;
     }
 
     .security,
@@ -682,9 +686,14 @@
     .telecoms, 
     .web {
 
-        & button {
+        & p {
 
-            right: 63px;
+            margin-top: 5px;
+        }
+
+        & .read-more-btn {
+
+            right: 70px;
         }
     }
 
@@ -692,9 +701,9 @@
     .it-support,
     .marketing {
 
-        & button {
+        & .read-more-btn {
 
-            right: 123px;
+            right: 127px;
         }
     }
 
@@ -715,13 +724,13 @@
         height: 600px;
         width: auto;
 
-        & button {
+        & .read-more {
 
             margin-top: 60px;
             margin-bottom: -7px;
         }
 
-        & article {
+        & article p {
 
             margin-top: 40px;
         }
@@ -731,7 +740,7 @@
     .news-2,
     .news-3 {
 
-        & button {
+        & .read-more {
 
             margin-top: 45px;
         }
@@ -754,8 +763,12 @@
         width: 1080px;
     }
 
+    fieldset {
+
+        width: 1160px;
+    }
+
     .partner-1,
-    fieldset,
     .footer-lists,
     .footer-address,
     hr,
@@ -766,7 +779,7 @@
 
     .footer {
 
-        width: 1250px;
+        width: 1240px;
         margin: 0 auto;
     }
 

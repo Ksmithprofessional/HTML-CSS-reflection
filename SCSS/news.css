@@ -38,23 +38,25 @@
   line-height: 1.5rem;
 }
 
-.news-1 button,
-.news-2 button,
-.news-3 button {
+.news-1 .read-more,
+.news-2 .read-more,
+.news-3 .read-more {
   background-color: #926fb1;
   color: white;
   cursor: pointer;
   border-style: none;
   padding: 11px 15px;
   border-radius: 5%;
-  font-size: 1rem;
+  font-size: 1.05rem;
   margin-top: 22px;
   margin-bottom: 22px;
+  width: 100px;
+  text-align: center;
 }
 
-.news-1 button:hover,
-.news-2 button:hover,
-.news-3 button:hover {
+.news-1 .read-more:hover,
+.news-2 .read-more:hover,
+.news-3 .read-more:hover {
   background-color: #7949a3;
 }
 
@@ -82,16 +84,16 @@
 
 .news-1 h3,
 .news-1 footer,
-.news-1 article,
-.news-1 button,
+.news-1 p,
+.news-1 .read-more,
 .news-2 h3,
 .news-2 footer,
-.news-2 article,
-.news-2 button,
+.news-2 p,
+.news-2 .read-more,
 .news-3 h3,
 .news-3 footer,
-.news-3 article,
-.news-3 button {
+.news-3 p,
+.news-3 .read-more {
   margin-left: 25px;
   margin-right: 25px;
 }

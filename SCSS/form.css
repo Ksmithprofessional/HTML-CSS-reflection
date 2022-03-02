@@ -74,6 +74,8 @@ label {
 label[for=marketing] {
   font-size: 1rem;
   margin-left: 5px;
+  max-width: 80vw;
+  display: inline-block;
 }
 
 form a {

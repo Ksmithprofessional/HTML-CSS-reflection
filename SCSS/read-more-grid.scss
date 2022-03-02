@@ -37,7 +37,7 @@
 
     }
 
-    & button {
+    & .read-more-btn {
 
         padding: 13px;
         margin-bottom: 10px;
@@ -47,6 +47,8 @@
         color: white;
         border: 1px solid;
         border-radius: 5%;
+        width: 100px;
+        margin: 0 auto;
         
     }
 }
@@ -62,7 +64,7 @@
 
 .bespoke {
 
-    & button {
+    & .read-more-btn {
 
         background-color: #67809f;
         border-color: #67809f;
@@ -89,7 +91,7 @@
             border-color: white;
         }
 
-        & button {
+        & .read-more-btn {
 
             background-color: white;
             border-color: white;
@@ -113,7 +115,7 @@
 
 .it-support {
 
-    & button {
+    & .read-more-btn {
 
         background-color: #4183d7;
         border-color: #4183d7;
@@ -140,7 +142,7 @@
             border-color: white;
         }
 
-        & button {
+        & .read-more-btn {
 
             background-color: white;
             border-color: white;
@@ -164,7 +166,7 @@
 
 .marketing {
 
-    & button {
+    & .read-more-btn {
 
         background-color: #2ecc71;
         border-color: #2ecc71;
@@ -191,7 +193,7 @@
             border-color: white;
         }
 
-        & button {
+        & .read-more-btn {
 
             background-color: white;
             border-color: white;
@@ -215,7 +217,7 @@
 
 .telecoms {
 
-    & button {
+    & .read-more-btn {
 
         background-color: #d64541;
         border-color: #d64541;
@@ -242,7 +244,7 @@
             border-color: white;
         }
 
-        & button {
+        & .read-more-btn {
 
             background-color: white;
             border-color: white;
@@ -266,7 +268,7 @@
 
 .web {
 
-    & button {
+    & .read-more-btn {
 
         background-color: #926fb1;
         border-color: #926fb1;
@@ -293,7 +295,7 @@
             border-color: white;
         }
 
-        & button {
+        & .read-more-btn {
 
             background-color: white;
             border-color: white;
@@ -317,7 +319,7 @@
 
 .security {
 
-    & button {
+    & .read-more-btn {
 
         background-color: #f62459;
         border-color: #f62459;
@@ -344,7 +346,7 @@
             border-color: white;
         }
 
-        & button {
+        & .read-more-btn {
 
             background-color: white;
             border-color: white;
@@ -368,7 +370,7 @@
 
 .developer {
 
-    & button {
+    & .read-more-btn {
 
         background-color: #926fb1;
         border-color: #926fb1;
@@ -395,7 +397,7 @@
             border-color: white;
         }
 
-        & button {
+        & .read-more-btn {
 
             background-color: white;
             border-color: white;

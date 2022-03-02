@@ -90,6 +90,15 @@
   .telecoms,
   .security {
     height: 260px;
+    position: relative;
+  }
+  .web .read-more-btn,
+  .developer .read-more-btn,
+  .telecoms .read-more-btn,
+  .security .read-more-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 114px;
   }
   .bio {
     width: 720px;
@@ -133,8 +142,8 @@
   .news-2 h3 {
     margin-top: 15px;
   }
-  .news-1 article,
-  .news-2 article {
+  .news-1 article p,
+  .news-2 article p {
     margin-top: 30px;
   }
   .news-3 {
@@ -162,6 +171,7 @@
     padding-right: 10px;
     display: inline-block;
     width: 600px;
+    max-width: 90vw;
   }
   input[type=checkbox] {
     margin-bottom: 20px;
@@ -201,7 +211,6 @@
 
 @media screen and (min-width: 992px) {
   .read-more-grid,
-  .bio,
   .news-wrapper,
   .latest-fix {
     width: 950px;
@@ -213,26 +222,29 @@
   .contact {
     position: absolute;
     display: inline-block;
-    width: 140px;
+    width: 135px;
     color: white;
     border: 1px solid;
     border-radius: 5%;
     z-index: 1;
     font-size: 1.15rem;
     text-transform: uppercase;
+    text-align: center;
+    padding-top: 15px;
   }
   .support:hover,
   .contact:hover {
     cursor: pointer;
   }
   .support,
-  .contact,
-  .menu {
-    height: 55px;
+  .contact {
+    height: 37px;
     top: -27px;
   }
   .menu {
     right: 0px;
+    top: -27px;
+    height: 50px;
   }
   .support {
     right: 35%;
@@ -290,35 +302,19 @@
   .bespoke,
   .marketing {
     height: 278px;
-  }
-  .it-support button,
-  .bespoke button,
-  .marketing button {
-    right: 85px;
-  }
-  .bespoke,
-  .it-support,
-  .marketing,
-  .telecoms,
-  .web,
-  .security,
-  .developer {
     position: relative;
   }
-  .bespoke button,
-  .it-support button,
-  .marketing button,
-  .telecoms button,
-  .web button,
-  .security button,
-  .developer button {
+  .it-support .read-more-btn,
+  .bespoke .read-more-btn,
+  .marketing .read-more-btn {
     position: absolute;
-    bottom: 15px;
+    right: 85px;
+    bottom: 30px;
   }
-  .telecoms button,
-  .web button,
-  .security button,
-  .developer button {
+  .telecoms .read-more-btn,
+  .web .read-more-btn,
+  .security .read-more-btn,
+  .developer .read-more-btn {
     right: 158px;
   }
   .background-fix-2 {
@@ -326,8 +322,11 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .bio {
+    width: 920px;
+  }
   .bio p {
-    width: 950px;
+    width: 900px;
   }
   .news-img {
     height: 40%;
@@ -336,13 +335,13 @@
   .news-2 {
     height: 600px;
   }
-  .news-1 button,
-  .news-2 button {
+  .news-1 .read-more,
+  .news-2 .read-more {
     margin-top: 60px;
     margin-bottom: -7px;
   }
-  .news-1 article,
-  .news-2 article {
+  .news-1 article p,
+  .news-2 article p {
     margin-top: 40px;
   }
   .news-1 footer,
@@ -351,7 +350,6 @@
   }
   .partner-1,
   .partner-2,
-  fieldset,
   .footer-lists,
   .footer-address,
   hr,
@@ -360,6 +358,9 @@
   }
   form {
     height: 350px;
+  }
+  fieldset {
+    width: 920px;
   }
   #name,
   #email {
@@ -413,7 +414,7 @@
   }
   .investing-future,
   .skills-of-tomorrow {
-    width: 200px;
+    width: 170px;
   }
   .skills-of-tomorrow {
     margin-left: 10px;
@@ -422,7 +423,7 @@
     width: 180px;
   }
   .payment-code {
-    width: 300px;
+    width: 270px;
     margin-top: -36px;
     margin-left: -60px;
   }
@@ -458,25 +459,31 @@
   .move-up {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
   }
   .security,
   .developer {
     margin-top: 29px;
   }
   .telecoms, .security {
-    margin-right: 10;
+    margin-right: 10px;
   }
-  .security button,
-  .developer button,
-  .telecoms button,
-  .web button {
-    right: 63px;
+  .security p,
+  .developer p,
+  .telecoms p,
+  .web p {
+    margin-top: 5px;
   }
-  .bespoke button,
-  .it-support button,
-  .marketing button {
-    right: 123px;
+  .security .read-more-btn,
+  .developer .read-more-btn,
+  .telecoms .read-more-btn,
+  .web .read-more-btn {
+    right: 70px;
+  }
+  .bespoke .read-more-btn,
+  .it-support .read-more-btn,
+  .marketing .read-more-btn {
+    right: 127px;
   }
   .bio p {
     width: 550px;
@@ -491,16 +498,16 @@
     height: 600px;
     width: auto;
   }
-  .news-3 button {
+  .news-3 .read-more {
     margin-top: 60px;
     margin-bottom: -7px;
   }
-  .news-3 article {
+  .news-3 article p {
     margin-top: 40px;
   }
-  .news-1 button,
-  .news-2 button,
-  .news-3 button {
+  .news-1 .read-more,
+  .news-2 .read-more,
+  .news-3 .read-more {
     margin-top: 45px;
   }
   .news-1 footer,
@@ -516,8 +523,10 @@
   label[for=marketing] {
     width: 1080px;
   }
+  fieldset {
+    width: 1160px;
+  }
   .partner-1,
-  fieldset,
   .footer-lists,
   .footer-address,
   hr,
@@ -525,7 +534,7 @@
     width: 1200px;
   }
   .footer {
-    width: 1250px;
+    width: 1240px;
     margin: 0 auto;
   }
   .footer-lists,
