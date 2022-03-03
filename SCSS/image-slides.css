@@ -14,6 +14,17 @@
   min-height: 400px;
 }
 
+.image-slideshow:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, right top, left top, color-stop(25%, transparent), to(#000));
+  background: linear-gradient(270deg, transparent 25%, #000);
+}
+
 .image-slideshow h1,
 .image-slideshow p {
   color: white;
@@ -29,6 +40,7 @@
 
 .image-slideshow p {
   font-size: 1.17rem;
+  line-height: 2rem;
 }
 
 .image-slideshow .image-btn {

@@ -125,10 +125,13 @@ fieldset {
 legend {
   font-size: 2rem;
   padding-top: 30px;
+  max-width: 95%;
 }
 
 input[type=text] {
   border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 5px 20px 20px 0px;
   padding: 12px 8px;
   min-width: 85vw;
@@ -165,6 +168,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #242424;
+  cursor: pointer;
 }
 
 input[type=checkbox] {
@@ -241,12 +245,12 @@ input[type=checkbox]:focus {
 }
 
 .culture-but {
-  padding: 5px 0 12px 15px;
+  padding: 5px 0 12px 13px;
   margin-top: 10px;
-  height: 25px;
-  width: 150px;
+  height: 27px;
+  width: 155px;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.1rem;
   background-color: white;
   color: black;
   border: 1px solid white;
@@ -296,7 +300,6 @@ input[type=checkbox]:focus {
   border: 1px solid #bdbdbd;
   border-radius: 1%;
   margin: 30px 0px;
-  height: 620px;
   width: 93vw;
   background-color: white;
   color: gray;
@@ -375,6 +378,10 @@ input[type=checkbox]:focus {
 .news-img {
   height: 50%;
   width: 100%;
+}
+
+.news-height {
+  height: 270px;
 }
 
 .poster {
@@ -777,6 +784,17 @@ input[type=checkbox]:focus {
   min-height: 400px;
 }
 
+.image-slideshow:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, right top, left top, color-stop(25%, transparent), to(#000));
+  background: linear-gradient(270deg, transparent 25%, #000);
+}
+
 .image-slideshow h1,
 .image-slideshow p {
   color: white;
@@ -792,6 +810,7 @@ input[type=checkbox]:focus {
 
 .image-slideshow p {
   font-size: 1.17rem;
+  line-height: 2rem;
 }
 
 .image-slideshow .image-btn {
@@ -1181,6 +1200,8 @@ a {
     background-color: white;
     color: #999aa2;
     font-size: 1.1rem;
+    -webkit-box-sizing: unset;
+            box-sizing: unset;
   }
   header input[type=text]:focus {
     outline: #5bc0de solid 1px;
@@ -1209,6 +1230,7 @@ a {
   }
   .menu {
     top: -30px;
+    height: 53px;
   }
   header img {
     max-width: 350px;
@@ -1309,10 +1331,11 @@ a {
   fieldset {
     width: 700px;
     margin: 0 auto;
+    margin-top: -25px;
   }
   #name,
   #email {
-    width: 650px;
+    width: 670px;
     min-width: 650px;
   }
   label[for=marketing] {
@@ -1370,7 +1393,7 @@ a {
   .contact {
     position: absolute;
     display: inline-block;
-    width: 135px;
+    width: 140px;
     color: white;
     border: 1px solid;
     border-radius: 5%;
@@ -1379,20 +1402,17 @@ a {
     text-transform: uppercase;
     text-align: center;
     padding-top: 15px;
+    height: 38px;
+    top: -29px;
   }
   .support:hover,
   .contact:hover {
     cursor: pointer;
   }
-  .support,
-  .contact {
-    height: 37px;
-    top: -27px;
-  }
   .menu {
     right: 0px;
-    top: -27px;
-    height: 50px;
+    top: -28px;
+    height: 51px;
   }
   .support {
     right: 35%;
@@ -1476,9 +1496,6 @@ a {
   .bio p {
     width: 900px;
   }
-  .news-img {
-    height: 40%;
-  }
   .news-1,
   .news-2 {
     height: 600px;
@@ -1496,6 +1513,27 @@ a {
   .news-2 footer {
     font-size: 0.9rem;
   }
+  .news-1 .news-link,
+  .news-2 .news-link {
+    z-index: 1;
+  }
+  .news-1 .overflow-img,
+  .news-2 .overflow-img {
+    overflow: hidden;
+    height: 220px;
+  }
+  .news-1 img,
+  .news-2 img {
+    height: 100%;
+  }
+  .news-1 img:hover,
+  .news-2 img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 0.6;
+  }
   .partner-1,
   .partner-2,
   .footer-lists,
@@ -1509,10 +1547,11 @@ a {
   }
   fieldset {
     width: 920px;
+    margin-top: -5px;
   }
   #name,
   #email {
-    width: 420px;
+    width: 435px;
     min-width: 420px;
   }
   label[for=marketing] {
@@ -1653,6 +1692,23 @@ a {
   .news-3 article p {
     margin-top: 40px;
   }
+  .news-3 .news-link {
+    z-index: 1;
+  }
+  .news-3 .overflow-img {
+    overflow: hidden;
+    height: 220px;
+  }
+  .news-3 img {
+    height: 100%;
+  }
+  .news-3 img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 0.6;
+  }
   .news-1 .read-more,
   .news-2 .read-more,
   .news-3 .read-more {
@@ -1666,7 +1722,7 @@ a {
   }
   #name,
   #email {
-    width: 530px;
+    width: 550px;
   }
   label[for=marketing] {
     width: 1080px;

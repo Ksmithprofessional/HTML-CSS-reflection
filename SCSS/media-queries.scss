@@ -46,6 +46,7 @@
         background-color: white;
         color: #999aa2;
         font-size: 1.1rem;
+        box-sizing: unset;
 
         &:focus {
 
@@ -83,6 +84,7 @@
     .menu {
 
         top: -30px;
+        height: 53px;
     }
 
     header img {
@@ -224,12 +226,13 @@
 
         width: 700px;
         margin: 0 auto;
+        margin-top: -25px;
     }
 
     #name,
     #email {
 
-        width: 650px;
+        width: 670px;
         min-width: 650px;
     }
 
@@ -313,7 +316,7 @@
 
         position: absolute;
         display: inline-block;
-        width: 135px;
+        width: 140px;
         color: white;
         border: 1px solid;
         border-radius: 5%;
@@ -322,6 +325,8 @@
         text-transform: uppercase;
         text-align: center;
         padding-top: 15px;
+        height: 38px;
+        top: -29px;
 
         &:hover {
 
@@ -329,18 +334,18 @@
         }
     }
 
-    .support,
-    .contact {
+    // .support,
+    // .contact {
 
-        height: 37px;
-        top: -27px;
-    }
+    //     height: 37px;
+    //     top: -27px;
+    // }
 
     .menu {
 
         right: 0px;
-        top: -27px;
-        height: 50px;
+        top: -28px;
+        height: 51px;
     }
 
     .support {
@@ -464,10 +469,10 @@
         }
       }
 
-    .news-img {
+    // .news-img {
 
-        height: 40%;
-    }
+    //     height: 40%;
+    // }
 
     
     .news-1,
@@ -490,6 +495,29 @@
 
             font-size: 0.9rem;
         }
+
+        & .news-link {
+
+            z-index: 1;
+        }
+
+        & .overflow-img {
+
+            overflow: hidden;
+            height: 220px;
+        }
+
+        & img {
+
+            height: 100%;
+
+            &:hover {
+
+                transform: scale(1.1);
+                transition: .3s;
+                opacity: 0.6;
+            }
+        }
     }
 
     .partner-1,
@@ -510,12 +538,13 @@
     fieldset {
 
         width: 920px;
+        margin-top: -5px;
     }
 
     #name,
     #email {
 
-        width: 420px;
+        width: 435px;
         min-width: 420px;
     }
 
@@ -734,6 +763,29 @@
 
             margin-top: 40px;
         }
+
+        & .news-link {
+
+            z-index: 1;
+        }
+
+        & .overflow-img {
+
+            overflow: hidden;
+            height: 220px;
+        }
+
+        & img {
+
+            height: 100%;
+
+            &:hover {
+
+                transform: scale(1.1);
+                transition: .3s;
+                opacity: 0.6;
+            }
+        }
     }
 
     .news-1,
@@ -755,7 +807,7 @@
     #name,
     #email {
 
-        width: 530px;
+        width: 550px;
     }
 
     label[for=marketing] {
