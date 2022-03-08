@@ -109,4 +109,132 @@ header button[type=submit]:hover {
   background-color: #24262e;
   cursor: pointer;
 }
+
+.nav-bar,
+.background-fix-5 {
+  display: none;
+}
+
+.small-text {
+  font-size: 0.6rem;
+  line-height: 0.1rem;
+  margin-top: 13px;
+  margin-bottom: -14px;
+}
+
+.large-text {
+  font-size: 1.2rem;
+}
+
+.bespoke-nav,
+.it-nav,
+.marketing-nav,
+.telecom-nav,
+.web-nav,
+.security-nav,
+.developer-nav {
+  border: 1px solid #424242;
+  padding: 20px 0 5px;
+}
+
+.bespoke-nav p,
+.it-nav p,
+.marketing-nav p,
+.telecom-nav p,
+.web-nav p,
+.security-nav p,
+.developer-nav p {
+  text-transform: uppercase;
+}
+
+.bespoke-icon {
+  color: #67809f;
+}
+
+.bespoke-nav:hover {
+  background-color: #67809f;
+  cursor: pointer;
+}
+
+.bespoke-nav:hover .bespoke-icon {
+  color: white;
+}
+
+.it-icon {
+  color: #4183d7;
+}
+
+.it-nav:hover {
+  background-color: #4183d7;
+  cursor: pointer;
+}
+
+.it-nav:hover .it-icon {
+  color: white;
+}
+
+.market-icon {
+  color: #2ecc71;
+}
+
+.marketing-nav:hover {
+  background-color: #2ecc71;
+  cursor: pointer;
+}
+
+.marketing-nav:hover .market-icon {
+  color: white;
+}
+
+.tele-icon {
+  color: #d64541;
+}
+
+.telecom-nav:hover {
+  background-color: #d64541;
+  cursor: pointer;
+}
+
+.telecom-nav:hover .tele-icon {
+  color: white;
+}
+
+.web-icon {
+  color: #926fb1;
+}
+
+.web-nav:hover {
+  background-color: #926fb1;
+  cursor: pointer;
+}
+
+.web-nav:hover .web-icon {
+  color: white;
+}
+
+.security-icon {
+  color: #f62459;
+}
+
+.security-nav:hover {
+  background-color: #f62459;
+  cursor: pointer;
+}
+
+.security-nav:hover .security-icon {
+  color: white;
+}
+
+.developer-icon {
+  color: #926fb1;
+}
+
+.developer-nav:hover {
+  background-color: #926fb1;
+  cursor: pointer;
+}
+
+.developer-nav:hover .developer-icon {
+  color: white;
+}
 /*# sourceMappingURL=Header-bar.css.map */

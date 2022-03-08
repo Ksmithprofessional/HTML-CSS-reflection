@@ -92,6 +92,11 @@
         max-width: 350px;
     }
 
+    .image-slideshow {
+
+        height: 87vh;
+    }
+
     // .read-more-grid {
 
     //     width: 740px;
@@ -263,9 +268,15 @@
         width: 740px;
     }
 
+    .about-netmatters,
     .our-services {
 
-        margin-left: -130px;
+        width: fit-content;
+    }
+
+    .our-services {
+
+        margin-left: -150px;
     }
 
     .footer-address {
@@ -308,7 +319,7 @@
 
     header {
 
-        height: 50px;
+        height: fit-content;
     }
 
     .support,
@@ -400,6 +411,31 @@
             top: -3px;
             height: 55px;
         }
+    }
+
+    .nav-bar {
+
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 920px;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+    }
+
+    .background-fix-5 {
+
+        background-color: #333645;
+        display: block;
+        margin-bottom: -5px;
+        height: 100px;
+        margin-top: -5px;
+    }
+
+    .image-slideshow {
+
+        height: 80vh;
     }
 
     .image-content {
@@ -687,6 +723,12 @@
     .contact {
 
         right: 35%
+    }
+
+    .nav-bar {
+
+        width: 1180px;
+
     }
 
     .image-content {

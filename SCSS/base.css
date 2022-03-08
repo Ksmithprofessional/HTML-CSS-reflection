@@ -101,14 +101,27 @@ p a:hover,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 .footer-address {
   margin-bottom: 40px;
+}
+
+.about-netmatters {
+  width: 187px;
+}
+
+.our-services {
+  width: 179px;
+}
+
+.address-2 {
+  padding: 0 5px;
 }
 
 form {
@@ -960,6 +973,134 @@ header button[type=submit]:hover {
   cursor: pointer;
 }
 
+.nav-bar,
+.background-fix-5 {
+  display: none;
+}
+
+.small-text {
+  font-size: 0.6rem;
+  line-height: 0.1rem;
+  margin-top: 13px;
+  margin-bottom: -14px;
+}
+
+.large-text {
+  font-size: 1.2rem;
+}
+
+.bespoke-nav,
+.it-nav,
+.marketing-nav,
+.telecom-nav,
+.web-nav,
+.security-nav,
+.developer-nav {
+  border: 1px solid #424242;
+  padding: 20px 0 5px;
+}
+
+.bespoke-nav p,
+.it-nav p,
+.marketing-nav p,
+.telecom-nav p,
+.web-nav p,
+.security-nav p,
+.developer-nav p {
+  text-transform: uppercase;
+}
+
+.bespoke-icon {
+  color: #67809f;
+}
+
+.bespoke-nav:hover {
+  background-color: #67809f;
+  cursor: pointer;
+}
+
+.bespoke-nav:hover .bespoke-icon {
+  color: white;
+}
+
+.it-icon {
+  color: #4183d7;
+}
+
+.it-nav:hover {
+  background-color: #4183d7;
+  cursor: pointer;
+}
+
+.it-nav:hover .it-icon {
+  color: white;
+}
+
+.market-icon {
+  color: #2ecc71;
+}
+
+.marketing-nav:hover {
+  background-color: #2ecc71;
+  cursor: pointer;
+}
+
+.marketing-nav:hover .market-icon {
+  color: white;
+}
+
+.tele-icon {
+  color: #d64541;
+}
+
+.telecom-nav:hover {
+  background-color: #d64541;
+  cursor: pointer;
+}
+
+.telecom-nav:hover .tele-icon {
+  color: white;
+}
+
+.web-icon {
+  color: #926fb1;
+}
+
+.web-nav:hover {
+  background-color: #926fb1;
+  cursor: pointer;
+}
+
+.web-nav:hover .web-icon {
+  color: white;
+}
+
+.security-icon {
+  color: #f62459;
+}
+
+.security-nav:hover {
+  background-color: #f62459;
+  cursor: pointer;
+}
+
+.security-nav:hover .security-icon {
+  color: white;
+}
+
+.developer-icon {
+  color: #926fb1;
+}
+
+.developer-nav:hover {
+  background-color: #926fb1;
+  cursor: pointer;
+}
+
+.developer-nav:hover .developer-icon {
+  color: white;
+}
+
 .partner-1,
 .partner-2 {
   display: -ms-grid;
@@ -1235,6 +1376,9 @@ a {
   header img {
     max-width: 350px;
   }
+  .image-slideshow {
+    height: 87vh;
+  }
   .move-up {
     display: -ms-grid;
     display: grid;
@@ -1356,8 +1500,14 @@ a {
     margin: 0 auto;
     width: 740px;
   }
+  .about-netmatters,
   .our-services {
-    margin-left: -130px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .our-services {
+    margin-left: -150px;
   }
   .footer-address {
     display: -ms-grid;
@@ -1387,7 +1537,9 @@ a {
     width: 950px;
   }
   header {
-    height: 50px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .support,
   .contact {
@@ -1448,6 +1600,28 @@ a {
     right: 10px;
     top: -3px;
     height: 55px;
+  }
+  .nav-bar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 920px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+  }
+  .background-fix-5 {
+    background-color: #333645;
+    display: block;
+    margin-bottom: -5px;
+    height: 100px;
+    margin-top: -5px;
+  }
+  .image-slideshow {
+    height: 80vh;
   }
   .image-content {
     width: 950px;
@@ -1639,6 +1813,9 @@ a {
   }
   .contact {
     right: 35%;
+  }
+  .nav-bar {
+    width: 1180px;
   }
   .image-content {
     width: 1180px;

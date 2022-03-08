@@ -115,7 +115,7 @@ hr {
   .footer-address {
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     // grid-template-columns: repeat(auto-fit, 200px);
     flex-wrap: wrap;
   }
@@ -125,3 +125,17 @@ hr {
     margin-bottom: 40px;
   }
 
+.about-netmatters {
+
+  width: 187px;
+}
+
+.our-services {
+
+  width: 179px;
+}
+
+.address-2 {
+
+  padding: 0 5px;
+}
