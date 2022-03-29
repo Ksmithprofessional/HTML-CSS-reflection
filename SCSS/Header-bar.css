@@ -39,6 +39,9 @@ header input[type=text] {
           flex-grow: 2;
   margin-right: 0;
   width: 95%;
+  font-size: 0.9rem;
+  color: #4f4f4f;
+  padding-left: 15px;
 }
 
 header input[type=text]:focus {
@@ -81,7 +84,7 @@ header button[type=submit]:hover {
 
 .fa-bars {
   font-size: 1.7rem;
-  margin-bottom: 3px;
+  margin: 0 5px 3px;
 }
 
 .fa-phone-alt {
@@ -103,6 +106,7 @@ header button[type=submit]:hover {
   padding-top: 5px;
   z-index: 1;
   text-align: center;
+  font-size: 0.75rem;
 }
 
 .menu:hover {
@@ -235,6 +239,19 @@ header button[type=submit]:hover {
 }
 
 .developer-nav:hover .developer-icon {
+  color: white;
+}
+
+.sub-nav {
+  z-index: 1;
+  position: relative;
+  margin-top: -12px;
+}
+
+.bespoke-nav-sub {
+  display: none;
+  background-color: #67809f;
+  text-align: center;
   color: white;
 }
 /*# sourceMappingURL=Header-bar.css.map */

@@ -39,6 +39,9 @@ header input[type=text] {
     flex-grow: 2;
     margin-right: 0;
     width: 95%;
+    font-size: 0.9rem;
+    color: #4f4f4f;
+    padding-left: 15px;
 
     &:focus {
 
@@ -90,7 +93,7 @@ header button[type=submit] {
 .fa-bars {
 
     font-size: 1.7rem;
-    margin-bottom: 3px;
+    margin: 0 5px 3px;
 }
 
 .fa-phone-alt {
@@ -114,6 +117,7 @@ header button[type=submit] {
     padding-top: 5px;
     z-index: 1;
     text-align: center;
+    font-size: 0.75rem;
 
     &:hover {
 
@@ -292,3 +296,24 @@ header button[type=submit] {
         }
     }
 }
+
+.sub-nav {
+
+    z-index: 1;
+    position: relative;
+    margin-top: -12px;
+}
+
+.bespoke-nav-sub {
+
+    display: none;
+    background-color: #67809f;
+    // cursor: pointer;
+    // grid-template-rows: 1fr;
+    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    // display: grid;
+    text-align: center;
+    color: white;
+
+}
+

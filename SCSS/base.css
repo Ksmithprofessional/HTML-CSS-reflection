@@ -108,6 +108,11 @@ p a:hover,
       flex-wrap: wrap;
 }
 
+.footer-lists h3,
+.footer-address h3 {
+  font-weight: normal;
+}
+
 .footer-address {
   margin-bottom: 40px;
 }
@@ -481,6 +486,16 @@ input[type=checkbox]:focus {
   border-radius: 5%;
   width: 100px;
   margin: 0 auto;
+}
+
+.bespoke p,
+.it-support p,
+.marketing p,
+.telecoms p,
+.web p,
+.security p,
+.developer p {
+  line-height: 1.4rem;
 }
 
 .header-border {
@@ -902,6 +917,9 @@ header input[type=text] {
           flex-grow: 2;
   margin-right: 0;
   width: 95%;
+  font-size: 0.9rem;
+  color: #4f4f4f;
+  padding-left: 15px;
 }
 
 header input[type=text]:focus {
@@ -944,7 +962,7 @@ header button[type=submit]:hover {
 
 .fa-bars {
   font-size: 1.7rem;
-  margin-bottom: 3px;
+  margin: 0 5px 3px;
 }
 
 .fa-phone-alt {
@@ -966,6 +984,7 @@ header button[type=submit]:hover {
   padding-top: 5px;
   z-index: 1;
   text-align: center;
+  font-size: 0.75rem;
 }
 
 .menu:hover {
@@ -1098,6 +1117,19 @@ header button[type=submit]:hover {
 }
 
 .developer-nav:hover .developer-icon {
+  color: white;
+}
+
+.sub-nav {
+  z-index: 1;
+  position: relative;
+  margin-top: -12px;
+}
+
+.bespoke-nav-sub {
+  display: none;
+  background-color: #67809f;
+  text-align: center;
   color: white;
 }
 
@@ -1337,10 +1369,9 @@ a {
     min-width: 20px;
     height: 31px;
     margin-right: 0;
-    border: 1px solid #999aa2;
+    border: 1px solid #bebec2;
     background-color: white;
     color: #999aa2;
-    font-size: 1.1rem;
     -webkit-box-sizing: unset;
             box-sizing: unset;
   }
@@ -1363,6 +1394,9 @@ a {
   header button[type=submit]:hover {
     background-color: #82838a;
     cursor: pointer;
+  }
+  header button[type=submit] .fa-search {
+    font-size: 1.55rem;
   }
   .center {
     margin: 0 auto;
@@ -1454,11 +1488,30 @@ a {
   }
   .news-1 h3,
   .news-2 h3 {
-    margin-top: 15px;
+    margin-top: 20px;
   }
   .news-1 article p,
   .news-2 article p {
     margin-top: 30px;
+  }
+  .news-1 footer,
+  .news-2 footer {
+    margin-top: 30px;
+    padding-top: 13px;
+  }
+  .news-1 footer img,
+  .news-2 footer img {
+    height: 48px;
+    width: 48px;
+  }
+  .news-1 footer p,
+  .news-2 footer p {
+    font-size: 0.85rem;
+    padding-left: 2px;
+  }
+  .news-1 footer .poster,
+  .news-2 footer .poster {
+    color: #4b4b4b;
   }
   .news-3 {
     display: none;
@@ -1613,12 +1666,58 @@ a {
     text-align: center;
     color: white;
   }
+  .bespoke-nav:hover .bespoke-nav-sub {
+    display: inline;
+  }
+  .bespoke-nav:hover .bespoke-nav-sub .nav-sub-links::before {
+    content: "";
+    background-color: #67809f;
+    width: 2000px;
+    display: block;
+    height: 40px;
+    position: absolute;
+    right: 100%;
+  }
+  .bespoke-nav:hover .bespoke-nav-sub .nav-sub-links::after {
+    content: "";
+    background-color: #67809f;
+    width: 2000px;
+    display: block;
+    height: 40px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+  .bespoke-nav:hover .bespoke-nav-sub li {
+    display: inline;
+  }
+  .bespoke-nav:hover .bespoke-nav-sub .background-fix-nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .bespoke-nav:hover .bespoke-nav-sub .nav-sub-links {
+    width: 920px;
+    position: absolute;
+    bottom: -52px;
+    background-color: #67809f;
+    font-size: 0.8rem;
+  }
+  .bespoke-nav:hover .bespoke-nav-sub .nav-sub-links .link-dash::after {
+    content: "-";
+    margin-left: 20px;
+  }
   .background-fix-5 {
     background-color: #333645;
     display: block;
     margin-bottom: -5px;
     height: 100px;
     margin-top: -5px;
+    overflow-x: -moz-hidden-unscrollable;
+    overflow-x: clip;
   }
   .image-slideshow {
     height: 80vh;
@@ -1643,8 +1742,13 @@ a {
   .it-support,
   .bespoke,
   .marketing {
-    height: 278px;
+    height: 285px;
     position: relative;
+  }
+  .it-support p,
+  .bespoke p,
+  .marketing p {
+    font-size: 0.8rem;
   }
   .it-support .read-more-btn,
   .bespoke .read-more-btn,
@@ -1653,11 +1757,23 @@ a {
     right: 85px;
     bottom: 30px;
   }
+  .telecoms,
+  .web,
+  .security,
+  .developer {
+    height: 245px;
+  }
   .telecoms .read-more-btn,
   .web .read-more-btn,
   .security .read-more-btn,
   .developer .read-more-btn {
     right: 158px;
+  }
+  .telecoms h3,
+  .web h3,
+  .security h3,
+  .developer h3 {
+    margin-bottom: 7px;
   }
   .background-fix-2 {
     background-image: url(../Images/logo-background.png);
@@ -1676,8 +1792,12 @@ a {
   }
   .news-1 .read-more,
   .news-2 .read-more {
-    margin-top: 60px;
-    margin-bottom: -7px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+  .news-1 article,
+  .news-2 article {
+    padding-top: 15px;
   }
   .news-1 article p,
   .news-2 article p {
@@ -1808,6 +1928,12 @@ a {
     height: 29px;
     top: 2px;
   }
+  header button[type=submit] {
+    border-radius: 0 5% 5% 0;
+  }
+  header button[type=submit] .fa-search {
+    font-size: 1.55rem;
+  }
   .support {
     right: 49%;
   }
@@ -1832,6 +1958,12 @@ a {
   .telecoms, .security {
     margin-right: 10px;
   }
+  .security,
+  .developer,
+  .telecoms,
+  .web {
+    height: 255px;
+  }
   .security p,
   .developer p,
   .telecoms p,
@@ -1843,6 +1975,11 @@ a {
   .telecoms .read-more-btn,
   .web .read-more-btn {
     right: 70px;
+  }
+  .bespoke,
+  .it-support,
+  .marketing {
+    height: 265px;
   }
   .bespoke .read-more-btn,
   .it-support .read-more-btn,
@@ -1863,11 +2000,23 @@ a {
     width: auto;
   }
   .news-3 .read-more {
-    margin-top: 60px;
-    margin-bottom: -7px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+  .news-3 h3 {
+    margin-top: 20px;
+  }
+  .news-3 article {
+    padding-top: 15px;
   }
   .news-3 article p {
     margin-top: 40px;
+  }
+  .news-3 footer {
+    padding-top: 13px;
+  }
+  .news-3 footer .poster {
+    color: #4b4b4b;
   }
   .news-3 .news-link {
     z-index: 1;
@@ -1889,12 +2038,12 @@ a {
   .news-1 .read-more,
   .news-2 .read-more,
   .news-3 .read-more {
-    margin-top: 45px;
+    margin-top: 25px;
   }
   .news-1 footer,
   .news-2 footer,
   .news-3 footer {
-    margin-top: 37px;
+    margin-top: 27px;
     font-size: 0.9rem;
   }
   #name,

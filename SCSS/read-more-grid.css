@@ -57,6 +57,16 @@
   margin: 0 auto;
 }
 
+.bespoke p,
+.it-support p,
+.marketing p,
+.telecoms p,
+.web p,
+.security p,
+.developer p {
+  line-height: 1.4rem;
+}
+
 .header-border {
   border-bottom: 3px solid black;
   background-color: black;
