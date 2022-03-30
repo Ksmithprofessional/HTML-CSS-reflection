@@ -486,16 +486,16 @@
                 top: 0;
             }
 
-            & li {
+            // & li {
 
-                display: inline;
-            }
+            //     display: inline;
+            // }
 
             & .background-fix-nav {
 
                 display: grid;
                 grid-template-rows: 1fr;
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-columns: repeat(7, max-content);
             }
 
             & .nav-sub-links {
@@ -505,7 +505,8 @@
                 // grid-template-rows: 1fr;
                 // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
                 position: absolute;
-                bottom: -52px;
+                bottom: -49px;
+                top: 9px;
                 background-color: #67809f;
                 font-size: 0.8rem;
 
@@ -513,6 +514,349 @@
 
                     content: "-";
                     margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .it-nav:hover {
+
+        .it-nav-sub {
+
+            display: inline;
+
+            & .nav-sub-links::before {
+
+                content: "";
+                background-color: #4183d7;
+                width: 2000px;
+                display: block;
+                height: 40px;
+                position: absolute;
+                right: 100%;
+            }
+
+            & .nav-sub-links::after {
+
+                content: "";
+                background-color: #4183d7;
+                width: 2000px;
+                display: block;
+                height: 40px;
+                position: absolute;
+                left: 100%;
+                top: 0;
+            }
+
+
+            & .background-fix-nav {
+
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: repeat(6, max-content);
+            }
+
+            & .nav-sub-links {
+
+                width: 920px;
+                position: absolute;
+                bottom: -49px;
+                top: 9px;
+                background-color: #4183d7;
+                font-size: 0.8rem;
+                margin-left: -135px;
+
+                & .link-dash::after {
+
+                    content: "-";
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .marketing-nav:hover {
+
+        .market-nav-sub {
+
+            display: inline;
+
+            & .nav-sub-links::before {
+
+                content: "";
+                background-color: #2ecc71;
+                width: 2000px;
+                display: block;
+                height: 40px;
+                position: absolute;
+                right: 100%;
+            }
+
+            & .nav-sub-links::after {
+
+                content: "";
+                background-color: #2ecc71;
+                width: 2000px;
+                display: block;
+                height: 40px;
+                position: absolute;
+                left: 100%;
+                top: 0;
+            }
+
+
+            & .background-fix-nav {
+
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: repeat(6, max-content);
+            }
+
+            & .nav-sub-links {
+
+                width: 920px;
+                position: absolute;
+                bottom: -49px;
+                top: 9px;
+                background-color: #2ecc71;
+                font-size: 0.8rem;
+                margin-left: -270px;
+
+                & .link-dash::after {
+
+                    content: "-";
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .telecom-nav:hover {
+
+        .tele-nav-sub {
+
+            display: inline;
+
+            & .nav-sub-links::before {
+
+                content: "";
+                background-color: #d64541;
+                width: 2000px;
+                display: block;
+                height: 40px;
+                position: absolute;
+                right: 100%;
+            }
+
+            & .nav-sub-links::after {
+
+                content: "";
+                background-color: #d64541;
+                width: 2000px;
+                display: block;
+                height: 40px;
+                position: absolute;
+                left: 100%;
+                top: 0;
+            }
+
+
+            & .background-fix-nav {
+
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: repeat(6, max-content);
+            }
+
+            & .nav-sub-links {
+
+                width: 920px;
+                position: absolute;
+                top: 5px;
+                bottom: -45px;
+                background-color: #d64541;
+                font-size: 0.8rem;
+                margin-left: -400px;
+
+                & .link-dash::after {
+
+                    content: "-";
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .web-nav:hover {
+
+        .web-nav-sub {
+
+            display: inline;
+
+            & .nav-sub-links::before {
+
+                content: "";
+                background-color: #926fb1;
+                width: 2000px;
+                display: block;
+                height: 40px;
+                position: absolute;
+                right: 100%;
+            }
+
+            & .nav-sub-links::after {
+
+                content: "";
+                background-color: #926fb1;
+                width: 2000px;
+                display: block;
+                height: 40px;
+                position: absolute;
+                left: 100%;
+                top: 0;
+            }
+
+
+            & .background-fix-nav {
+
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: repeat(6, max-content);
+            }
+
+            & .nav-sub-links {
+
+                width: 920px;
+                position: absolute;
+                bottom: -49px;
+                top: 9px;
+                background-color: #926fb1;
+                font-size: 0.8rem;
+                margin-left: -530px;
+
+                & .link-dash::after {
+
+                    content: "-";
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .security-nav:hover {
+
+        .security-nav-sub {
+
+            display: inline;
+
+            & .nav-sub-links::before {
+
+                content: "";
+                background-color: #f62459;
+                width: 2000px;
+                display: block;
+                height: 40px;
+                position: absolute;
+                right: 100%;
+            }
+
+            & .nav-sub-links::after {
+
+                content: "";
+                background-color: #f62459;
+                width: 2000px;
+                display: block;
+                height: 40px;
+                position: absolute;
+                left: 100%;
+                top: 0;
+            }
+
+
+            & .background-fix-nav {
+
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: repeat(6, max-content);
+            }
+
+            & .nav-sub-links {
+
+                width: 920px;
+                position: absolute;
+                bottom: -49px;
+                top: 9px;
+                background-color: #f62459;
+                font-size: 0.8rem;
+                margin-left: -660px;
+
+                & .link-dash::after {
+
+                    content: "-";
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .developer-nav:hover {
+
+        .dev-nav-sub {
+
+            display: inline;
+
+            & .nav-sub-links::before {
+
+                content: "";
+                background-color: #926fb1;
+                width: 2000px;
+                display: block;
+                height: 40px;
+                position: absolute;
+                right: 100%;
+            }
+
+            & .nav-sub-links::after {
+
+                content: "";
+                background-color: #926fb1;
+                width: 2000px;
+                display: block;
+                height: 40px;
+                position: absolute;
+                left: 100%;
+                top: 0;
+            }
+
+
+            & .background-fix-nav {
+
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: repeat(3, max-content);
+            }
+
+            & .nav-sub-links {
+
+                width: 920px;
+                position: absolute;
+                bottom: -49px;
+                top: 9px;
+                background-color: #926fb1;
+                font-size: 0.8rem;
+                margin-left: -790px;
+
+                & .link-dash::after {
+
+                    content: "-";
+                    margin-left: 20px;
+                    margin-right: 20px;
                 }
             }
         }
@@ -855,6 +1199,210 @@
 
     }
 
+    .bespoke-nav:hover,
+    .it-nav:hover,
+    .marketing-nav:hover,
+    .telecom-nav:hover,
+    .web-nav:hover,
+    .security-nav:hover,
+    .developer-nav:hover {
+
+        & .background-fix-nav {
+
+            font-size: 1rem;
+            z-index: 2;
+            position: relative;
+        }
+
+        // & p {
+
+        //     margin-left: 10px;
+        //     // margin-right: 10px;
+        // }
+
+    }
+
+    .bespoke-nav:hover {
+
+        .bespoke-nav-sub {
+
+            & .nav-sub-links {
+
+                height: 45px;
+
+                & .link-dash::after {
+
+                    margin-left: 35px;
+                    margin-right: 35px;
+                }
+
+                &::before,
+                &::after {
+
+                    height: 45px;
+                }
+            }
+
+        }
+
+    }
+
+    .it-nav:hover {
+
+        .it-nav-sub {
+
+            & .nav-sub-links {
+
+                margin-left: -170px;
+                height: 45px;
+
+                & .link-dash::after {
+
+                    margin-left: 35px;
+                    margin-right: 35px;
+                }
+
+                &::before,
+                &::after {
+
+                    height: 45px;
+                }
+            }
+
+        }
+
+    }
+
+    .marketing-nav:hover {
+
+        .market-nav-sub {
+
+            & .nav-sub-links {
+
+                margin-left: -340px;
+                height: 45px;
+
+                & .link-dash::after {
+
+                    margin-left: 35px;
+                    margin-right: 35px;
+                }
+
+                &::before,
+                &::after {
+
+                    height: 45px;
+                }
+            }
+
+        }
+
+    }
+
+    .telecom-nav:hover {
+
+        .tele-nav-sub {
+
+            & .nav-sub-links {
+
+                margin-left: -510px;
+                height: 45px;
+
+                & .link-dash::after {
+
+                    margin-left: 35px;
+                    margin-right: 35px;
+                }
+
+                &::before,
+                &::after {
+
+                    height: 45px;
+                }
+            }
+
+        }
+
+    }
+
+    .web-nav:hover {
+
+        .web-nav-sub {
+
+            & .nav-sub-links {
+
+                margin-left: -680px;
+                height: 45px;
+
+                & .link-dash::after {
+
+                    margin-left: 35px;
+                    margin-right: 35px;
+                }
+
+                &::before,
+                &::after {
+
+                    height: 45px;
+                }
+            }
+
+        }
+
+    }
+
+    .security-nav:hover {
+
+        .security-nav-sub {
+
+            & .nav-sub-links {
+
+                margin-left: -850px;
+                height: 45px;
+
+                & .link-dash::after {
+
+                    margin-left: 35px;
+                    margin-right: 35px;
+                }
+
+                &::before,
+                &::after {
+
+                    height: 45px;
+                }
+            }
+
+        }
+
+    }
+
+    .developer-nav:hover {
+
+        .dev-nav-sub {
+
+            & .nav-sub-links {
+
+                margin-left: -1015px;
+                height: 45px;
+
+                & .link-dash::after {
+
+                    margin-left: 35px;
+                    margin-right: 35px;
+                }
+
+                &::before,
+                &::after {
+
+                    height: 45px;
+                }
+            }
+
+        }
+
+    }
+
     .image-content {
 
         width: 1180px;
@@ -899,6 +1447,11 @@
     .marketing {
 
         height: 265px;
+
+        & p {
+
+            font-size: 0.85rem;
+        }
 
         & .read-more-btn {
 

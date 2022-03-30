@@ -302,18 +302,25 @@ header button[type=submit] {
     z-index: 1;
     position: relative;
     margin-top: -12px;
+    cursor: auto;
 }
 
-.bespoke-nav-sub {
+.bespoke-nav-sub,
+.it-nav-sub,
+.market-nav-sub,
+.tele-nav-sub,
+.web-nav-sub,
+.security-nav-sub,
+.dev-nav-sub {
 
     display: none;
-    background-color: #67809f;
-    // cursor: pointer;
-    // grid-template-rows: 1fr;
-    // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    // display: grid;
     text-align: center;
     color: white;
+
+    & a:hover {
+
+        text-decoration: none;
+    }
 
 }
 

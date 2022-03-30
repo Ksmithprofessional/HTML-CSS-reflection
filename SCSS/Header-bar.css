@@ -246,12 +246,28 @@ header button[type=submit]:hover {
   z-index: 1;
   position: relative;
   margin-top: -12px;
+  cursor: auto;
 }
 
-.bespoke-nav-sub {
+.bespoke-nav-sub,
+.it-nav-sub,
+.market-nav-sub,
+.tele-nav-sub,
+.web-nav-sub,
+.security-nav-sub,
+.dev-nav-sub {
   display: none;
-  background-color: #67809f;
   text-align: center;
   color: white;
+}
+
+.bespoke-nav-sub a:hover,
+.it-nav-sub a:hover,
+.market-nav-sub a:hover,
+.tele-nav-sub a:hover,
+.web-nav-sub a:hover,
+.security-nav-sub a:hover,
+.dev-nav-sub a:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=Header-bar.css.map */

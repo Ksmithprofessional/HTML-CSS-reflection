@@ -1124,13 +1124,29 @@ header button[type=submit]:hover {
   z-index: 1;
   position: relative;
   margin-top: -12px;
+  cursor: auto;
 }
 
-.bespoke-nav-sub {
+.bespoke-nav-sub,
+.it-nav-sub,
+.market-nav-sub,
+.tele-nav-sub,
+.web-nav-sub,
+.security-nav-sub,
+.dev-nav-sub {
   display: none;
-  background-color: #67809f;
   text-align: center;
   color: white;
+}
+
+.bespoke-nav-sub a:hover,
+.it-nav-sub a:hover,
+.market-nav-sub a:hover,
+.tele-nav-sub a:hover,
+.web-nav-sub a:hover,
+.security-nav-sub a:hover,
+.dev-nav-sub a:hover {
+  text-decoration: none;
 }
 
 .partner-1,
@@ -1319,6 +1335,7 @@ body {
   font-size: 16px;
   margin: auto;
   background-color: #fefefe;
+  overflow-x: hidden;
 }
 
 li {
@@ -1688,27 +1705,297 @@ a {
     left: 100%;
     top: 0;
   }
-  .bespoke-nav:hover .bespoke-nav-sub li {
-    display: inline;
-  }
   .bespoke-nav:hover .bespoke-nav-sub .background-fix-nav {
     display: -ms-grid;
     display: grid;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: (max-content)[7];
+        grid-template-columns: repeat(7, -webkit-max-content);
+        grid-template-columns: repeat(7, max-content);
   }
   .bespoke-nav:hover .bespoke-nav-sub .nav-sub-links {
     width: 920px;
     position: absolute;
-    bottom: -52px;
+    bottom: -49px;
+    top: 9px;
     background-color: #67809f;
     font-size: 0.8rem;
   }
   .bespoke-nav:hover .bespoke-nav-sub .nav-sub-links .link-dash::after {
     content: "-";
     margin-left: 20px;
+    margin-right: 20px;
+  }
+  .it-nav:hover .it-nav-sub {
+    display: inline;
+  }
+  .it-nav:hover .it-nav-sub .nav-sub-links::before {
+    content: "";
+    background-color: #4183d7;
+    width: 2000px;
+    display: block;
+    height: 40px;
+    position: absolute;
+    right: 100%;
+  }
+  .it-nav:hover .it-nav-sub .nav-sub-links::after {
+    content: "";
+    background-color: #4183d7;
+    width: 2000px;
+    display: block;
+    height: 40px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+  .it-nav:hover .it-nav-sub .background-fix-nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: (max-content)[6];
+        grid-template-columns: repeat(6, -webkit-max-content);
+        grid-template-columns: repeat(6, max-content);
+  }
+  .it-nav:hover .it-nav-sub .nav-sub-links {
+    width: 920px;
+    position: absolute;
+    bottom: -49px;
+    top: 9px;
+    background-color: #4183d7;
+    font-size: 0.8rem;
+    margin-left: -135px;
+  }
+  .it-nav:hover .it-nav-sub .nav-sub-links .link-dash::after {
+    content: "-";
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .marketing-nav:hover .market-nav-sub {
+    display: inline;
+  }
+  .marketing-nav:hover .market-nav-sub .nav-sub-links::before {
+    content: "";
+    background-color: #2ecc71;
+    width: 2000px;
+    display: block;
+    height: 40px;
+    position: absolute;
+    right: 100%;
+  }
+  .marketing-nav:hover .market-nav-sub .nav-sub-links::after {
+    content: "";
+    background-color: #2ecc71;
+    width: 2000px;
+    display: block;
+    height: 40px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+  .marketing-nav:hover .market-nav-sub .background-fix-nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: (max-content)[6];
+        grid-template-columns: repeat(6, -webkit-max-content);
+        grid-template-columns: repeat(6, max-content);
+  }
+  .marketing-nav:hover .market-nav-sub .nav-sub-links {
+    width: 920px;
+    position: absolute;
+    bottom: -49px;
+    top: 9px;
+    background-color: #2ecc71;
+    font-size: 0.8rem;
+    margin-left: -270px;
+  }
+  .marketing-nav:hover .market-nav-sub .nav-sub-links .link-dash::after {
+    content: "-";
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .telecom-nav:hover .tele-nav-sub {
+    display: inline;
+  }
+  .telecom-nav:hover .tele-nav-sub .nav-sub-links::before {
+    content: "";
+    background-color: #d64541;
+    width: 2000px;
+    display: block;
+    height: 40px;
+    position: absolute;
+    right: 100%;
+  }
+  .telecom-nav:hover .tele-nav-sub .nav-sub-links::after {
+    content: "";
+    background-color: #d64541;
+    width: 2000px;
+    display: block;
+    height: 40px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+  .telecom-nav:hover .tele-nav-sub .background-fix-nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: (max-content)[6];
+        grid-template-columns: repeat(6, -webkit-max-content);
+        grid-template-columns: repeat(6, max-content);
+  }
+  .telecom-nav:hover .tele-nav-sub .nav-sub-links {
+    width: 920px;
+    position: absolute;
+    top: 5px;
+    bottom: -45px;
+    background-color: #d64541;
+    font-size: 0.8rem;
+    margin-left: -400px;
+  }
+  .telecom-nav:hover .tele-nav-sub .nav-sub-links .link-dash::after {
+    content: "-";
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .web-nav:hover .web-nav-sub {
+    display: inline;
+  }
+  .web-nav:hover .web-nav-sub .nav-sub-links::before {
+    content: "";
+    background-color: #926fb1;
+    width: 2000px;
+    display: block;
+    height: 40px;
+    position: absolute;
+    right: 100%;
+  }
+  .web-nav:hover .web-nav-sub .nav-sub-links::after {
+    content: "";
+    background-color: #926fb1;
+    width: 2000px;
+    display: block;
+    height: 40px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+  .web-nav:hover .web-nav-sub .background-fix-nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: (max-content)[6];
+        grid-template-columns: repeat(6, -webkit-max-content);
+        grid-template-columns: repeat(6, max-content);
+  }
+  .web-nav:hover .web-nav-sub .nav-sub-links {
+    width: 920px;
+    position: absolute;
+    bottom: -49px;
+    top: 9px;
+    background-color: #926fb1;
+    font-size: 0.8rem;
+    margin-left: -530px;
+  }
+  .web-nav:hover .web-nav-sub .nav-sub-links .link-dash::after {
+    content: "-";
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .security-nav:hover .security-nav-sub {
+    display: inline;
+  }
+  .security-nav:hover .security-nav-sub .nav-sub-links::before {
+    content: "";
+    background-color: #f62459;
+    width: 2000px;
+    display: block;
+    height: 40px;
+    position: absolute;
+    right: 100%;
+  }
+  .security-nav:hover .security-nav-sub .nav-sub-links::after {
+    content: "";
+    background-color: #f62459;
+    width: 2000px;
+    display: block;
+    height: 40px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+  .security-nav:hover .security-nav-sub .background-fix-nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: (max-content)[6];
+        grid-template-columns: repeat(6, -webkit-max-content);
+        grid-template-columns: repeat(6, max-content);
+  }
+  .security-nav:hover .security-nav-sub .nav-sub-links {
+    width: 920px;
+    position: absolute;
+    bottom: -49px;
+    top: 9px;
+    background-color: #f62459;
+    font-size: 0.8rem;
+    margin-left: -660px;
+  }
+  .security-nav:hover .security-nav-sub .nav-sub-links .link-dash::after {
+    content: "-";
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .developer-nav:hover .dev-nav-sub {
+    display: inline;
+  }
+  .developer-nav:hover .dev-nav-sub .nav-sub-links::before {
+    content: "";
+    background-color: #926fb1;
+    width: 2000px;
+    display: block;
+    height: 40px;
+    position: absolute;
+    right: 100%;
+  }
+  .developer-nav:hover .dev-nav-sub .nav-sub-links::after {
+    content: "";
+    background-color: #926fb1;
+    width: 2000px;
+    display: block;
+    height: 40px;
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+  .developer-nav:hover .dev-nav-sub .background-fix-nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: (max-content)[3];
+        grid-template-columns: repeat(3, -webkit-max-content);
+        grid-template-columns: repeat(3, max-content);
+  }
+  .developer-nav:hover .dev-nav-sub .nav-sub-links {
+    width: 920px;
+    position: absolute;
+    bottom: -49px;
+    top: 9px;
+    background-color: #926fb1;
+    font-size: 0.8rem;
+    margin-left: -790px;
+  }
+  .developer-nav:hover .dev-nav-sub .nav-sub-links .link-dash::after {
+    content: "-";
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .background-fix-5 {
     background-color: #333645;
@@ -1943,6 +2230,93 @@ a {
   .nav-bar {
     width: 1180px;
   }
+  .bespoke-nav:hover .background-fix-nav,
+  .it-nav:hover .background-fix-nav,
+  .marketing-nav:hover .background-fix-nav,
+  .telecom-nav:hover .background-fix-nav,
+  .web-nav:hover .background-fix-nav,
+  .security-nav:hover .background-fix-nav,
+  .developer-nav:hover .background-fix-nav {
+    font-size: 1rem;
+    z-index: 2;
+    position: relative;
+  }
+  .bespoke-nav:hover .bespoke-nav-sub .nav-sub-links {
+    height: 45px;
+  }
+  .bespoke-nav:hover .bespoke-nav-sub .nav-sub-links .link-dash::after {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .bespoke-nav:hover .bespoke-nav-sub .nav-sub-links::before, .bespoke-nav:hover .bespoke-nav-sub .nav-sub-links::after {
+    height: 45px;
+  }
+  .it-nav:hover .it-nav-sub .nav-sub-links {
+    margin-left: -170px;
+    height: 45px;
+  }
+  .it-nav:hover .it-nav-sub .nav-sub-links .link-dash::after {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .it-nav:hover .it-nav-sub .nav-sub-links::before, .it-nav:hover .it-nav-sub .nav-sub-links::after {
+    height: 45px;
+  }
+  .marketing-nav:hover .market-nav-sub .nav-sub-links {
+    margin-left: -340px;
+    height: 45px;
+  }
+  .marketing-nav:hover .market-nav-sub .nav-sub-links .link-dash::after {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .marketing-nav:hover .market-nav-sub .nav-sub-links::before, .marketing-nav:hover .market-nav-sub .nav-sub-links::after {
+    height: 45px;
+  }
+  .telecom-nav:hover .tele-nav-sub .nav-sub-links {
+    margin-left: -510px;
+    height: 45px;
+  }
+  .telecom-nav:hover .tele-nav-sub .nav-sub-links .link-dash::after {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .telecom-nav:hover .tele-nav-sub .nav-sub-links::before, .telecom-nav:hover .tele-nav-sub .nav-sub-links::after {
+    height: 45px;
+  }
+  .web-nav:hover .web-nav-sub .nav-sub-links {
+    margin-left: -680px;
+    height: 45px;
+  }
+  .web-nav:hover .web-nav-sub .nav-sub-links .link-dash::after {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .web-nav:hover .web-nav-sub .nav-sub-links::before, .web-nav:hover .web-nav-sub .nav-sub-links::after {
+    height: 45px;
+  }
+  .security-nav:hover .security-nav-sub .nav-sub-links {
+    margin-left: -850px;
+    height: 45px;
+  }
+  .security-nav:hover .security-nav-sub .nav-sub-links .link-dash::after {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .security-nav:hover .security-nav-sub .nav-sub-links::before, .security-nav:hover .security-nav-sub .nav-sub-links::after {
+    height: 45px;
+  }
+  .developer-nav:hover .dev-nav-sub .nav-sub-links {
+    margin-left: -1015px;
+    height: 45px;
+  }
+  .developer-nav:hover .dev-nav-sub .nav-sub-links .link-dash::after {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .developer-nav:hover .dev-nav-sub .nav-sub-links::before, .developer-nav:hover .dev-nav-sub .nav-sub-links::after {
+    height: 45px;
+  }
   .image-content {
     width: 1180px;
   }
@@ -1980,6 +2354,11 @@ a {
   .it-support,
   .marketing {
     height: 265px;
+  }
+  .bespoke p,
+  .it-support p,
+  .marketing p {
+    font-size: 0.85rem;
   }
   .bespoke .read-more-btn,
   .it-support .read-more-btn,

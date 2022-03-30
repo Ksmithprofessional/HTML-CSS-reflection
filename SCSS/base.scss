@@ -15,6 +15,9 @@
    //  max-width: 95%;
     margin: auto;
     background-color: #fefefe;
+    overflow-x: hidden;
+    // Had weird overflow issues, don't know what was causing it other than the sub nav, 
+    //this fixed it but feels like it should break something
     
  }
 
