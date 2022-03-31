@@ -2094,6 +2094,11 @@ a {
   .news-2 footer {
     font-size: 0.9rem;
   }
+  .news-1 footer img:hover,
+  .news-2 footer img:hover {
+    Transform: none;
+    opacity: 1;
+  }
   .news-1 .news-link,
   .news-2 .news-link {
     z-index: 1;
@@ -2393,6 +2398,14 @@ a {
   }
   .news-3 footer {
     padding-top: 13px;
+  }
+  .news-3 footer img {
+    height: 48px;
+    width: 48px;
+  }
+  .news-3 footer img:hover {
+    Transform: none;
+    opacity: 1;
   }
   .news-3 footer .poster {
     color: #4b4b4b;

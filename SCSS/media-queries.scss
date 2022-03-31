@@ -988,6 +988,14 @@
         & footer {
 
             font-size: 0.9rem;
+
+            & img:hover {
+
+                Transform: none;
+                opacity: 1;
+                // Screwed up before and made all the images transform,
+                // could have probably changed the &img to be more specific, but i'll remember for next time
+            }
         }
 
         & .news-link {
@@ -1500,6 +1508,18 @@
         & footer {
 
             padding-top: 13px;
+
+            & img {
+
+                height: 48px;
+                width: 48px;
+            }
+
+            & img:hover {
+
+                Transform: none;
+                opacity: 1;
+            }
 
             & .poster {
 
