@@ -57,10 +57,16 @@
         // font-weight: bold;
         // margin: 0 auto;
 
-        &:after {
+        // &:after {
 
-            content: "→";
+        //     content: "→";
+        //     padding-left: 15px;
+        // }
+
+        & .fa-arrow-right {
+
             padding-left: 15px;
+            font-size: 1.2rem;
         }
 
         &:hover {

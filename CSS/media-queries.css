@@ -31,7 +31,7 @@
     margin-right: 0;
     border: 1px solid #bebec2;
     background-color: white;
-    color: #999aa2;
+    color: #5e5e62;
     -webkit-box-sizing: unset;
             box-sizing: unset;
   }
@@ -325,6 +325,8 @@
     margin: 0 auto;
     text-align: center;
     color: white;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
   }
   .bespoke-nav:hover .bespoke-nav-sub {
     display: inline;
@@ -668,6 +670,7 @@
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
   }
   .it-support,
   .bespoke,
@@ -745,15 +748,35 @@
   .news-1 .news-link,
   .news-2 .news-link {
     z-index: 1;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .news-1 .news-link:hover .news-link img,
+  .news-2 .news-link:hover .news-link img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 0.6;
   }
   .news-1 .overflow-img,
   .news-2 .overflow-img {
     overflow: hidden;
     height: 220px;
   }
+  .news-1 .overflow-img:hover img,
+  .news-2 .overflow-img:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: .3s;
+    transition: .3s;
+    opacity: 0.6;
+  }
   .news-1 img,
   .news-2 img {
     height: 100%;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
   .news-1 img:hover,
   .news-2 img:hover {
@@ -1060,14 +1083,21 @@
     overflow: hidden;
     height: 220px;
   }
-  .news-3 img {
-    height: 100%;
-  }
-  .news-3 img:hover {
+  .news-3 .overflow-img:hover img {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     -webkit-transition: .3s;
     transition: .3s;
+    opacity: 0.6;
+  }
+  .news-3 img {
+    height: 100%;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .news-3 img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
     opacity: 0.6;
   }
   .news-1 .read-more,

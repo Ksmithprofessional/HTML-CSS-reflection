@@ -44,7 +44,7 @@
         margin-right: 0;
         border: 1px solid #bebec2;
         background-color: white;
-        color: #999aa2;
+        color: #5e5e62;
         box-sizing: unset;
         
 
@@ -451,6 +451,8 @@
         margin: 0 auto;
         text-align: center;
         color: white;
+        border-left: 1px solid hsla(0, 0%, 100%, .1);
+        border-right: 1px solid rgba(0, 0, 0, .25);
     }
 
     .bespoke-nav:hover {
@@ -900,6 +902,7 @@
 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
     }
 
     .it-support,
@@ -1001,17 +1004,36 @@
         & .news-link {
 
             z-index: 1;
+            transition: .3s;
+
+            &:hover {
+
+                .news-link img {
+
+                    transform: scale(1.1);
+                    transition: .3s;
+                    opacity: 0.6;
+                }
+            }
         }
 
         & .overflow-img {
 
             overflow: hidden;
             height: 220px;
+
+            &:hover img {
+
+                transform: scale(1.1);
+                transition: .3s;
+                opacity: 0.6;
+            }
         }
 
         & img {
 
             height: 100%;
+            transition: .3s;
 
             &:hover {
 
@@ -1536,17 +1558,25 @@
 
             overflow: hidden;
             height: 220px;
+
+            &:hover img {
+
+                transform: scale(1.1);
+                transition: .3s;
+                opacity: 0.6;
+            }
         }
 
         & img {
 
             height: 100%;
+            transition: .3s;
 
             &:hover {
 
                 transform: scale(1.1);
-                transition: .3s;
                 opacity: 0.6;
+                //possibly repeated code, will test/remove later
             }
         }
     }

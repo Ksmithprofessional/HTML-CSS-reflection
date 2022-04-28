@@ -3,12 +3,6 @@ footer {
   color: white;
 }
 
-hr {
-  margin-left: 15px;
-  margin-right: 10px;
-  margin-top: 20px;
-}
-
 .footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -19,6 +13,8 @@ hr {
 
 .footer address {
   font-style: normal;
+  line-height: 1.4rem;
+  margin-top: -10px;
 }
 
 .footer h3 {
@@ -35,6 +31,8 @@ hr {
   font-size: 14px;
   padding: 7px;
   margin: 0 10px;
+  border-top: 1px solid #8c8c8c;
+  margin-top: 25px;
 }
 
 p a:hover,

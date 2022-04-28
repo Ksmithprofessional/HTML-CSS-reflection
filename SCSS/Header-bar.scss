@@ -119,6 +119,11 @@ header button[type=submit] {
     text-align: center;
     font-size: 0.75rem;
 
+    & p {
+
+        margin-top: 5px;
+    }
+
     &:hover {
 
         background-color: #24262e;
@@ -155,7 +160,8 @@ header button[type=submit] {
 .security-nav,
 .developer-nav {
 
-    border: 1px solid rgb(66, 66, 66);
+    border-right: 1px solid hsla(0, 0%, 100%, .1);
+    border-left: 1px solid rgba(0, 0, 0, .25);
     padding: 20px 0 5px;
 
     & p {
@@ -301,8 +307,16 @@ header button[type=submit] {
 
     z-index: 1;
     position: relative;
-    margin-top: -12px;
+    margin-top: -22px;
     cursor: auto;
+}
+
+.telecom-nav {
+
+    & .sub-nav {
+
+        margin-top: -20px;
+    }
 }
 
 .bespoke-nav-sub,
@@ -324,3 +338,12 @@ header button[type=submit] {
 
 }
 
+.menu-icon {
+
+    background-color: white;
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    margin-left: 17px;
+}
