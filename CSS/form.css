@@ -21,7 +21,7 @@ input[type=text] {
           box-sizing: border-box;
   margin: 5px 20px 20px 0px;
   padding: 12px 8px;
-  min-width: 85vw;
+  min-width: 80vw;
 }
 
 input[type=text]:focus {
@@ -78,7 +78,7 @@ label {
 label[for=marketing] {
   font-size: 1rem;
   margin-left: 5px;
-  max-width: 80vw;
+  max-width: 70vw;
   display: inline-block;
 }
 

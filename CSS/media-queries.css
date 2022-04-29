@@ -1123,10 +1123,11 @@
   }
   .partner-1,
   .footer-lists,
-  .footer-address,
-  hr,
-  .footnote {
+  .footer-address {
     width: 1200px;
+  }
+  .footnote {
+    width: 1180px;
   }
   .footer {
     width: 1240px;
@@ -1139,6 +1140,10 @@
   }
   .footer-lists {
     width: 500px;
+    margin-bottom: 30px;
+  }
+  .about-netmatters {
+    margin-left: -30px;
   }
   .footer-address {
     width: 700px;

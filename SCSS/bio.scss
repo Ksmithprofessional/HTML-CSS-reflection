@@ -37,14 +37,19 @@
     text-transform: uppercase;
     font-size: 1.1rem;
     background-color: white;
-    color: black;
+    color: rgb(59, 59, 59);
     border: 1px solid white;
     border-radius: 5%;
 
-    &:after {
+    // &:after {
 
-        content: '\2192';
-        padding-left: 10px;
+    //     content: '\2192';
+    //     padding-left: 10px;
+    // }
+
+    & .fa-arrow-right {
+
+        padding-left: 8px;
     }
 
     &:hover {

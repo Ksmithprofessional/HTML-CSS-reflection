@@ -13,7 +13,7 @@ footer {
 
 .footer address {
   font-style: normal;
-  line-height: 1.4rem;
+  line-height: 1.45rem;
   margin-top: -10px;
 }
 
@@ -29,7 +29,7 @@ footer {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   font-size: 14px;
-  padding: 7px;
+  padding: 7px 0;
   margin: 0 10px;
   border-top: 1px solid #8c8c8c;
   margin-top: 25px;
@@ -54,7 +54,7 @@ p a:hover,
 }
 
 .footer-lists {
-  line-height: .7rem;
+  line-height: .65rem;
 }
 
 .fa-facebook-f:hover {
@@ -149,7 +149,7 @@ input[type=text] {
           box-sizing: border-box;
   margin: 5px 20px 20px 0px;
   padding: 12px 8px;
-  min-width: 85vw;
+  min-width: 80vw;
 }
 
 input[type=text]:focus {
@@ -206,7 +206,7 @@ label {
 label[for=marketing] {
   font-size: 1rem;
   margin-left: 5px;
-  max-width: 80vw;
+  max-width: 70vw;
   display: inline-block;
 }
 
@@ -267,14 +267,13 @@ input[type=checkbox]:focus {
   text-transform: uppercase;
   font-size: 1.1rem;
   background-color: white;
-  color: black;
+  color: #3b3b3b;
   border: 1px solid white;
   border-radius: 5%;
 }
 
-.culture-but:after {
-  content: '\2192';
-  padding-left: 10px;
+.culture-but .fa-arrow-right {
+  padding-left: 8px;
 }
 
 .culture-but:hover {
@@ -2495,10 +2494,11 @@ a {
   }
   .partner-1,
   .footer-lists,
-  .footer-address,
-  hr,
-  .footnote {
+  .footer-address {
     width: 1200px;
+  }
+  .footnote {
+    width: 1180px;
   }
   .footer {
     width: 1240px;
@@ -2511,6 +2511,10 @@ a {
   }
   .footer-lists {
     width: 500px;
+    margin-bottom: 30px;
+  }
+  .about-netmatters {
+    margin-left: -30px;
   }
   .footer-address {
     width: 700px;

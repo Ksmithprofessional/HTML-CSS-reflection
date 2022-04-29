@@ -31,14 +31,13 @@
   text-transform: uppercase;
   font-size: 1.1rem;
   background-color: white;
-  color: black;
+  color: #3b3b3b;
   border: 1px solid white;
   border-radius: 5%;
 }
 
-.culture-but:after {
-  content: '\2192';
-  padding-left: 10px;
+.culture-but .fa-arrow-right {
+  padding-left: 8px;
 }
 
 .culture-but:hover {
