@@ -1,13 +1,18 @@
 .image-slideshow {
 
     position: relative;
-    background-image: url("../Images/placeholder stock.avif");
+    // background-image: url("../Images/placeholder stock.avif");
     background-repeat: no-repeat;
     background-size: cover;
     height: 83vh;
     display: flex;
     align-items: center;
     min-height: 400px;
+
+    & img {
+
+        width: 100vw;
+    }
 
     &:before {
 

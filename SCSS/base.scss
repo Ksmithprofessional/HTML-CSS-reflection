@@ -35,6 +35,32 @@
        
  }
 
+ .sticky {
+
+   position: sticky;
+   top: 0;
+   padding-top: 1px;
+   z-index: 3;
+   background-color: white;
+   transition: 0.3s top cubic-bezier(.3, .73, .3, .74);
+ }
+
+ .no-stick {
+    position: sticky;
+    top: -250px;
+    padding-top: 1px;
+    z-index: 3;
+    background-color: white;
+    transition: 0.3s top cubic-bezier(.3, .73, .3, .74);
+ }
+
+//  .slide {
+
+//     transition: height 2s ease-out;
+//     height: 0;
+//     overflow: hidden;
+//  }
+
 //  footer {
 //    background-color: #333645;
 //    color: white;

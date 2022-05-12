@@ -795,7 +795,6 @@ input[type=checkbox]:focus {
 
 .image-slideshow {
   position: relative;
-  background-image: url("../Images/placeholder stock.avif");
   background-repeat: no-repeat;
   background-size: cover;
   height: 83vh;
@@ -806,6 +805,10 @@ input[type=checkbox]:focus {
       -ms-flex-align: center;
           align-items: center;
   min-height: 400px;
+}
+
+.image-slideshow img {
+  width: 100vw;
 }
 
 .image-slideshow:before {
@@ -872,10 +875,10 @@ input[type=checkbox]:focus {
   width: 210px;
 }
 
-header {
+.header {
   display: relative;
   margin-bottom: 5px;
-  height: 103px;
+  height: 110px;
 }
 
 header form {
@@ -1365,6 +1368,28 @@ a {
   color: inherit;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-top: 1px;
+  z-index: 3;
+  background-color: white;
+  -webkit-transition: 0.3s top cubic-bezier(0.3, 0.73, 0.3, 0.74);
+  transition: 0.3s top cubic-bezier(0.3, 0.73, 0.3, 0.74);
+}
+
+.no-stick {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -250px;
+  padding-top: 1px;
+  z-index: 3;
+  background-color: white;
+  -webkit-transition: 0.3s top cubic-bezier(0.3, 0.73, 0.3, 0.74);
+  transition: 0.3s top cubic-bezier(0.3, 0.73, 0.3, 0.74);
+}
+
 .partner-2, .partner-1 {
   display: none;
 }
@@ -1379,7 +1404,7 @@ a {
   .phone {
     display: none;
   }
-  header {
+  .header {
     -ms-flex-line-pack: center;
         align-content: center;
     height: 55px;
@@ -1620,7 +1645,7 @@ a {
   .latest-fix {
     width: 950px;
   }
-  header {
+  .header {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;

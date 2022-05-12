@@ -1,7 +1,7 @@
-header {
+.header {
   display: relative;
   margin-bottom: 5px;
-  height: 103px;
+  height: 110px;
 }
 
 header form {
