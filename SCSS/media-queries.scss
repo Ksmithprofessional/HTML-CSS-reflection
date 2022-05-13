@@ -100,6 +100,11 @@
     .image-slideshow {
 
         height: 87vh;
+
+        & img {
+
+            height: 87vh;
+        }
     }
 
     // .read-more-grid {
@@ -878,6 +883,11 @@
     .image-slideshow {
 
         height: 80vh;
+
+        & img {
+
+            height: 80vh;
+        }
     }
 
     .image-content {

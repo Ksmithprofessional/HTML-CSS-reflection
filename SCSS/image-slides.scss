@@ -1,28 +1,44 @@
 .image-slideshow {
 
     position: relative;
-    // background-image: url("../Images/placeholder stock.avif");
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: block;
+    // // background-image: url("../Images/placeholder stock.avif");
+    // background-repeat: no-repeat;
+    // background-size: cover;
     height: 83vh;
-    display: flex;
-    align-items: center;
+    width: 100vw;
     min-height: 400px;
+    // overflow: hidden;
+
+    & .slide-1,
+      .slide-2,
+      .slide-3,
+      .slide-4,
+      .slide-5,
+      .slide-6 {
+
+        position: relative;
+        width: 100vw;
+        height: 100%;
+        display: inline-block;
+
+        &:before {
+
+            content: " ";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: linear-gradient(270deg, transparent 25%, #000);
+            }
+    }
 
     & img {
 
         width: 100vw;
-    }
-
-    &:before {
-
-    content: " ";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: linear-gradient(270deg, transparent 25%, #000);
+        height: 83vh;
+        object-fit: cover;
     }
 
     & h1, 
@@ -62,12 +78,6 @@
         // font-weight: bold;
         // margin: 0 auto;
 
-        // &:after {
-
-        //     content: "→";
-        //     padding-left: 15px;
-        // }
-
         & .fa-arrow-right {
 
             padding-left: 15px;
@@ -80,6 +90,82 @@
             background-color: #4e647e;
         }
     }
+
+    .slide-2 {
+
+        & .image-btn {
+
+            background-color: #4183d7;
+
+            &:hover {
+
+                cursor: pointer;
+                background-color: #2a6ec6;
+            }
+        }
+    }
+
+    .slide-3 {
+
+        & .center-button {
+
+            width: 311px;
+        }
+
+        & .image-btn {
+
+            background-color: #2ecc71;
+            width: 275px;
+
+            &:hover {
+
+                cursor: pointer;
+                background-color: #26ab5f;
+            }
+        }
+    }
+
+    .slide-4 {
+
+        & .image-btn {
+
+            background-color: #d64541;
+
+            &:hover {
+
+                cursor: pointer;
+                background-color: #c42e2a;
+            }
+        }
+    }
+
+    .slide-5 {
+
+        & .image-btn {
+
+            background-color: #926fb1;
+
+            &:hover {
+
+                cursor: pointer;
+                background-color: #7e57a0;
+            }
+        }
+    }
+
+    .slide-6 {
+
+        & .image-btn {
+
+            background-color: #f62459;
+
+            &:hover {
+
+                cursor: pointer;
+                background-color: #e80a42;
+            }
+        }
+    }
 }
 
 .image-content {
@@ -89,7 +175,7 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    // top: 27%;
+    top: 25%;
     width: 80vw;
 }
 

@@ -18,3 +18,12 @@ document.addEventListener('scroll', () => {
 });
 
 // image slideshow all images in one picture moving along changing left/right positioning
+$(document).ready(function(){ $('.image-slideshow').slick({ 
+   dots: true, 
+   autoplay: true, 
+   autoplaySpeed: 5000,
+   infinite: true, 
+   slidesToShow: 1, 
+   slidesToScroll: 1,
+   speed: 500
+}); });

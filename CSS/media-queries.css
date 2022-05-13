@@ -73,6 +73,9 @@
   .image-slideshow {
     height: 87vh;
   }
+  .image-slideshow img {
+    height: 87vh;
+  }
   .move-up {
     display: -ms-grid;
     display: grid;
@@ -652,6 +655,9 @@
     overflow-x: clip;
   }
   .image-slideshow {
+    height: 80vh;
+  }
+  .image-slideshow img {
     height: 80vh;
   }
   .image-content {

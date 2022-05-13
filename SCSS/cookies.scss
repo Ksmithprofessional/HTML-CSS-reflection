@@ -1,0 +1,50 @@
+.cookies {
+
+    display: none;
+    width: 80vw;
+    margin: 0 auto;
+    color: rgb(80, 80, 80);
+    line-height: 2rem;
+
+    & h3 {
+
+        font-weight: 500;
+        font-size: 1.5rem;
+        padding: 10px 10px 0px;
+    }
+
+    & p {
+
+        padding: 20px 10px 40px;
+        border-top: solid grey 1px;
+        border-bottom: solid grey 1px;
+    }
+
+    & .settings {
+
+        display: inline-block;
+        background-color: grey;
+        color: white;
+        padding: 5px;
+        width: 91%;
+        margin: 5px 10px 15px;
+        text-align: center;
+        border: solid grey 1px;
+        border-radius: 2%;
+        text-transform: uppercase;
+    }
+
+    & .accept {
+
+        display: inline-block;
+        background-color: #926fb1;
+        color: white;
+        padding: 5px;
+        width: 91%;
+        margin: 5px 10px 15px;
+        text-align: center;
+        border: solid #926fb1 1px;
+        border-radius: 2%;
+        text-transform: uppercase;
+    }
+}
