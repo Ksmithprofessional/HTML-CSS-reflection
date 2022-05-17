@@ -1415,48 +1415,183 @@ header button[type=submit]:hover {
 
 .cookies {
   display: none;
-  width: 80vw;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   color: #505050;
   line-height: 2rem;
+  position: relative;
+  z-index: 5;
+  background-color: white;
 }
 
 .cookies h3 {
   font-weight: 500;
   font-size: 1.5rem;
-  padding: 10px 10px 0px;
+  padding: 10px 15px 0px;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .cookies p {
-  padding: 20px 10px 40px;
-  border-top: solid grey 1px;
-  border-bottom: solid grey 1px;
+  padding: 20px 15px 40px;
+  border-top: solid #d8d8d8 1px;
+  border-bottom: solid #d8d8d8 1px;
+  font-size: 0.99rem;
+}
+
+.cookies .settings,
+.cookies .accept {
+  display: inline-block;
+  color: white;
+  font-size: 1.1rem;
+  padding: 5px;
+  width: 93%;
+  margin: 5px 10px 15px;
+  text-align: center;
+  border-radius: 2%;
+  text-transform: uppercase;
+  height: 50px;
 }
 
 .cookies .settings {
-  display: inline-block;
-  background-color: grey;
-  color: white;
-  padding: 5px;
-  width: 91%;
-  margin: 5px 10px 15px;
-  text-align: center;
-  border: solid grey 1px;
-  border-radius: 2%;
-  text-transform: uppercase;
+  background-color: #999999;
+  border: solid #999999 1px;
+  margin-bottom: 20px;
+}
+
+.cookies .settings:hover {
+  cursor: pointer;
+  background-color: #84858f;
+  border-color: #84858f;
 }
 
 .cookies .accept {
-  display: inline-block;
   background-color: #926fb1;
-  color: white;
-  padding: 5px;
-  width: 91%;
-  margin: 5px 10px 15px;
-  text-align: center;
   border: solid #926fb1 1px;
+}
+
+.cookies .accept:hover {
+  cursor: pointer;
+  background-color: #7e57a0;
+  border-color: #7e57a0;
+}
+
+.cookie-pop-up {
+  border: 1px solid white;
+  border-radius: 0.9%;
+  padding: 0px;
+  width: 85vw;
+}
+
+dialog::-webkit-backdrop {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.cookie-settings {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+  overflow-y: scroll;
+  padding: 0 20px;
+}
+
+.cookie-settings strong {
+  color: black;
+  font-size: 1rem;
+}
+
+.cookie-settings p,
+.cookie-settings li {
+  color: gray;
+  font-size: 0.9rem;
+  padding-right: 20px;
+}
+
+.cookie-settings a {
+  color: #414141;
+}
+
+.cookie-settings li {
+  list-style: disc;
+}
+
+.cookie-settings .preferences h3 {
+  font-size: 1.7rem;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+
+.cookie-settings .functional h2,
+.cookie-settings .analytics h2 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.cookie-settings .analytics li {
+  font-size: 1rem;
+}
+
+.cookie-settings .detailed li {
+  font-size: 1rem;
+}
+
+.cookie-settings .detailed li a:hover {
+  cursor: pointer;
+}
+
+.cookie-settings .enable,
+.cookie-settings .disable,
+.cookie-settings .cancel,
+.cookie-settings .continue,
+.cookie-settings .show-detailed {
+  display: inline-block;
+  color: white;
+  font-size: 1.1rem;
+  padding: 13px 5px 5px;
+  margin: 5px 10px 15px 0;
+  text-align: center;
   border-radius: 2%;
   text-transform: uppercase;
+  height: 30px;
+}
+
+.cookie-settings .enable:hover,
+.cookie-settings .disable:hover,
+.cookie-settings .cancel:hover,
+.cookie-settings .continue:hover,
+.cookie-settings .show-detailed:hover {
+  cursor: pointer;
+}
+
+.cookie-settings .cancel {
+  width: 100px;
+  background-color: #84858f;
+  border: solid #999999 1px;
+  margin-right: 1px;
+}
+
+.cookie-settings .show-detailed {
+  width: 270px;
+  background-color: #84858f;
+  border: solid #999999 1px;
+  margin-bottom: 20px;
+}
+
+.cookie-settings .continue {
+  width: 200px;
+  background-color: #926fb1;
+  border: solid #926fb1 1px;
+  margin-left: 1px;
 }
 
 body {
@@ -1507,6 +1642,16 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .cookie-pop-up {
+    width: 600px;
+  }
+  .cookie-pop-up .cookies {
+    height: 370px;
+  }
+  .cookie-pop-up .settings,
+  .cookie-pop-up .accept {
+    width: 275px;
+  }
   .read-more-grid,
   .news-wrapper,
   .latest-fix {

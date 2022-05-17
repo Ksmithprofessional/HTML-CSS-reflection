@@ -3,7 +3,21 @@
 
 @media screen and (min-width: 768px) {
     
-    // main {
+    .cookie-pop-up {
+
+        width: 600px;
+
+        & .cookies {
+
+            height: 370px;
+        }
+
+        & .settings,
+        & .accept {
+
+            width: 275px;
+        }
+    }
 
     .read-more-grid,
     .news-wrapper,

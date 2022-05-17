@@ -1,4 +1,14 @@
 @media screen and (min-width: 768px) {
+  .cookie-pop-up {
+    width: 600px;
+  }
+  .cookie-pop-up .cookies {
+    height: 370px;
+  }
+  .cookie-pop-up .settings,
+  .cookie-pop-up .accept {
+    width: 275px;
+  }
   .read-more-grid,
   .news-wrapper,
   .latest-fix {
