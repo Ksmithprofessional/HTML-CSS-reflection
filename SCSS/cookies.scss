@@ -183,6 +183,25 @@ dialog::backdrop {
         }
     }
 
+    & .enable,
+    & .disable {
+
+        color: rgb(184, 184, 184);
+        background-color: white;
+        border: 1px solid #f0f0f0;; 
+        border-radius: 5%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 0px;
+    }
+
+    & .selected {
+
+        color: white;
+        border-color: #926fb1;
+        background-color: #926fb1;
+    }
+
     & .cancel {
 
         width: 100px;
@@ -205,5 +224,27 @@ dialog::backdrop {
         background-color: #926fb1;
         border: solid #926fb1 1px;
         margin-left: 1px;
+    }
+
+    & .detailed-table {
+
+        display: none;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        overflow-x: auto;
+
+        & th {
+
+            background-color:#aaa;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        & td {
+
+            background-color: #ddd;
+            padding: 15px;
+        }
     }
 }

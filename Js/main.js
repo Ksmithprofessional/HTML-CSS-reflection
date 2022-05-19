@@ -37,6 +37,10 @@ const settings = document.querySelector('.settings')
 const body = document.querySelector('body')
 const cancel = document.querySelector('.cancel')
 const cont = document.querySelector('.continue')
+const enable = document.getElementsByClassName('enable')
+const disable = document.getElementsByClassName('disable')
+const detail = document.querySelector('.show-detailed')
+const detailTab = document.querySelector('.detailed-table')
 
 
 window.addEventListener ('load', ()=> {
@@ -64,19 +68,234 @@ settings.addEventListener('click', () => {
 
    close();
    changeSettings.style.display = 'block';
+   event.preventDefault();
+   //cookie settings were working one day, and then randomly closing as soon as it
+   // opened the next day. Prevent default seemed to fix it for some reason?
+
+
+   cancel.addEventListener('click', () => {
+
+      changeSettings.style.display = 'none';
+      popUp.showModal();
+      cookie.style.display = 'block';
+      body.style.overflowY = 'hidden';
+   });
+
+   cont.addEventListener('click', () => {
+
+      changeSettings.style.display = 'none';
+      document.cookie = "status=accepted; max-age=60; Secure";
+      body.style.overflowY = 'auto';
+
+      if (enable[0].classList.contains('selected')) {
+         document.cookie = "functional=enable; max-age=60; Secure"
+      } if (enable[1].classList.contains('selected')) {
+         document.cookie = "performance=enable; max-age=60; Secure"
+      } if (enable[2].classList.contains('selected')) {
+         document.cookie = "leadForensics=enable; max-age=60; Secure"
+      } if (enable[4].classList.contains('selected')) {
+         document.cookie = "hotjar=enable; max-age=60; Secure"
+      } if (enable[5].classList.contains('selected')) {
+         document.cookie = "linkedin=enable; max-age=60; Secure"
+      } if (enable[6].classList.contains('selected')) {
+         document.cookie = "facebook=enable; max-age=60; Secure"
+      } if (enable[7].classList.contains('selected')) {
+         document.cookie = "google=enable; max-age=60; Secure"
+      }
+   });
+
 });
 
-cancel.addEventListener('click', () => {
+   detail.addEventListener('click', () => {
 
-   changeSettings.style.display = 'none';
-   popUp.showModal();
-   cookie.style.display = 'block';
-   body.style.overflowY = 'hidden';
+      if (detailTab.style.display == 'none') {
+
+      detailTab.style.display = 'block';
+      detail.textContent = 'Hide Detailed Preferences';
+      } else {
+
+         detailTab.style.display = 'none';
+         detail.textContent = 'Show Detailed Preferences';
+      }
+   });
+
+enable[0].addEventListener('click', () => {
+
+   enable[0].classList.add('selected');
+   disable[0].classList.remove('selected');
+   enable[3].classList.add('selected');
+   disable[3].classList.remove('selected');
+   
 });
 
-cont.addEventListener('click', () => {
+disable[0].addEventListener('click', () => {
 
-   changeSettings.style.display = 'none';
-   document.cookie = "status=accepted; max-age=60; Secure";
-   body.style.overflowY = 'auto';
+   disable[0].classList.add('selected');
+   enable[0].classList.remove('selected');
+   disable[3].classList.add('selected');
+   enable[3].classList.remove('selected');
+   
 });
+
+enable[3].addEventListener('click', () => {
+
+   enable[0].classList.add('selected');
+   disable[0].classList.remove('selected');
+   enable[3].classList.add('selected');
+   disable[3].classList.remove('selected');
+   
+});
+
+disable[3].addEventListener('click', () => {
+
+   disable[0].classList.add('selected');
+   enable[0].classList.remove('selected');
+   disable[3].classList.add('selected');
+   enable[3].classList.remove('selected');
+   
+});
+
+enable[1].addEventListener('click', () => {
+
+   enable[1].classList.add('selected');
+   disable[1].classList.remove('selected');
+   enable[2].classList.add('selected');
+   disable[2].classList.remove('selected');
+   enable[4].classList.add('selected');
+   disable[4].classList.remove('selected');
+   enable[5].classList.add('selected');
+   disable[5].classList.remove('selected');
+   enable[6].classList.add('selected');
+   disable[6].classList.remove('selected');
+   enable[7].classList.add('selected');
+   disable[7].classList.remove('selected');
+   
+});
+
+disable[1].addEventListener('click', () => {
+
+   disable[1].classList.add('selected');
+   enable[1].classList.remove('selected');
+   disable[2].classList.add('selected');
+   enable[2].classList.remove('selected');
+   disable[4].classList.add('selected');
+   enable[4].classList.remove('selected');
+   disable[5].classList.add('selected');
+   enable[5].classList.remove('selected');
+   disable[6].classList.add('selected');
+   enable[6].classList.remove('selected');
+   disable[7].classList.add('selected');
+   enable[7].classList.remove('selected');
+   
+});
+
+enable[2].addEventListener('click', () => {
+
+   enable[2].classList.add('selected');
+   disable[2].classList.remove('selected');
+
+   if (enable[4].classList.contains('selected') && enable[5].classList.contains('selected') && enable[6].classList.contains('selected') && enable[7].classList.contains('selected')) {
+
+      enable[1].classList.add('selected');
+      disable[1].classList.remove('selected');
+   };
+   
+});
+
+disable[2].addEventListener('click', () => {
+
+   disable[2].classList.add('selected');
+   enable[2].classList.remove('selected');
+   disable[1].classList.add('selected');
+   enable[1].classList.remove('selected');
+   
+});
+
+enable[4].addEventListener('click', () => {
+
+   enable[4].classList.add('selected');
+   disable[4].classList.remove('selected');
+
+   if (enable[2].classList.contains('selected') && enable[5].classList.contains('selected') && enable[6].classList.contains('selected') && enable[7].classList.contains('selected')) {
+
+      enable[1].classList.add('selected');
+      disable[1].classList.remove('selected');
+   };
+   
+});
+
+disable[4].addEventListener('click', () => {
+
+   disable[4].classList.add('selected');
+   enable[4].classList.remove('selected');
+   disable[1].classList.add('selected');
+   enable[1].classList.remove('selected');
+   
+});
+
+enable[5].addEventListener('click', () => {
+
+   enable[5].classList.add('selected');
+   disable[5].classList.remove('selected');
+
+   if (enable[2].classList.contains('selected') && enable[4].classList.contains('selected') && enable[6].classList.contains('selected') && enable[7].classList.contains('selected')) {
+
+      enable[1].classList.add('selected');
+      disable[1].classList.remove('selected');
+   };
+   
+});
+
+disable[5].addEventListener('click', () => {
+
+   disable[5].classList.add('selected');
+   enable[5].classList.remove('selected');
+   disable[1].classList.add('selected');
+   enable[1].classList.remove('selected');
+   
+});
+
+enable[6].addEventListener('click', () => {
+
+   enable[6].classList.add('selected');
+   disable[6].classList.remove('selected');
+
+   if (enable[2].classList.contains('selected') && enable[4].classList.contains('selected') && enable[5].classList.contains('selected') && enable[7].classList.contains('selected')) {
+
+      enable[1].classList.add('selected');
+      disable[1].classList.remove('selected');
+   };
+   
+});
+
+disable[6].addEventListener('click', () => {
+
+   disable[6].classList.add('selected');
+   enable[6].classList.remove('selected');
+   disable[1].classList.add('selected');
+   enable[1].classList.remove('selected');
+   
+});
+
+enable[7].addEventListener('click', () => {
+
+   enable[7].classList.add('selected');
+   disable[7].classList.remove('selected');
+
+   if (enable[2].classList.contains('selected') && enable[4].classList.contains('selected') && enable[5].classList.contains('selected') && enable[6].classList.contains('selected')) {
+
+      enable[1].classList.add('selected');
+      disable[1].classList.remove('selected');
+   };
+   
+});
+
+disable[7].addEventListener('click', () => {
+
+   disable[7].classList.add('selected');
+   enable[7].classList.remove('selected');
+   disable[1].classList.add('selected');
+   enable[1].classList.remove('selected');
+   
+});
+

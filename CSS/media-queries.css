@@ -9,6 +9,10 @@
   .cookie-pop-up .accept {
     width: 275px;
   }
+  .cookie-settings-container {
+    width: 750px;
+    margin: 0 auto;
+  }
   .read-more-grid,
   .news-wrapper,
   .latest-fix {
@@ -257,6 +261,19 @@
 }
 
 @media screen and (min-width: 992px) {
+  .cookie-settings-container {
+    width: 950px;
+  }
+  .cookie-settings-container .can-cont-btns {
+    margin-left: auto;
+    margin-right: 0;
+    width: 341px;
+  }
+  .cookie-settings-container .en-dis-btns {
+    margin-left: auto;
+    margin-right: 0;
+    width: 190px;
+  }
   .read-more-grid,
   .news-wrapper,
   .latest-fix {
@@ -885,6 +902,12 @@
 }
 
 @media screen and (min-width: 1260px) {
+  .cookie-settings-container {
+    width: 1200px;
+  }
+  .cookie-settings-container tbody {
+    width: 1200px;
+  }
   .read-more-grid,
   .bio,
   .news-wrapper,

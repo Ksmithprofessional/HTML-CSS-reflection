@@ -1573,6 +1573,23 @@ dialog::backdrop {
   cursor: pointer;
 }
 
+.cookie-settings .enable,
+.cookie-settings .disable {
+  color: #b8b8b8;
+  background-color: white;
+  border: 1px solid #f0f0f0;
+  border-radius: 5%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 0px;
+}
+
+.cookie-settings .selected {
+  color: white;
+  border-color: #926fb1;
+  background-color: #926fb1;
+}
+
 .cookie-settings .cancel {
   width: 100px;
   background-color: #84858f;
@@ -1592,6 +1609,25 @@ dialog::backdrop {
   background-color: #926fb1;
   border: solid #926fb1 1px;
   margin-left: 1px;
+}
+
+.cookie-settings .detailed-table {
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  overflow-x: auto;
+}
+
+.cookie-settings .detailed-table th {
+  background-color: #aaa;
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+
+.cookie-settings .detailed-table td {
+  background-color: #ddd;
+  padding: 15px;
 }
 
 body {
@@ -1651,6 +1687,10 @@ a {
   .cookie-pop-up .settings,
   .cookie-pop-up .accept {
     width: 275px;
+  }
+  .cookie-settings-container {
+    width: 750px;
+    margin: 0 auto;
   }
   .read-more-grid,
   .news-wrapper,
@@ -1900,6 +1940,19 @@ a {
 }
 
 @media screen and (min-width: 992px) {
+  .cookie-settings-container {
+    width: 950px;
+  }
+  .cookie-settings-container .can-cont-btns {
+    margin-left: auto;
+    margin-right: 0;
+    width: 341px;
+  }
+  .cookie-settings-container .en-dis-btns {
+    margin-left: auto;
+    margin-right: 0;
+    width: 190px;
+  }
   .read-more-grid,
   .news-wrapper,
   .latest-fix {
@@ -2528,6 +2581,12 @@ a {
 }
 
 @media screen and (min-width: 1260px) {
+  .cookie-settings-container {
+    width: 1200px;
+  }
+  .cookie-settings-container tbody {
+    width: 1200px;
+  }
   .read-more-grid,
   .bio,
   .news-wrapper,
