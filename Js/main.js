@@ -299,3 +299,58 @@ disable[7].addEventListener('click', () => {
    
 });
 
+
+// pop out menu
+// absolute mess of code purely because i made the header absolute positioned
+// but only on small screens. Just a horrible workaround, but i think it works?
+
+const menuButton = document.querySelector('.menu');
+const menu = document.querySelector('.pop-out-menu');
+const page = document.querySelector('.entire-page');
+const dark = document.querySelector('.darken-page');
+const menuSm = document.querySelector('.small-position');
+const formSm = document.querySelector('.small-form');
+const phoneSm = document.querySelector('.small-phone');
+
+menuButton.addEventListener('click', () => {
+
+   menu.style.display = 'block';
+   body.style.overflowY = 'hidden';
+   dark.style.display = 'block';
+   page.style.position = 'absolute';
+  
+   if(window.innerWidth <= 767) {
+      menuSm.style.right = '305px';
+      formSm.style.width = '97vw';
+      phoneSm.style.right = '380px';
+   };
+});
+
+dark.addEventListener('click', () => {
+
+   menu.style.display = 'none';
+   body.style.overflowY = 'auto';
+   dark.style.display = 'none';
+   page.style.position = '';
+   menuSm.style.right = '';
+   formSm.style.width = '';
+   phoneSm.style.right = '';
+});
+
+window.addEventListener('resize', () => {
+
+   if(menu.style.display == 'block') {
+
+      if(window.innerWidth <= 767) {
+         menuSm.style.right = '305px';
+         formSm.style.width = '97vw';
+         phoneSm.style.right = '380px';
+      } else {
+
+         menuSm.style.right = '';
+         formSm.style.width = '';
+         phoneSm.style.right = '';
+      };
+
+   };
+});

@@ -1,0 +1,138 @@
+.pop-out-menu {
+
+    display: none;
+    background-color: #333645;
+    color: white;
+    width: 275px;
+    height:100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    padding: 10px;
+
+    & ul {
+
+        padding-left: 0;
+        border: 1px solid rgba(0,0,0,.25);
+        border-radius: 3%;
+        width: 220px;
+        margin: 0 auto;
+
+        & li:not(:first-child) {
+
+            border-top: 1px solid hsla(0,0%,100%,.05);
+        }
+
+        & li:not(:last-child) {
+
+            border-bottom: 1px solid rgba(0,0,0,.45);
+        }
+    }
+
+    & li {
+
+        width: 200px;
+        height: fit-content;
+        padding: 10px;
+        text-align: center;
+        background-color: rgba(0,0,0,.25);
+        text-transform: uppercase;
+    }
+
+    .dev-menu {
+
+        & ul {
+
+            margin-bottom: 15px;
+        }
+    }
+
+    .training-menu,
+    .events-menu,
+    .company-menu,
+    .work-menu,
+    .knowledge-menu,
+    .covid-menu,
+    .contact-menu,
+    .support-menu {
+
+        & .menu-title-2 {
+
+            padding: 0 5px 0 25px;
+            margin-left: -10px;
+            margin-right: -10px;
+            outline: 1px solid rgba(0,0,0,.25);
+            border-top: 1px solid rgba(255,255,255,.1);
+            text-transform: uppercase;
+            height: 47px;
+        }
+
+        & ul {
+
+            width: 300px;
+            margin: 0 -10px;
+
+            & li {
+
+                width: 250px;
+                text-align: left;
+                padding: 10px 25px;
+                border-top: 1px solid hsla(0,0%,100%,.05);
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+.darken-page {
+
+    display: none;
+    background: #000;
+    opacity: 0.4;
+    position: fixed;
+    top: -56px;
+    right: 295px;
+    width: 100%;
+    height: 120%;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.entire-page {
+
+    top: 0;
+    left: -295px;
+}
+
+.contact-top {
+    margin: 15px auto;
+    width: 200px;
+    height: 38px;
+    padding: 10px;
+    outline: 1px solid rgba(0,0,0,.25);
+    text-align: center;
+    border-radius: 3%;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    border: 1px solid rgba(255,255,255,.1);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.menu-title {
+
+    margin: 15px auto;
+    width: 200px;
+    height: 90px;
+    padding: 10px;
+    outline: 1px solid rgba(0,0,0,.25);
+    text-align: center;
+    border-radius: 3%;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    border: 1px solid rgba(255,255,255,.1);
+    text-transform: uppercase;
+}
+

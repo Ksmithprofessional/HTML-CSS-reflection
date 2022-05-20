@@ -79,6 +79,7 @@
   }
   .menu {
     top: -30px;
+    right: 0;
     height: 53px;
   }
   header img {
@@ -273,6 +274,15 @@
     margin-left: auto;
     margin-right: 0;
     width: 190px;
+  }
+  .pop-out-menu {
+    width: 350px;
+  }
+  .darken-page {
+    right: 370px;
+  }
+  .entire-page {
+    left: -350px;
   }
   .read-more-grid,
   .news-wrapper,

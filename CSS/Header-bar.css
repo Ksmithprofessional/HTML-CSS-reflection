@@ -93,8 +93,8 @@ header button[type=submit]:hover {
 
 .menu {
   position: absolute;
-  right: 12px;
   top: 27px;
+  right: 12px;
   background-color: #333645;
   color: white;
   text-transform: uppercase;

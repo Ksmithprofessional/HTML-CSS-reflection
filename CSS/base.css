@@ -1036,8 +1036,8 @@ header button[type=submit]:hover {
 
 .menu {
   position: absolute;
-  right: 12px;
   top: 27px;
+  right: 12px;
   background-color: #333645;
   color: white;
   text-transform: uppercase;
@@ -1630,6 +1630,142 @@ dialog::backdrop {
   padding: 15px;
 }
 
+.pop-out-menu {
+  display: none;
+  background-color: #333645;
+  color: white;
+  width: 275px;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.pop-out-menu ul {
+  padding-left: 0;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3%;
+  width: 220px;
+  margin: 0 auto;
+}
+
+.pop-out-menu ul li:not(:first-child) {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.pop-out-menu ul li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.45);
+}
+
+.pop-out-menu li {
+  width: 200px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+}
+
+.pop-out-menu .dev-menu ul {
+  margin-bottom: 15px;
+}
+
+.pop-out-menu .training-menu .menu-title-2,
+.pop-out-menu .events-menu .menu-title-2,
+.pop-out-menu .company-menu .menu-title-2,
+.pop-out-menu .work-menu .menu-title-2,
+.pop-out-menu .knowledge-menu .menu-title-2,
+.pop-out-menu .covid-menu .menu-title-2,
+.pop-out-menu .contact-menu .menu-title-2,
+.pop-out-menu .support-menu .menu-title-2 {
+  padding: 0 5px 0 25px;
+  margin-left: -10px;
+  margin-right: -10px;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  height: 47px;
+}
+
+.pop-out-menu .training-menu ul,
+.pop-out-menu .events-menu ul,
+.pop-out-menu .company-menu ul,
+.pop-out-menu .work-menu ul,
+.pop-out-menu .knowledge-menu ul,
+.pop-out-menu .covid-menu ul,
+.pop-out-menu .contact-menu ul,
+.pop-out-menu .support-menu ul {
+  width: 300px;
+  margin: 0 -10px;
+}
+
+.pop-out-menu .training-menu ul li,
+.pop-out-menu .events-menu ul li,
+.pop-out-menu .company-menu ul li,
+.pop-out-menu .work-menu ul li,
+.pop-out-menu .knowledge-menu ul li,
+.pop-out-menu .covid-menu ul li,
+.pop-out-menu .contact-menu ul li,
+.pop-out-menu .support-menu ul li {
+  width: 250px;
+  text-align: left;
+  padding: 10px 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 0;
+}
+
+.darken-page {
+  display: none;
+  background: #000;
+  opacity: 0.4;
+  position: fixed;
+  top: -56px;
+  right: 295px;
+  width: 100%;
+  height: 120%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.entire-page {
+  top: 0;
+  left: -295px;
+}
+
+.contact-top {
+  margin: 15px auto;
+  width: 200px;
+  height: 38px;
+  padding: 10px;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  text-align: center;
+  border-radius: 3%;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.menu-title {
+  margin: 15px auto;
+  width: 200px;
+  height: 90px;
+  padding: 10px;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  text-align: center;
+  border-radius: 3%;
+  padding-top: 25px;
+  padding-bottom: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -1758,6 +1894,7 @@ a {
   }
   .menu {
     top: -30px;
+    right: 0;
     height: 53px;
   }
   header img {
@@ -1952,6 +2089,15 @@ a {
     margin-left: auto;
     margin-right: 0;
     width: 190px;
+  }
+  .pop-out-menu {
+    width: 350px;
+  }
+  .darken-page {
+    right: 370px;
+  }
+  .entire-page {
+    left: -350px;
   }
   .read-more-grid,
   .news-wrapper,

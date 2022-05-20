@@ -109,6 +109,7 @@
     .menu {
 
         top: -30px;
+        right: 0;
         height: 53px;
     }
 
@@ -380,6 +381,21 @@
     }
 }
 
+.pop-out-menu {
+
+    width: 350px;
+}
+
+.darken-page {
+
+    right: 370px;
+}
+
+.entire-page {
+
+    left: -350px;
+}
+
     .read-more-grid,
     .news-wrapper,
     .latest-fix {
@@ -414,13 +430,6 @@
             cursor: pointer;
         }
     }
-
-    // .support,
-    // .contact {
-
-    //     height: 37px;
-    //     top: -27px;
-    // }
 
     .menu {
 
