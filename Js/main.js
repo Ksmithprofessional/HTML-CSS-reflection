@@ -29,6 +29,8 @@ $(document).ready(function(){ $('.image-slideshow').slick({
 }); });
 
 //cookie pop up
+// gigantic mess, must be a better way to clean this up
+// also cookies act strangely when accepting more than one cookie
 const popUp = document.querySelector('.cookie-pop-up')
 const cookie = document.querySelector('.cookies')
 const changeSettings = document.querySelector('.cookie-settings')

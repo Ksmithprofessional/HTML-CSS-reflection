@@ -396,6 +396,63 @@
     left: -350px;
 }
 
+
+    .pop-out-menu {
+
+        .training-menu,
+        .events-menu,
+        .company-menu,
+        .work-menu,
+        .knowledge-menu,
+        .covid-menu,
+        .contact-menu,
+        .support-menu,
+        .services-menu {
+
+            & ul {
+
+                width: 360px;
+
+                & li {
+
+                    width: 305px;
+                }
+            }
+        }
+
+        .support-menu {
+
+            display: none;
+        }
+
+        .services-menu {
+
+            display: block;
+        }
+    }
+
+    .bespoke-menu,
+    .it-menu,
+    .marketing-menu,
+    .telecom-menu,
+    .web-menu,
+    .security-menu,
+    .dev-menu,
+    .contact-top {
+
+        display: none;
+    }
+
+    .empty-menu {
+
+        width: 360px;
+
+        & a {
+
+            width: 360px;
+        }
+    }
+
     .read-more-grid,
     .news-wrapper,
     .latest-fix {

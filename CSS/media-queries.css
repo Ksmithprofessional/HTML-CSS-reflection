@@ -284,6 +284,50 @@
   .entire-page {
     left: -350px;
   }
+  .pop-out-menu .training-menu ul,
+  .pop-out-menu .events-menu ul,
+  .pop-out-menu .company-menu ul,
+  .pop-out-menu .work-menu ul,
+  .pop-out-menu .knowledge-menu ul,
+  .pop-out-menu .covid-menu ul,
+  .pop-out-menu .contact-menu ul,
+  .pop-out-menu .support-menu ul,
+  .pop-out-menu .services-menu ul {
+    width: 360px;
+  }
+  .pop-out-menu .training-menu ul li,
+  .pop-out-menu .events-menu ul li,
+  .pop-out-menu .company-menu ul li,
+  .pop-out-menu .work-menu ul li,
+  .pop-out-menu .knowledge-menu ul li,
+  .pop-out-menu .covid-menu ul li,
+  .pop-out-menu .contact-menu ul li,
+  .pop-out-menu .support-menu ul li,
+  .pop-out-menu .services-menu ul li {
+    width: 305px;
+  }
+  .pop-out-menu .support-menu {
+    display: none;
+  }
+  .pop-out-menu .services-menu {
+    display: block;
+  }
+  .bespoke-menu,
+  .it-menu,
+  .marketing-menu,
+  .telecom-menu,
+  .web-menu,
+  .security-menu,
+  .dev-menu,
+  .contact-top {
+    display: none;
+  }
+  .empty-menu {
+    width: 360px;
+  }
+  .empty-menu a {
+    width: 360px;
+  }
   .read-more-grid,
   .news-wrapper,
   .latest-fix {

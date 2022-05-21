@@ -10,7 +10,7 @@
     top: 0;
     right: 0;
     overflow-y: auto;
-    padding: 10px;
+    padding: 0 10px;
 
     & ul {
 
@@ -19,6 +19,7 @@
         border-radius: 3%;
         width: 220px;
         margin: 0 auto;
+        line-height: 1.5rem;
 
         & li:not(:first-child) {
 
@@ -47,6 +48,29 @@
 
             margin-bottom: 15px;
         }
+
+    }
+
+    .bespoke-menu,
+    .it-menu,
+    .marketing-menu,
+    .telecom-menu,
+    .web-menu,
+    .security-menu,
+    .dev-menu {
+
+        &:hover {
+
+            & .menu-title {
+
+                background-color: rgba(255,255,255,.05)
+            }
+        }
+    }
+
+    .services-menu {
+
+        display: none;
     }
 
     .training-menu,
@@ -56,7 +80,8 @@
     .knowledge-menu,
     .covid-menu,
     .contact-menu,
-    .support-menu {
+    .support-menu,
+    .services-menu {
 
         & .menu-title-2 {
 
@@ -73,14 +98,29 @@
 
             width: 300px;
             margin: 0 -10px;
+            border-radius: 0;
 
             & li {
 
-                width: 250px;
+                width: 230px;
                 text-align: left;
                 padding: 10px 25px;
                 border-top: 1px solid hsla(0,0%,100%,.05);
-                border-radius: 0;
+                font-size: 0.9rem;
+
+                &:before {
+
+                    content: '\00bb';
+                    padding-right: 15px;
+                }
+            }
+        }
+
+        &:hover {
+
+            & .menu-title-2 {
+
+                background-color: rgba(255,255,255,.05)
             }
         }
     }
@@ -107,6 +147,7 @@
 }
 
 .contact-top {
+
     margin: 15px auto;
     width: 200px;
     height: 38px;
@@ -119,6 +160,11 @@
     border: 1px solid rgba(255,255,255,.1);
     text-transform: uppercase;
     font-size: 1.2rem;
+
+    &:hover {
+
+        background-color: rgba(255,255,255,.05)
+    }
 }
 
 .menu-title {
@@ -136,3 +182,25 @@
     text-transform: uppercase;
 }
 
+.empty-menu {
+
+    width: 300px;
+    height: 47px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(0,0,0,.25);
+    margin-left: -10px;
+
+    & a {
+
+        width: 300px;
+        height: 47px;
+        display: block;
+    }
+
+    &:hover {
+
+        background-color: rgba(255,255,255,.05)
+    }
+}
+
+//border top border bottom seems to work?
