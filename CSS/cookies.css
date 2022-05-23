@@ -201,6 +201,7 @@ dialog::backdrop {
   margin-top: 10px;
   margin-bottom: 25px;
   overflow-x: auto;
+  border-spacing: 1px;
 }
 
 .cookie-settings .detailed-table th {
@@ -213,5 +214,9 @@ dialog::backdrop {
 .cookie-settings .detailed-table td {
   background-color: #ddd;
   padding: 15px;
+}
+
+.cookie-settings .detailed-table td:last-child {
+  width: 215px;
 }
 /*# sourceMappingURL=cookies.css.map */

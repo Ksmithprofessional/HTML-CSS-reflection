@@ -406,6 +406,7 @@
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     width: 920px;
+    height: 100px;
     margin: 0 auto;
     text-align: center;
     color: white;

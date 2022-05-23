@@ -9,6 +9,7 @@
   top: 0;
   right: 0;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 0 10px;
 }
 
@@ -21,11 +22,11 @@
   line-height: 1.5rem;
 }
 
-.pop-out-menu ul li:not(:first-child) {
+.pop-out-menu ul a:not(:first-of-type) li {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.pop-out-menu ul li:not(:last-child) {
+.pop-out-menu ul a:not(:last-of-type) li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.45);
 }
 

@@ -30,7 +30,7 @@ $(document).ready(function(){ $('.image-slideshow').slick({
 
 //cookie pop up
 // gigantic mess, must be a better way to clean this up
-// also cookies act strangely when accepting more than one cookie
+// hopefully cookie.split etc works since the way i did it originally only worked when accepting one cookie
 const popUp = document.querySelector('.cookie-pop-up')
 const cookie = document.querySelector('.cookies')
 const changeSettings = document.querySelector('.cookie-settings')
@@ -47,7 +47,7 @@ const detailTab = document.querySelector('.detailed-table')
 
 window.addEventListener ('load', ()=> {
 
-   if (document.cookie !== "status=accepted") {
+   if (!document.cookie.split('; ').find(row => row.startsWith('status=accepted'))) {
       popUp.showModal();
       cookie.style.display = 'block';
       body.style.overflowY = 'hidden';
@@ -313,6 +313,11 @@ const dark = document.querySelector('.darken-page');
 const menuSm = document.querySelector('.small-position');
 const formSm = document.querySelector('.small-form');
 const phoneSm = document.querySelector('.small-phone');
+const menuSquare = document.querySelector('.menu');
+const menuSqText = menuSquare.querySelector('p');
+const menuTop = document.querySelector('.menu-icon');
+const menuMid = document.querySelector('.menu-icon-2');
+const menuBot = document.querySelector('.menu-icon-3');
 
 menuButton.addEventListener('click', () => {
 
@@ -320,12 +325,24 @@ menuButton.addEventListener('click', () => {
    body.style.overflowY = 'hidden';
    dark.style.display = 'block';
    page.style.position = 'absolute';
+   menuTop.style.marginTop = '12px';
+   menuTop.style.marginBottom = '-8px';
+   menuBot.style.marginTop = '-8px';
+   menuSqText.style.marginTop = '17px';
   
    if(window.innerWidth <= 767) {
       menuSm.style.right = '305px';
       formSm.style.width = '97vw';
       phoneSm.style.right = '380px';
    };
+
+   setTimeout( () =>{
+      menuTop.style.rotate = '-135deg';
+      menuMid.style.rotate = '-135deg';
+      menuMid.style.display = 'none';
+      menuBot.style.marginTop = '5px';
+      menuBot.style.rotate = '135deg';
+   }, 200);
 });
 
 dark.addEventListener('click', () => {
@@ -337,6 +354,19 @@ dark.addEventListener('click', () => {
    menuSm.style.right = '';
    formSm.style.width = '';
    phoneSm.style.right = '';
+   menuTop.style.rotate = '';
+   menuMid.style.display = 'block';
+   menuMid.style.rotate = '';
+   menuBot.style.rotate = '';
+   menuBot.style.marginTop = '-8px';
+   menuSqText.style.marginTop = '5px';
+
+   setTimeout( () =>{
+
+      menuTop.style.marginTop = '5px';
+      menuTop.style.marginBottom = '5px';
+      menuBot.style.marginTop = '5px';
+   }, 200);
 });
 
 window.addEventListener('resize', () => {

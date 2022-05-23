@@ -10,6 +10,7 @@
     top: 0;
     right: 0;
     overflow-y: auto;
+    overflow-x: hidden;
     padding: 0 10px;
 
     & ul {
@@ -21,15 +22,23 @@
         margin: 0 auto;
         line-height: 1.5rem;
 
-        & li:not(:first-child) {
+        & a:not(:first-of-type) {
 
-            border-top: 1px solid hsla(0,0%,100%,.05);
+            & li {
+
+                border-top: 1px solid hsla(0,0%,100%,.05);
+                //li's aren't siblings but the a's are, so this works
+            }
         }
 
-        & li:not(:last-child) {
+        & a:not(:last-of-type) {
 
-            border-bottom: 1px solid rgba(0,0,0,.45);
+            & li {
+
+                border-bottom: 1px solid rgba(0,0,0,.45);
+            }
         }
+       
     }
 
     & li {

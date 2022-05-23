@@ -170,6 +170,16 @@ header button[type=submit] {
     }
 }
 
+.telecom-nav {
+
+    padding-bottom: 10px;
+
+    & .fa-phone-alt {
+
+        font-size: 1.1rem;
+    }
+}
+
 .bespoke-icon {
 
     color: #67809f;
@@ -338,7 +348,9 @@ header button[type=submit] {
 
 }
 
-.menu-icon {
+.menu-icon,
+.menu-icon-2,
+.menu-icon-3 {
 
     background-color: white;
     display: block;
@@ -346,4 +358,5 @@ header button[type=submit] {
     height: 3px;
     margin: 5px;
     margin-left: 17px;
+    transition: 0.2s ease-in;
 }

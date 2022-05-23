@@ -232,6 +232,7 @@ dialog::backdrop {
         margin-top: 10px;
         margin-bottom: 25px;
         overflow-x: auto;
+        border-spacing: 1px;
 
         & th {
 
@@ -245,6 +246,11 @@ dialog::backdrop {
 
             background-color: #ddd;
             padding: 15px;
+
+            &:last-child {
+
+                width: 215px;
+            }
         }
     }
 }
