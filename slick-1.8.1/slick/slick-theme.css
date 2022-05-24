@@ -118,7 +118,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: 60px;
+    bottom: 50px;
 
     display: block;
 
@@ -200,3 +200,10 @@
     border: solid white 2px;
     border-radius: 50%;
 }
+
+
+.slick-list.draggable:active {
+
+    cursor: grab;
+}
+

@@ -228,11 +228,25 @@ dialog::backdrop {
 
     & .detailed-table {
 
-        display: none;
         margin-top: 10px;
         margin-bottom: 25px;
         overflow-x: auto;
         border-spacing: 1px;
+
+        & .col-1 {
+
+            width: 15%;
+        }
+
+        & .col-2 {
+
+            width: 50%;
+        }
+
+        & .col-3 {
+
+            width: 35%;
+        }
 
         & th {
 
@@ -240,17 +254,17 @@ dialog::backdrop {
             color: white;
             padding: 15px;
             text-align: left;
+
+            &:last-child {
+
+                min-width: 176px;
+            }
         }
 
         & td {
 
             background-color: #ddd;
             padding: 15px;
-
-            &:last-child {
-
-                width: 215px;
-            }
         }
     }
 }

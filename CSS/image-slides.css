@@ -30,8 +30,8 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background: -webkit-gradient(linear, right top, left top, color-stop(25%, transparent), to(#000));
-  background: linear-gradient(270deg, transparent 25%, #000);
+  background: -webkit-gradient(linear, right top, left top, color-stop(1%, #00000078), to(#000));
+  background: linear-gradient(270deg, #00000078 1%, #000);
 }
 
 .image-slideshow img {

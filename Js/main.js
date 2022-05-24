@@ -17,11 +17,11 @@ document.addEventListener('scroll', () => {
    scrollPosition = scroll <= 0 ? 0 : scroll; 
 });
 
-// image slideshow all images in one picture moving along changing left/right positioning
+// image slideshow 
 $(document).ready(function(){ $('.image-slideshow').slick({ 
    dots: true, 
    autoplay: true, 
-   autoplaySpeed: 5000,
+   autoplaySpeed: 4000,
    infinite: true, 
    slidesToShow: 1, 
    slidesToScroll: 1,
@@ -62,7 +62,7 @@ function close() {
 accept.addEventListener('click', () => {
 
    close();
-   document.cookie = "status=accepted; max-age=60; Secure";
+   document.cookie = "status=accepted; max-age=86400; Secure";
    body.style.overflowY = 'auto';
 });
 
@@ -86,23 +86,23 @@ settings.addEventListener('click', () => {
    cont.addEventListener('click', () => {
 
       changeSettings.style.display = 'none';
-      document.cookie = "status=accepted; max-age=60; Secure";
+      document.cookie = "status=accepted; max-age=86400; Secure";
       body.style.overflowY = 'auto';
 
       if (enable[0].classList.contains('selected')) {
-         document.cookie = "functional=enable; max-age=60; Secure"
+         document.cookie = "functional=enable; max-age=86400; Secure"
       } if (enable[1].classList.contains('selected')) {
-         document.cookie = "performance=enable; max-age=60; Secure"
+         document.cookie = "performance=enable; max-age=86400; Secure"
       } if (enable[2].classList.contains('selected')) {
-         document.cookie = "leadForensics=enable; max-age=60; Secure"
+         document.cookie = "leadForensics=enable; max-age=86400; Secure"
       } if (enable[4].classList.contains('selected')) {
-         document.cookie = "hotjar=enable; max-age=60; Secure"
+         document.cookie = "hotjar=enable; max-age=86400; Secure"
       } if (enable[5].classList.contains('selected')) {
-         document.cookie = "linkedin=enable; max-age=60; Secure"
+         document.cookie = "linkedin=enable; max-age=86400; Secure"
       } if (enable[6].classList.contains('selected')) {
-         document.cookie = "facebook=enable; max-age=60; Secure"
+         document.cookie = "facebook=enable; max-age=86400; Secure"
       } if (enable[7].classList.contains('selected')) {
-         document.cookie = "google=enable; max-age=60; Secure"
+         document.cookie = "google=enable; max-age=86400; Secure"
       }
    });
 
@@ -337,11 +337,11 @@ menuButton.addEventListener('click', () => {
    };
 
    setTimeout( () =>{
-      menuTop.style.rotate = '-135deg';
-      menuMid.style.rotate = '-135deg';
+      menuTop.style.rotate = '135deg';
+      menuMid.style.rotate = '135deg';
       menuMid.style.display = 'none';
       menuBot.style.marginTop = '5px';
-      menuBot.style.rotate = '135deg';
+      menuBot.style.rotate = '225deg';
    }, 200);
 });
 
@@ -366,7 +366,7 @@ dark.addEventListener('click', () => {
       menuTop.style.marginTop = '5px';
       menuTop.style.marginBottom = '5px';
       menuBot.style.marginTop = '5px';
-   }, 200);
+   }, 300);
 });
 
 window.addEventListener('resize', () => {

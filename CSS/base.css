@@ -826,8 +826,8 @@ input[type=checkbox]:focus {
   right: 0;
   top: 0;
   bottom: 0;
-  background: -webkit-gradient(linear, right top, left top, color-stop(25%, transparent), to(#000));
-  background: linear-gradient(270deg, transparent 25%, #000);
+  background: -webkit-gradient(linear, right top, left top, color-stop(1%, #00000078), to(#000));
+  background: linear-gradient(270deg, #00000078 1%, #000);
 }
 
 .image-slideshow img {
@@ -1624,11 +1624,22 @@ dialog::backdrop {
 }
 
 .cookie-settings .detailed-table {
-  display: none;
   margin-top: 10px;
   margin-bottom: 25px;
   overflow-x: auto;
   border-spacing: 1px;
+}
+
+.cookie-settings .detailed-table .col-1 {
+  width: 15%;
+}
+
+.cookie-settings .detailed-table .col-2 {
+  width: 50%;
+}
+
+.cookie-settings .detailed-table .col-3 {
+  width: 35%;
 }
 
 .cookie-settings .detailed-table th {
@@ -1638,13 +1649,13 @@ dialog::backdrop {
   text-align: left;
 }
 
+.cookie-settings .detailed-table th:last-child {
+  min-width: 176px;
+}
+
 .cookie-settings .detailed-table td {
   background-color: #ddd;
   padding: 15px;
-}
-
-.cookie-settings .detailed-table td:last-child {
-  width: 215px;
 }
 
 .pop-out-menu {
@@ -1912,6 +1923,15 @@ a {
     width: 750px;
     margin: 0 auto;
   }
+  .cookie-settings .detailed-table {
+    width: 100%;
+  }
+  .cookie-settings .detailed-table th:last-child {
+    min-width: unset;
+  }
+  .cookie-settings .detailed-table .col-3 {
+    width: 25.4%;
+  }
   .read-more-grid,
   .news-wrapper,
   .latest-fix {
@@ -2173,6 +2193,12 @@ a {
     margin-left: auto;
     margin-right: 0;
     width: 190px;
+  }
+  .cookie-settings .detailed-table {
+    width: 100%;
+  }
+  .cookie-settings .detailed-table .col-3 {
+    width: 18.1%;
   }
   .pop-out-menu {
     width: 350px;
@@ -2638,6 +2664,15 @@ a {
   .image-slideshow {
     height: 80vh;
   }
+  .image-slideshow .slide-1:before,
+  .image-slideshow .slide-2:before,
+  .image-slideshow .slide-3:before,
+  .image-slideshow .slide-4:before,
+  .image-slideshow .slide-5:before,
+  .image-slideshow .slide-6:before {
+    background: -webkit-gradient(linear, right top, left top, color-stop(25%, transparent), to(#000));
+    background: linear-gradient(270deg, transparent 25%, #000);
+  }
   .image-slideshow img {
     height: 80vh;
   }
@@ -2861,6 +2896,12 @@ a {
   }
   .cookie-settings-container tbody {
     width: 1200px;
+  }
+  .cookie-settings .detailed-table {
+    width: 100%;
+  }
+  .cookie-settings .detailed-table .col-3 {
+    width: 14%;
   }
   .read-more-grid,
   .bio,
