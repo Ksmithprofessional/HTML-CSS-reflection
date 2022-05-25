@@ -22,11 +22,11 @@
   line-height: 1.5rem;
 }
 
-.pop-out-menu ul a:not(:first-of-type) li {
+.pop-out-menu ul li:not(:first-of-type) {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.pop-out-menu ul a:not(:last-of-type) li {
+.pop-out-menu ul li:not(:last-of-type) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.45);
 }
 

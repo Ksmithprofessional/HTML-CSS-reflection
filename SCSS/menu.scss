@@ -22,21 +22,15 @@
         margin: 0 auto;
         line-height: 1.5rem;
 
-        & a:not(:first-of-type) {
+        & li:not(:first-of-type) {
 
-            & li {
-
-                border-top: 1px solid hsla(0,0%,100%,.05);
-                //li's aren't siblings but the a's are, so this works, change this round later when changing a's and li's
-            }
+            border-top: 1px solid hsla(0,0%,100%,.05);
+            //li's aren't siblings but the a's are, so this works, change this round later when changing a's and li's
         }
 
-        & a:not(:last-of-type) {
+        & li:not(:last-of-type) {
 
-            & li {
-
-                border-bottom: 1px solid rgba(0,0,0,.45);
-            }
+            border-bottom: 1px solid rgba(0,0,0,.45);
         }
        
     }
