@@ -27,7 +27,7 @@
             & li {
 
                 border-top: 1px solid hsla(0,0%,100%,.05);
-                //li's aren't siblings but the a's are, so this works
+                //li's aren't siblings but the a's are, so this works, change this round later when changing a's and li's
             }
         }
 
@@ -211,5 +211,3 @@
         background-color: rgba(255,255,255,.05)
     }
 }
-
-//border top border bottom seems to work?

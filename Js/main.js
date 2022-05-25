@@ -62,7 +62,7 @@ function close() {
 accept.addEventListener('click', () => {
 
    close();
-   document.cookie = "status=accepted; max-age=86400; Secure";
+   document.cookie = "status=accepted; max-age=86400; SameSite=Strict";
    body.style.overflowY = 'auto';
 });
 
@@ -86,23 +86,23 @@ settings.addEventListener('click', () => {
    cont.addEventListener('click', () => {
 
       changeSettings.style.display = 'none';
-      document.cookie = "status=accepted; max-age=86400; Secure";
+      document.cookie = "status=accepted; max-age=86400; SameSite=Strict";
       body.style.overflowY = 'auto';
 
       if (enable[0].classList.contains('selected')) {
-         document.cookie = "functional=enable; max-age=86400; Secure"
+         document.cookie = "functional=enable; max-age=86400; SameSite=Strict";
       } if (enable[1].classList.contains('selected')) {
-         document.cookie = "performance=enable; max-age=86400; Secure"
+         document.cookie = "performance=enable; max-age=86400; SameSite=Strict";
       } if (enable[2].classList.contains('selected')) {
-         document.cookie = "leadForensics=enable; max-age=86400; Secure"
+         document.cookie = "leadForensics=enable; max-age=86400; SameSite=Strict";
       } if (enable[4].classList.contains('selected')) {
-         document.cookie = "hotjar=enable; max-age=86400; Secure"
+         document.cookie = "hotjar=enable; max-age=86400; SameSite=Strict";
       } if (enable[5].classList.contains('selected')) {
-         document.cookie = "linkedin=enable; max-age=86400; Secure"
+         document.cookie = "linkedin=enable; max-age=86400; SameSite=Strict";
       } if (enable[6].classList.contains('selected')) {
-         document.cookie = "facebook=enable; max-age=86400; Secure"
+         document.cookie = "facebook=enable; max-age=86400; SameSite=Strict";
       } if (enable[7].classList.contains('selected')) {
-         document.cookie = "google=enable; max-age=86400; Secure"
+         document.cookie = "google=enable; max-age=86400; SameSite=Strict";
       }
    });
 
@@ -321,10 +321,6 @@ const menuBot = document.querySelector('.menu-icon-3');
 
 menuButton.addEventListener('click', () => {
 
-   menu.style.display = 'block';
-   body.style.overflowY = 'hidden';
-   dark.style.display = 'block';
-   page.style.position = 'absolute';
    menuTop.style.marginTop = '12px';
    menuTop.style.marginBottom = '-8px';
    menuBot.style.marginTop = '-8px';
@@ -335,6 +331,13 @@ menuButton.addEventListener('click', () => {
       formSm.style.width = '97vw';
       phoneSm.style.right = '380px';
    };
+
+   setTimeout( () =>{
+      menu.style.display = 'block';
+      body.style.overflowY = 'hidden';
+      dark.style.display = 'block';
+      page.style.position = 'absolute';
+   }, 50);
 
    setTimeout( () =>{
       menuTop.style.transform = 'rotate(135deg)';
