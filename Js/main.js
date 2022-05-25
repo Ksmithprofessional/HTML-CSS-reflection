@@ -337,11 +337,11 @@ menuButton.addEventListener('click', () => {
    };
 
    setTimeout( () =>{
-      menuTop.style.rotate = '135deg';
-      menuMid.style.rotate = '135deg';
+      menuTop.style.transform = 'rotate(135deg)';
+      menuMid.style.transform = 'rotate(135deg)';
       menuMid.style.display = 'none';
       menuBot.style.marginTop = '5px';
-      menuBot.style.rotate = '225deg';
+      menuBot.style.transform = 'rotate(225deg)';
    }, 200);
 });
 
@@ -354,10 +354,10 @@ dark.addEventListener('click', () => {
    menuSm.style.right = '';
    formSm.style.width = '';
    phoneSm.style.right = '';
-   menuTop.style.rotate = '';
+   menuTop.style.transform = '';
    menuMid.style.display = 'block';
-   menuMid.style.rotate = '';
-   menuBot.style.rotate = '';
+   menuMid.style.transform = '';
+   menuBot.style.transform = '';
    menuBot.style.marginTop = '-8px';
    menuSqText.style.marginTop = '5px';
 
