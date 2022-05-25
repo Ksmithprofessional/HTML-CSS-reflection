@@ -383,6 +383,5 @@ window.addEventListener('resize', () => {
          formSm.style.width = '';
          phoneSm.style.right = '';
       };
-
    };
 });
