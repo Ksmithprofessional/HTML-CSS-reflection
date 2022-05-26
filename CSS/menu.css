@@ -41,6 +41,17 @@
   text-transform: uppercase;
 }
 
+.pop-out-menu li a {
+  width: 214px;
+  display: block;
+  margin: -10px;
+  padding: 10px 10px 10px 0;
+}
+
+.pop-out-menu li a:hover {
+  text-decoration: none;
+}
+
 .pop-out-menu .dev-menu ul {
   margin-bottom: 15px;
 }
@@ -107,15 +118,27 @@
   font-size: 0.9rem;
 }
 
-.pop-out-menu .training-menu ul li:before,
-.pop-out-menu .events-menu ul li:before,
-.pop-out-menu .company-menu ul li:before,
-.pop-out-menu .work-menu ul li:before,
-.pop-out-menu .knowledge-menu ul li:before,
-.pop-out-menu .covid-menu ul li:before,
-.pop-out-menu .contact-menu ul li:before,
-.pop-out-menu .support-menu ul li:before,
-.pop-out-menu .services-menu ul li:before {
+.pop-out-menu .training-menu ul li a,
+.pop-out-menu .events-menu ul li a,
+.pop-out-menu .company-menu ul li a,
+.pop-out-menu .work-menu ul li a,
+.pop-out-menu .knowledge-menu ul li a,
+.pop-out-menu .covid-menu ul li a,
+.pop-out-menu .contact-menu ul li a,
+.pop-out-menu .support-menu ul li a,
+.pop-out-menu .services-menu ul li a {
+  width: 260px;
+}
+
+.pop-out-menu .training-menu ul li a:before,
+.pop-out-menu .events-menu ul li a:before,
+.pop-out-menu .company-menu ul li a:before,
+.pop-out-menu .work-menu ul li a:before,
+.pop-out-menu .knowledge-menu ul li a:before,
+.pop-out-menu .covid-menu ul li a:before,
+.pop-out-menu .contact-menu ul li a:before,
+.pop-out-menu .support-menu ul li a:before,
+.pop-out-menu .services-menu ul li a:before {
   content: '\00bb';
   padding-right: 15px;
 }

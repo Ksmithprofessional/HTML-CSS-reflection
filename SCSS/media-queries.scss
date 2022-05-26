@@ -33,9 +33,22 @@
 
             & th {
 
-                &:last-child {
+                &:nth-of-type(2) {
     
+                    width: unset;
+                }
+
+                &:last-child {
+
                     min-width: unset;
+                }
+            }
+
+            & td {
+
+                &:nth-of-type(2) {
+
+                    width: unset;
                 }
             }
 
@@ -451,6 +464,11 @@
                 & li {
 
                     width: 305px;
+
+                    & a {
+
+                        width: 330px;
+                    }
                 }
             }
         }

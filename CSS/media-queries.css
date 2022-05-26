@@ -16,8 +16,14 @@
   .cookie-settings .detailed-table {
     width: 100%;
   }
+  .cookie-settings .detailed-table th:nth-of-type(2) {
+    width: unset;
+  }
   .cookie-settings .detailed-table th:last-child {
     min-width: unset;
+  }
+  .cookie-settings .detailed-table td:nth-of-type(2) {
+    width: unset;
   }
   .cookie-settings .detailed-table .col-3 {
     width: 25.4%;
@@ -320,6 +326,17 @@
   .pop-out-menu .support-menu ul li,
   .pop-out-menu .services-menu ul li {
     width: 305px;
+  }
+  .pop-out-menu .training-menu ul li a,
+  .pop-out-menu .events-menu ul li a,
+  .pop-out-menu .company-menu ul li a,
+  .pop-out-menu .work-menu ul li a,
+  .pop-out-menu .knowledge-menu ul li a,
+  .pop-out-menu .covid-menu ul li a,
+  .pop-out-menu .contact-menu ul li a,
+  .pop-out-menu .support-menu ul li a,
+  .pop-out-menu .services-menu ul li a {
+    width: 330px;
   }
   .pop-out-menu .support-menu {
     display: none;

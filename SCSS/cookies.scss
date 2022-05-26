@@ -255,6 +255,11 @@ dialog::backdrop {
             padding: 15px;
             text-align: left;
 
+            &:nth-of-type(2) {
+
+                width: 300px;
+            }
+
             &:last-child {
 
                 min-width: 176px;
@@ -265,6 +270,12 @@ dialog::backdrop {
 
             background-color: #ddd;
             padding: 15px;
+
+            &:nth-of-type(2) {
+
+                width: 300px;
+                word-break: break-word;
+            }
         }
     }
 }

@@ -222,6 +222,10 @@ dialog::backdrop {
   text-align: left;
 }
 
+.cookie-settings .detailed-table th:nth-of-type(2) {
+  width: 300px;
+}
+
 .cookie-settings .detailed-table th:last-child {
   min-width: 176px;
 }
@@ -229,5 +233,10 @@ dialog::backdrop {
 .cookie-settings .detailed-table td {
   background-color: #ddd;
   padding: 15px;
+}
+
+.cookie-settings .detailed-table td:nth-of-type(2) {
+  width: 300px;
+  word-break: break-word;
 }
 /*# sourceMappingURL=cookies.css.map */
