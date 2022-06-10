@@ -14,31 +14,11 @@
 .image-slideshow .slide-6 {
   position: relative;
   width: 100vw;
-  height: 100%;
+  height: 83vh;
   display: inline-block;
-}
-
-.image-slideshow .slide-1:before,
-.image-slideshow .slide-2:before,
-.image-slideshow .slide-3:before,
-.image-slideshow .slide-4:before,
-.image-slideshow .slide-5:before,
-.image-slideshow .slide-6:before {
-  content: " ";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  background-position: center;
   background: -webkit-gradient(linear, right top, left top, color-stop(1%, #00000078), to(#000));
   background: linear-gradient(270deg, #00000078 1%, #000);
-}
-
-.image-slideshow img {
-  width: 100vw;
-  height: 83vh;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .image-slideshow h1,
@@ -80,6 +60,18 @@
   background-color: #4e647e;
 }
 
+.image-slideshow .slide-1 {
+  background-image: url("../Images/slide-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image-slideshow .slide-2 {
+  background-image: url("../Images/slide-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .image-slideshow .slide-2 .image-btn {
   background-color: #4183d7;
 }
@@ -87,6 +79,12 @@
 .image-slideshow .slide-2 .image-btn:hover {
   cursor: pointer;
   background-color: #2a6ec6;
+}
+
+.image-slideshow .slide-3 {
+  background-image: url("../Images/slide-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .image-slideshow .slide-3 .center-button {
@@ -103,6 +101,12 @@
   background-color: #26ab5f;
 }
 
+.image-slideshow .slide-4 {
+  background-image: url("../Images/slide-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .image-slideshow .slide-4 .image-btn {
   background-color: #d64541;
 }
@@ -112,6 +116,12 @@
   background-color: #c42e2a;
 }
 
+.image-slideshow .slide-5 {
+  background-image: url("../Images/slide-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .image-slideshow .slide-5 .image-btn {
   background-color: #926fb1;
 }
@@ -119,6 +129,12 @@
 .image-slideshow .slide-5 .image-btn:hover {
   cursor: pointer;
   background-color: #7e57a0;
+}
+
+.image-slideshow .slide-6 {
+  background-image: url("../Images/slide-6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .image-slideshow .slide-6 .image-btn {
@@ -143,5 +159,9 @@
 .center-button {
   margin: 45px auto 0;
   width: 210px;
+}
+
+.slick-initialized {
+  overflow: hidden;
 }
 /*# sourceMappingURL=image-slides.css.map */

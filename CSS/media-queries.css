@@ -4,6 +4,7 @@
   }
   .cookie-pop-up .cookies {
     height: 370px;
+    overflow-y: hidden;
   }
   .cookie-pop-up .settings,
   .cookie-pop-up .accept {
@@ -103,7 +104,12 @@
   .image-slideshow {
     height: 87vh;
   }
-  .image-slideshow img {
+  .image-slideshow .slide-1,
+  .image-slideshow .slide-2,
+  .image-slideshow .slide-3,
+  .image-slideshow .slide-4,
+  .image-slideshow .slide-5,
+  .image-slideshow .slide-6 {
     height: 87vh;
   }
   .move-up {
@@ -301,9 +307,6 @@
   }
   .darken-page {
     right: 370px;
-  }
-  .entire-page {
-    left: -350px;
   }
   .pop-out-menu .training-menu ul,
   .pop-out-menu .events-menu ul,
@@ -771,17 +774,14 @@
   .image-slideshow {
     height: 80vh;
   }
-  .image-slideshow .slide-1:before,
-  .image-slideshow .slide-2:before,
-  .image-slideshow .slide-3:before,
-  .image-slideshow .slide-4:before,
-  .image-slideshow .slide-5:before,
-  .image-slideshow .slide-6:before {
-    background: -webkit-gradient(linear, right top, left top, color-stop(25%, transparent), to(#000));
-    background: linear-gradient(270deg, transparent 25%, #000);
-  }
-  .image-slideshow img {
+  .image-slideshow .slide-1,
+  .image-slideshow .slide-2,
+  .image-slideshow .slide-3,
+  .image-slideshow .slide-4,
+  .image-slideshow .slide-5,
+  .image-slideshow .slide-6 {
     height: 80vh;
+    background-position: center;
   }
   .image-content {
     width: 950px;

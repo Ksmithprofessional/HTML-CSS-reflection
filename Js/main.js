@@ -20,6 +20,7 @@ document.addEventListener('scroll', () => {
 // image slideshow 
 $(document).ready(function(){ $('.image-slideshow').slick({ 
    dots: true, 
+   arrows: false,
    autoplay: true, 
    autoplaySpeed: 4000,
    infinite: true, 
@@ -334,9 +335,13 @@ menuButton.addEventListener('click', () => {
 
    setTimeout( () =>{
       menu.style.display = 'block';
+      menu.classList.add('menu-visible');
+      menu.classList.remove('menu-not-visible');
       body.style.overflowY = 'hidden';
       dark.style.display = 'block';
-      page.style.position = 'absolute';
+      page.classList.add('darken');
+      page.classList.remove('no-darken');
+      // page.style.position = 'absolute';
    }, 50);
 
    setTimeout( () =>{
@@ -350,10 +355,14 @@ menuButton.addEventListener('click', () => {
 
 dark.addEventListener('click', () => {
 
+   menu.classList.remove('menu-visible');
+   menu.classList.add('menu-not-visible');
    menu.style.display = 'none';
    body.style.overflowY = 'auto';
    dark.style.display = 'none';
-   page.style.position = '';
+   // page.style.position = '';
+   page.classList.remove('darken');
+   page.classList.add('no-darken');
    menuSm.style.right = '';
    formSm.style.width = '';
    phoneSm.style.right = '';

@@ -11,6 +11,10 @@
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0 10px;
+  -webkit-transform: translate(400px);
+          transform: translate(400px);
+  -webkit-animation: slide 1s forwards;
+          animation: slide 1s forwards;
 }
 
 .pop-out-menu ul {
@@ -168,9 +172,18 @@
   cursor: pointer;
 }
 
-.entire-page {
+.no-darken {
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
+
+.darken {
+  position: absolute;
   top: 0;
   left: -295px;
+  -webkit-animation: darken 0.02s forwards;
+          animation: darken 0.02s forwards;
 }
 
 .contact-top {
@@ -222,5 +235,59 @@
 
 .empty-menu:hover {
   background-color: rgba(255, 255, 255, 0.05);
+}
+
+.menu-not-visible {
+  -webkit-transform: translate(400px);
+          transform: translate(400px);
+  -webkit-animation: slide 0.01s backwards;
+          animation: slide 0.01s backwards;
+}
+
+.menu-visible {
+  -webkit-transform: translate(0px);
+          transform: translate(0px);
+  -webkit-animation: slide 0.01s forwards;
+          animation: slide 0.01s forwards;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translate(400px);
+            transform: translate(400px);
+  }
+  100% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translate(400px);
+            transform: translate(400px);
+  }
+  100% {
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+}
+
+@-webkit-keyframes darken {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -295px;
+  }
+}
+
+@keyframes darken {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: -295px;
+  }
 }
 /*# sourceMappingURL=menu.css.map */
