@@ -17,8 +17,6 @@
   height: 83vh;
   display: inline-block;
   background-position: center;
-  background: -webkit-gradient(linear, right top, left top, color-stop(1%, #00000078), to(#000));
-  background: linear-gradient(270deg, #00000078 1%, #000);
 }
 
 .image-slideshow h1,
@@ -61,13 +59,15 @@
 }
 
 .image-slideshow .slide-1 {
-  background-image: url("../Images/slide-1.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, #00000078), to(#000)), url("../Images/slide-1.jpg");
+  background-image: linear-gradient(270deg, #00000078 25%, #000), url("../Images/slide-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .image-slideshow .slide-2 {
-  background-image: url("../Images/slide-2.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, #00000078), to(#000)), url("../Images/slide-2.jpg");
+  background-image: linear-gradient(270deg, #00000078 25%, #000), url("../Images/slide-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -82,7 +82,8 @@
 }
 
 .image-slideshow .slide-3 {
-  background-image: url("../Images/slide-3.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, #00000078), to(#000)), url("../Images/slide-3.jpg");
+  background-image: linear-gradient(270deg, #00000078 25%, #000), url("../Images/slide-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -102,7 +103,8 @@
 }
 
 .image-slideshow .slide-4 {
-  background-image: url("../Images/slide-4.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, #00000078), to(#000)), url("../Images/slide-4.jpg");
+  background-image: linear-gradient(270deg, #00000078 25%, #000), url("../Images/slide-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -117,7 +119,8 @@
 }
 
 .image-slideshow .slide-5 {
-  background-image: url("../Images/slide-5.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, #00000078), to(#000)), url("../Images/slide-5.jpg");
+  background-image: linear-gradient(270deg, #00000078 25%, #000), url("../Images/slide-5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -132,7 +135,8 @@
 }
 
 .image-slideshow .slide-6 {
-  background-image: url("../Images/slide-6.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, #00000078), to(#000)), url("../Images/slide-6.jpg");
+  background-image: linear-gradient(270deg, #00000078 25%, #000), url("../Images/slide-6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

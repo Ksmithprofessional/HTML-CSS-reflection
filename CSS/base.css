@@ -813,8 +813,6 @@ input[type=checkbox]:focus {
   height: 83vh;
   display: inline-block;
   background-position: center;
-  background: -webkit-gradient(linear, right top, left top, color-stop(1%, #00000078), to(#000));
-  background: linear-gradient(270deg, #00000078 1%, #000);
 }
 
 .image-slideshow h1,
@@ -857,13 +855,15 @@ input[type=checkbox]:focus {
 }
 
 .image-slideshow .slide-1 {
-  background-image: url("../Images/slide-1.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, #00000078), to(#000)), url("../Images/slide-1.jpg");
+  background-image: linear-gradient(270deg, #00000078 25%, #000), url("../Images/slide-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .image-slideshow .slide-2 {
-  background-image: url("../Images/slide-2.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, #00000078), to(#000)), url("../Images/slide-2.jpg");
+  background-image: linear-gradient(270deg, #00000078 25%, #000), url("../Images/slide-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -878,7 +878,8 @@ input[type=checkbox]:focus {
 }
 
 .image-slideshow .slide-3 {
-  background-image: url("../Images/slide-3.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, #00000078), to(#000)), url("../Images/slide-3.jpg");
+  background-image: linear-gradient(270deg, #00000078 25%, #000), url("../Images/slide-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -898,7 +899,8 @@ input[type=checkbox]:focus {
 }
 
 .image-slideshow .slide-4 {
-  background-image: url("../Images/slide-4.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, #00000078), to(#000)), url("../Images/slide-4.jpg");
+  background-image: linear-gradient(270deg, #00000078 25%, #000), url("../Images/slide-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -913,7 +915,8 @@ input[type=checkbox]:focus {
 }
 
 .image-slideshow .slide-5 {
-  background-image: url("../Images/slide-5.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, #00000078), to(#000)), url("../Images/slide-5.jpg");
+  background-image: linear-gradient(270deg, #00000078 25%, #000), url("../Images/slide-5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -928,7 +931,8 @@ input[type=checkbox]:focus {
 }
 
 .image-slideshow .slide-6 {
-  background-image: url("../Images/slide-6.jpg");
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, #00000078), to(#000)), url("../Images/slide-6.jpg");
+  background-image: linear-gradient(270deg, #00000078 25%, #000), url("../Images/slide-6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1526,7 +1530,7 @@ dialog::backdrop {
 
 .cookie-settings {
   display: none;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: absolute;
   top: 0;
@@ -2803,14 +2807,29 @@ a {
   .image-slideshow {
     height: 80vh;
   }
-  .image-slideshow .slide-1,
-  .image-slideshow .slide-2,
-  .image-slideshow .slide-3,
-  .image-slideshow .slide-4,
-  .image-slideshow .slide-5,
+  .image-slideshow .slide-1 {
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, transparent), to(#000)), url("../Images/slide-1.jpg");
+    background-image: linear-gradient(270deg, transparent 25%, #000), url("../Images/slide-1.jpg");
+  }
+  .image-slideshow .slide-2 {
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, transparent), to(#000)), url("../Images/slide-2.jpg");
+    background-image: linear-gradient(270deg, transparent 25%, #000), url("../Images/slide-2.jpg");
+  }
+  .image-slideshow .slide-3 {
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, transparent), to(#000)), url("../Images/slide-3.jpg");
+    background-image: linear-gradient(270deg, transparent 25%, #000), url("../Images/slide-3.jpg");
+  }
+  .image-slideshow .slide-4 {
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, transparent), to(#000)), url("../Images/slide-4.jpg");
+    background-image: linear-gradient(270deg, transparent 25%, #000), url("../Images/slide-4.jpg");
+  }
+  .image-slideshow .slide-5 {
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, transparent), to(#000)), url("../Images/slide-5.jpg");
+    background-image: linear-gradient(270deg, transparent 25%, #000), url("../Images/slide-5.jpg");
+  }
   .image-slideshow .slide-6 {
-    height: 80vh;
-    background-position: center;
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, transparent), to(#000)), url("../Images/slide-6.jpg");
+    background-image: linear-gradient(270deg, transparent 25%, #000), url("../Images/slide-6.jpg");
   }
   .image-content {
     width: 950px;
