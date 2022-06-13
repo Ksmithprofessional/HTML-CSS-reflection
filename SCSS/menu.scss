@@ -170,17 +170,19 @@
 //     // top: 0;
 //     // left: -295px;
 // This was the way i did things before the keyframes animations, changing the values in javascript
-// doesn't allow for timings on things, but adding and removing classes allows for it.
+// doesn't allow for timings on things, but adding and removing classes allows for it?
 // Will leave this all here just in case i break it and need it later.
 // }
 
-.no-darken {
+// .no-darken {
 
-    position: absolute;
-    top: 0;
-    left: 0px;
-    // animation: darken 0.01s forwards;
-}
+//     position: absolute;
+//     top: 0;
+//     left: 0px;
+//     animation: darken 0.01s forwards;
+//     adding absolute here seems to move everything to the right slightly? No idea why. I don't think
+//     deleting it breaks anything, but i'll comment it out just in case.
+// }
 
 .darken {
 

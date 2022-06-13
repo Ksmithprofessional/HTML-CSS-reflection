@@ -7,7 +7,7 @@
     // background-size: cover;
     height: 83vh;
     width: 100vw;
-    min-height: 400px;
+    min-height: 500px;
     // overflow: hidden;
 
     & .slide-1,
@@ -22,6 +22,7 @@
         height: 83vh;
         display: inline-block;
         background-position: center;
+        min-height: 500px;
     }
 
     & h1, 
@@ -178,6 +179,16 @@
     }
 }
 
+.image-content-centering {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 90%;
+    min-height: 500px;
+}
+
 .image-content {
 
     position: absolute;
@@ -185,8 +196,9 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    top: 25%;
+    // top: 25%;
     width: 80vw;
+    // changing this from absolute seems to break the image sizes on mobile? 
 }
 
 .center-button {

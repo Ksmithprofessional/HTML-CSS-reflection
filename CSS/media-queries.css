@@ -798,9 +798,11 @@
     background-image: -webkit-gradient(linear, right top, left top, color-stop(25%, transparent), to(#000)), url("../Images/slide-6.jpg");
     background-image: linear-gradient(270deg, transparent 25%, #000), url("../Images/slide-6.jpg");
   }
+  .image-content-centering {
+    height: 85%;
+  }
   .image-content {
     width: 950px;
-    left: 25px;
   }
   .image-content h1,
   .image-content p {

@@ -1074,10 +1074,15 @@
 
     }
 
+    .image-content-centering {
+
+        height: 85%;
+    }
+
     .image-content {
 
         width: 950px;
-        left: 25px;
+        // left: 25px;
         
         
         & h1,

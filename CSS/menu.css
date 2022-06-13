@@ -172,12 +172,6 @@
   cursor: pointer;
 }
 
-.no-darken {
-  position: absolute;
-  top: 0;
-  left: 0px;
-}
-
 .darken {
   position: absolute;
   top: 0;

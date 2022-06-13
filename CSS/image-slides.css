@@ -3,7 +3,7 @@
   display: block;
   height: 83vh;
   width: 100vw;
-  min-height: 400px;
+  min-height: 500px;
 }
 
 .image-slideshow .slide-1,
@@ -17,6 +17,7 @@
   height: 83vh;
   display: inline-block;
   background-position: center;
+  min-height: 500px;
 }
 
 .image-slideshow h1,
@@ -150,13 +151,28 @@
   background-color: #e80a42;
 }
 
+.image-content-centering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 90%;
+  min-height: 500px;
+}
+
 .image-content {
   position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: 25%;
   width: 80vw;
 }
 
