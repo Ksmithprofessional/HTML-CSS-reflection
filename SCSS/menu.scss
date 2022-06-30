@@ -163,6 +163,7 @@
     height: 120%;
     z-index: 10;
     cursor: pointer;
+    animation: fadeIn 1s;
 }
 
 // .entire-page {
@@ -189,7 +190,7 @@
     position: absolute;
     top: 0;
     left: -295px;
-    animation: darken 0.02s forwards;
+    // animation: fadeIn 2s;
 }
 
 .contact-top {
@@ -252,25 +253,30 @@
 .menu-not-visible {
 
     transform: translate(400px);
-    animation: slide 0.01s backwards;
-    // i don't think backwards is a thing but i'll leave it.
+    animation: slideBack 1s forwards;
 }
 
 .menu-visible {
 
     transform: translate(0px);
-    animation: slide 0.01s forwards;
+    animation: slide 0.1s forwards;
 }
 
 @keyframes slide {
 
-    0% {transform: translate(400px)}
+    0% {transform: translate(400px);}
     100% {transform: translate(0px);}
 }
 
-@keyframes darken {
+@keyframes slideBack {
+
+    0% {transform: translate(0px);}
+    100% {transform: translate(400px);}
+}
+
+@keyframes fadeIn {
 
 
-    0% {left: 0px;}
-    100% {left: -295px;}
+    0% {opacity: 0;}
+    100% {opacity: 0.4;}
 }

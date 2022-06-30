@@ -1879,14 +1879,14 @@ dialog::backdrop {
   height: 120%;
   z-index: 10;
   cursor: pointer;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
 }
 
 .darken {
   position: absolute;
   top: 0;
   left: -295px;
-  -webkit-animation: darken 0.02s forwards;
-          animation: darken 0.02s forwards;
 }
 
 .contact-top {
@@ -1943,15 +1943,15 @@ dialog::backdrop {
 .menu-not-visible {
   -webkit-transform: translate(400px);
           transform: translate(400px);
-  -webkit-animation: slide 0.01s backwards;
-          animation: slide 0.01s backwards;
+  -webkit-animation: slideBack 1s forwards;
+          animation: slideBack 1s forwards;
 }
 
 .menu-visible {
   -webkit-transform: translate(0px);
           transform: translate(0px);
-  -webkit-animation: slide 0.01s forwards;
-          animation: slide 0.01s forwards;
+  -webkit-animation: slide 0.1s forwards;
+          animation: slide 0.1s forwards;
 }
 
 @-webkit-keyframes slide {
@@ -1976,21 +1976,43 @@ dialog::backdrop {
   }
 }
 
-@-webkit-keyframes darken {
+@-webkit-keyframes slideBack {
   0% {
-    left: 0px;
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
   }
   100% {
-    left: -295px;
+    -webkit-transform: translate(400px);
+            transform: translate(400px);
   }
 }
 
-@keyframes darken {
+@keyframes slideBack {
   0% {
-    left: 0px;
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
   }
   100% {
-    left: -295px;
+    -webkit-transform: translate(400px);
+            transform: translate(400px);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.4;
   }
 }
 
