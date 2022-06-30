@@ -1943,8 +1943,8 @@ dialog::backdrop {
 .menu-not-visible {
   -webkit-transform: translate(400px);
           transform: translate(400px);
-  -webkit-animation: slideBack 1s forwards;
-          animation: slideBack 1s forwards;
+  -webkit-animation: slideBack 0.5s forwards;
+          animation: slideBack 0.5s forwards;
 }
 
 .menu-visible {
@@ -2013,6 +2013,24 @@ dialog::backdrop {
   }
   100% {
     opacity: 0.4;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -2372,6 +2390,9 @@ a {
   }
   .darken-page {
     right: 370px;
+  }
+  .darken {
+    left: -350px;
   }
   .pop-out-menu .training-menu ul,
   .pop-out-menu .events-menu ul,

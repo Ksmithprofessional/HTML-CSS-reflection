@@ -308,6 +308,9 @@
   .darken-page {
     right: 370px;
   }
+  .darken {
+    left: -350px;
+  }
   .pop-out-menu .training-menu ul,
   .pop-out-menu .events-menu ul,
   .pop-out-menu .company-menu ul,

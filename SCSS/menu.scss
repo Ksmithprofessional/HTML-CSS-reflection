@@ -177,12 +177,7 @@
 
 // .no-darken {
 
-//     position: absolute;
-//     top: 0;
-//     left: 0px;
-//     animation: darken 0.01s forwards;
-//     adding absolute here seems to move everything to the right slightly? No idea why. I don't think
-//     deleting it breaks anything, but i'll comment it out just in case.
+//     animation: fadeOut 1s;
 // }
 
 .darken {
@@ -253,7 +248,7 @@
 .menu-not-visible {
 
     transform: translate(400px);
-    animation: slideBack 1s forwards;
+    animation: slideBack 0.5s forwards;
 }
 
 .menu-visible {
@@ -279,4 +274,11 @@
 
     0% {opacity: 0;}
     100% {opacity: 0.4;}
+}
+
+@keyframes fadeOut {
+
+
+    0% {opacity: 0.4;}
+    100% {opacity: 0;}
 }

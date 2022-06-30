@@ -234,8 +234,8 @@
 .menu-not-visible {
   -webkit-transform: translate(400px);
           transform: translate(400px);
-  -webkit-animation: slideBack 1s forwards;
-          animation: slideBack 1s forwards;
+  -webkit-animation: slideBack 0.5s forwards;
+          animation: slideBack 0.5s forwards;
 }
 
 .menu-visible {
@@ -304,6 +304,24 @@
   }
   100% {
     opacity: 0.4;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=menu.css.map */

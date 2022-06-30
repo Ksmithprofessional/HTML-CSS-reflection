@@ -334,15 +334,22 @@ menuButton.addEventListener('click', () => {
    };
 
    setTimeout( () =>{
+      dark.style.display = 'block';
+      dark.style.animation = 'fadeIn 1s';
+      dark.style.left = '';
       menu.style.display = 'block';
       menu.classList.add('menu-visible');
       menu.classList.remove('menu-not-visible');
       body.style.overflowY = 'hidden';
-      dark.style.display = 'block';
-      page.classList.add('darken');
-      page.classList.remove('no-darken');
+      // page.classList.add('darken');
+      // page.classList.remove('no-darken');
       // page.style.position = 'absolute';
    }, 50);
+
+   setTimeout( () =>{
+      page.classList.add('darken');
+      page.classList.remove('no-darken');
+   }, 100);
 
    setTimeout( () =>{
       menuTop.style.transform = 'rotate(135deg)';
@@ -355,17 +362,38 @@ menuButton.addEventListener('click', () => {
 
 dark.addEventListener('click', () => {
 
-   menu.classList.remove('menu-visible');
-   menu.classList.add('menu-not-visible');
-   menu.style.display = 'none';
-   body.style.overflowY = 'auto';
-   dark.style.display = 'none';
-   // page.style.position = '';
-   page.classList.remove('darken');
-   page.classList.add('no-darken');
-   menuSm.style.right = '';
-   formSm.style.width = '';
-   phoneSm.style.right = '';
+   setTimeout( () =>{
+      menu.classList.remove('menu-visible');
+      menu.classList.add('menu-not-visible');
+      body.style.overflowY = 'auto';
+      dark.style.animation = 'fadeOut 1s';
+      dark.style.left = '0';
+      // page.style.position = '';
+   }, 100);
+
+   setTimeout( () =>{
+      menu.style.display = 'none';
+   }, 200);
+
+   setTimeout( () =>{
+      page.classList.remove('darken');
+      page.classList.add('no-darken');
+      // dark.style.display = 'none';
+   }, 200);
+
+   setTimeout( () =>{
+      dark.style.display = 'none';
+   }, 500);
+
+   setTimeout( () =>{
+      menuSm.style.right = '';
+      formSm.style.width = '';
+      phoneSm.style.right = '';
+   }, 200);
+
+   // menuSm.style.right = '';
+   // formSm.style.width = '';
+   // phoneSm.style.right = '';
    menuTop.style.transform = '';
    menuMid.style.display = 'block';
    menuMid.style.transform = '';
