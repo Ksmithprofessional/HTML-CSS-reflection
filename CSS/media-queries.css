@@ -168,8 +168,7 @@
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     padding-top: 55px;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+    padding-bottom: 50px;
   }
   .background-fix-3 {
     background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(white));
@@ -305,11 +304,8 @@
   .pop-out-menu {
     width: 350px;
   }
-  .darken-page {
-    right: 370px;
-  }
   .darken {
-    left: -350px;
+    left: -370px;
   }
   .pop-out-menu .training-menu ul,
   .pop-out-menu .events-menu ul,
@@ -370,6 +366,38 @@
   .news-wrapper,
   .latest-fix {
     width: 950px;
+  }
+  @-webkit-keyframes slide {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -370px;
+    }
+  }
+  @keyframes slide {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -370px;
+    }
+  }
+  @-webkit-keyframes slideBack {
+    0% {
+      left: -370px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @keyframes slideBack {
+    0% {
+      left: -370px;
+    }
+    100% {
+      left: 0;
+    }
   }
   .header {
     height: -webkit-fit-content;

@@ -306,6 +306,7 @@ disable[7].addEventListener('click', () => {
 // pop out menu
 // absolute mess of code purely because i made the header absolute positioned
 // but only on small screens. Just a horrible workaround, but i think it works?
+// continue reading for how i fixed that last point there.
 
 const menuButton = document.querySelector('.menu');
 const menu = document.querySelector('.pop-out-menu');
@@ -327,15 +328,15 @@ menuButton.addEventListener('click', () => {
    menuBot.style.marginTop = '-8px';
    menuSqText.style.marginTop = '17px';
   
-   if(window.innerWidth <= 767) {
-      menuSm.style.right = '305px';
-      formSm.style.width = '97vw';
-      phoneSm.style.right = '380px';
-   };
+   // if(window.innerWidth <= 767) {
+   //    menuSm.style.right = '305px';
+   //    formSm.style.width = '97vw';
+   //    phoneSm.style.right = '380px';
+   // };
 
    setTimeout( () =>{
       dark.style.display = 'block';
-      dark.style.animation = 'fadeIn 1s';
+      dark.style.animation = 'fadeIn ease 1s';
       dark.style.left = '';
       menu.style.display = 'block';
       menu.classList.add('menu-visible');
@@ -358,6 +359,10 @@ menuButton.addEventListener('click', () => {
       menuBot.style.marginTop = '5px';
       menuBot.style.transform = 'rotate(225deg)';
    }, 200);
+
+   setTimeout( () =>{
+      menu.style.zIndex = '10';
+   }, 600);
 });
 
 dark.addEventListener('click', () => {
@@ -366,14 +371,15 @@ dark.addEventListener('click', () => {
       menu.classList.remove('menu-visible');
       menu.classList.add('menu-not-visible');
       body.style.overflowY = 'auto';
-      dark.style.animation = 'fadeOut 1s';
+      dark.style.animation = 'fadeOut ease 1s';
       dark.style.left = '0';
+      menu.style.zIndex = '0';
       // page.style.position = '';
    }, 100);
 
    setTimeout( () =>{
       menu.style.display = 'none';
-   }, 200);
+   }, 700);
 
    setTimeout( () =>{
       page.classList.remove('darken');
@@ -409,19 +415,23 @@ dark.addEventListener('click', () => {
    }, 300);
 });
 
-window.addEventListener('resize', () => {
+// window.addEventListener('resize', () => {
 
-   if(menu.style.display == 'block') {
+//    if(menu.style.display == 'block') {
 
-      if(window.innerWidth <= 767) {
-         menuSm.style.right = '305px';
-         formSm.style.width = '97vw';
-         phoneSm.style.right = '380px';
-      } else {
+//       if(window.innerWidth <= 767) {
+//          menuSm.style.right = '305px';
+//          formSm.style.width = '97vw';
+//          phoneSm.style.right = '380px';
+//       } else {
 
-         menuSm.style.right = '';
-         formSm.style.width = '';
-         phoneSm.style.right = '';
-      };
-   };
-});
+//          menuSm.style.right = '';
+//          formSm.style.width = '';
+//          phoneSm.style.right = '';
+//       };
+//    };
+// });
+
+// used to need this resize event listener due to absolute positioning screwing with the mobile header
+// don't need it anymore since i changed how the menu slides in and adding the entire page width seemed
+// to fix the issue completely.

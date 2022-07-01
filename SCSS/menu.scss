@@ -6,14 +6,14 @@
     width: 275px;
     height:100%;
     position: fixed;
-    z-index: 10;
+    z-index: -1;
     top: 0;
     right: 0;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 0 10px;
-    transform: translate(400px);
-    animation: slide 1s forwards;
+    // transform: translate(400px);
+    // animation: slide 1s forwards;
 
     & ul {
 
@@ -158,12 +158,12 @@
     opacity: 0.4;
     position: fixed;
     top: -56px;
-    right: 295px;
+    // right: 295px;
     width: 100%;
     height: 120%;
     z-index: 10;
     cursor: pointer;
-    animation: fadeIn 1s;
+    animation: fadeIn ease 2s;
 }
 
 // .entire-page {
@@ -175,17 +175,24 @@
 // Will leave this all here just in case i break it and need it later.
 // }
 
-// .no-darken {
+.entire-page {
 
-//     animation: fadeOut 1s;
-// }
+    width: 100%;
+}
+
+.no-darken {
+
+    animation: slideBack ease 0.5s;
+    z-index: 2;
+    position: relative;
+}
 
 .darken {
 
     position: absolute;
     top: 0;
     left: -295px;
-    // animation: fadeIn 2s;
+    animation: slide ease 0.5s;
 }
 
 .contact-top {
@@ -245,28 +252,28 @@
     }
 }
 
-.menu-not-visible {
+// .menu-not-visible {
 
-    transform: translate(400px);
-    animation: slideBack 0.5s forwards;
-}
+//     transform: translate(400px);
+//     animation: slideBack 0.5s forwards;
+// }
 
-.menu-visible {
+// .menu-visible {
 
-    transform: translate(0px);
-    animation: slide 0.1s forwards;
-}
+//     transform: translate(0px);
+//     animation: slide 0.5s forwards;
+// }
 
 @keyframes slide {
 
-    0% {transform: translate(400px);}
-    100% {transform: translate(0px);}
+    0% {left: 0;}
+    100% {left: -295px;}
 }
 
 @keyframes slideBack {
 
-    0% {transform: translate(0px);}
-    100% {transform: translate(400px);}
+    0% {left: -295px;}
+    100% {left: 0;}
 }
 
 @keyframes fadeIn {
@@ -282,3 +289,13 @@
     0% {opacity: 0.4;}
     100% {opacity: 0;}
 }
+
+main,
+.partner-background-fix,
+.latest-fix {
+
+    background-color: #fff;
+}
+
+// added these here since they're only issues when opening and closing the menu. Anywhere where there was
+// a margin caused the menu to open strangely. I think this fixes it.

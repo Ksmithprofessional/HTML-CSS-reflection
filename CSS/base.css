@@ -297,8 +297,9 @@ input[type=checkbox]:focus {
   display: grid;
   -ms-grid-rows: (1fr)[3];
       grid-template-rows: repeat(3, 1fr);
-  margin: 0 0 30px 0;
+  margin: 0 0 0 0;
   padding-top: 10px;
+  padding-bottom: 30px;
   background: #dadada;
   background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(white));
   background: linear-gradient(180deg, #f3f3f3 0%, white 100%);
@@ -983,7 +984,7 @@ input[type=checkbox]:focus {
 
 .header {
   display: relative;
-  margin-bottom: 5px;
+  padding-bottom: 5px;
   height: 110px;
 }
 
@@ -1714,16 +1715,12 @@ dialog::backdrop {
   width: 275px;
   height: 100%;
   position: fixed;
-  z-index: 10;
+  z-index: -1;
   top: 0;
   right: 0;
   overflow-y: auto;
   overflow-x: hidden;
   padding: 0 10px;
-  -webkit-transform: translate(400px);
-          transform: translate(400px);
-  -webkit-animation: slide 1s forwards;
-          animation: slide 1s forwards;
 }
 
 .pop-out-menu ul {
@@ -1874,19 +1871,31 @@ dialog::backdrop {
   opacity: 0.4;
   position: fixed;
   top: -56px;
-  right: 295px;
   width: 100%;
   height: 120%;
   z-index: 10;
   cursor: pointer;
-  -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
+  -webkit-animation: fadeIn ease 2s;
+          animation: fadeIn ease 2s;
+}
+
+.entire-page {
+  width: 100%;
+}
+
+.no-darken {
+  -webkit-animation: slideBack ease 0.5s;
+          animation: slideBack ease 0.5s;
+  z-index: 2;
+  position: relative;
 }
 
 .darken {
   position: absolute;
   top: 0;
   left: -295px;
+  -webkit-animation: slide ease 0.5s;
+          animation: slide ease 0.5s;
 }
 
 .contact-top {
@@ -1940,61 +1949,39 @@ dialog::backdrop {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-.menu-not-visible {
-  -webkit-transform: translate(400px);
-          transform: translate(400px);
-  -webkit-animation: slideBack 0.5s forwards;
-          animation: slideBack 0.5s forwards;
-}
-
-.menu-visible {
-  -webkit-transform: translate(0px);
-          transform: translate(0px);
-  -webkit-animation: slide 0.1s forwards;
-          animation: slide 0.1s forwards;
-}
-
 @-webkit-keyframes slide {
   0% {
-    -webkit-transform: translate(400px);
-            transform: translate(400px);
+    left: 0;
   }
   100% {
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
+    left: -295px;
   }
 }
 
 @keyframes slide {
   0% {
-    -webkit-transform: translate(400px);
-            transform: translate(400px);
+    left: 0;
   }
   100% {
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
+    left: -295px;
   }
 }
 
 @-webkit-keyframes slideBack {
   0% {
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
+    left: -295px;
   }
   100% {
-    -webkit-transform: translate(400px);
-            transform: translate(400px);
+    left: 0;
   }
 }
 
 @keyframes slideBack {
   0% {
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
+    left: -295px;
   }
   100% {
-    -webkit-transform: translate(400px);
-            transform: translate(400px);
+    left: 0;
   }
 }
 
@@ -2032,6 +2019,12 @@ dialog::backdrop {
   100% {
     opacity: 0;
   }
+}
+
+main,
+.partner-background-fix,
+.latest-fix {
+  background-color: #fff;
 }
 
 body {
@@ -2251,8 +2244,7 @@ a {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     padding-top: 55px;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+    padding-bottom: 50px;
   }
   .background-fix-3 {
     background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(white));
@@ -2388,11 +2380,8 @@ a {
   .pop-out-menu {
     width: 350px;
   }
-  .darken-page {
-    right: 370px;
-  }
   .darken {
-    left: -350px;
+    left: -370px;
   }
   .pop-out-menu .training-menu ul,
   .pop-out-menu .events-menu ul,
@@ -2453,6 +2442,38 @@ a {
   .news-wrapper,
   .latest-fix {
     width: 950px;
+  }
+  @-webkit-keyframes slide {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -370px;
+    }
+  }
+  @keyframes slide {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -370px;
+    }
+  }
+  @-webkit-keyframes slideBack {
+    0% {
+      left: -370px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @keyframes slideBack {
+    0% {
+      left: -370px;
+    }
+    100% {
+      left: 0;
+    }
   }
   .header {
     height: -webkit-fit-content;

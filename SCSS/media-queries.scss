@@ -246,8 +246,7 @@
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
       padding-top: 55px;
-      padding-bottom: 20px;
-      margin-bottom: 30px;
+      padding-bottom: 50px;
     }
 
     .background-fix-3 {
@@ -440,14 +439,14 @@
     width: 350px;
 }
 
-.darken-page {
+// .darken-page {
 
-    right: 370px;
-}
+//     right: 370px;
+// }
 
 .darken {
 
-    left: -350px;
+    left: -370px;
 }
 
 // .entire-page {
@@ -522,6 +521,18 @@
     .latest-fix {
 
     width: 950px;
+}
+
+@keyframes slide {
+
+    0% {left: 0;}
+    100% {left: -370px;}
+}
+
+@keyframes slideBack {
+
+    0% {left: -370px;}
+    100% {left: 0;}
 }
 
     .header {
