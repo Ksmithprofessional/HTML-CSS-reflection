@@ -149,10 +149,11 @@
     right: 0;
     background-color: #926fb1;
     color: white;
-    width: 50px;
+    width: fit-content;
     font-weight: bold;
     padding-left: 10px;
-    padding-right: -5px;
+    padding-right: 10px;
+    text-align: center;
 
     &:hover {
 

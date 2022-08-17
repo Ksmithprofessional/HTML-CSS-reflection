@@ -1,11 +1,11 @@
 <?php 
 
-include 'db.php';
+include 'emails-db.php';
 
     if(isset($_POST['submit'])) {
 
 
-        // include 'functions.php';
+        // filter input, escape output!
         $name = $_POST['name'];
         $email = $_POST['email'];
 

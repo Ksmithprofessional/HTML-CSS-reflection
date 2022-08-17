@@ -15,7 +15,13 @@
 </head>
 <body>
 
-<?php require 'php/header.php';?>
+<?php 
+ini_set('display_errors', '1');
+error_reporting(E_ALL);
+
+require 'php/header.php';
+
+?>
 
     <!-- Cookie pop-up -->
     <dialog class="cookie-pop-up">
@@ -370,6 +376,8 @@
 
         <!-- Latest news grid -->
 
+        <?php include "php/read-news.php";?>
+
         <div class="latest-fix">
             <div class="latest">
                 <h3>Latest</h3>
@@ -380,21 +388,39 @@
             <div class="news-wrapper">
                 <div class="news-1">
                     <div class="overflow-img">
-                        <div class="news-link">
-                            <a href="#">NEWS</a>
+                        <div class="news-link" <?php if($type[0] === "Careers") {
+                            ?>
+
+                                style="background-color: #4183d7"
+
+                            <?php 
+                            }?> >
+                            <a href="#"><?php echo strToUpper($type[0]); ?></a>
                         </div>
-                        <a href="#"><img src="Images/scs-graduates-january-yUfC.webp" alt="January 2022 scion graduates" class="news-img"></a>
+                        <a href="#"><img src="<?php echo $imgSrc[0] ?>" alt="<?php echo str_replace("-", " ", $titles[0]) ?>" class="news-img"></a>
                     </div>
                     <div class="news-height">
                         <article>
-                            <h3><a href="#">SCS Graduates January 2022</a></h3>
-                            <p>Our SCS scheme here at Netmatters was initially designed to bridge the ever-growing gap in the tech...</p>
+                            <h3 <?php if($type[0] === "Careers") {
+                            ?>
+
+                                style="color: #4183d7"
+
+                            <?php 
+                            }?> ><a href="#"><?php echo str_replace("-", " ", $titles[0]) ?></a></h3>
+                            <p> <?php echo substr($description[0], 0, 107) ?>... </p>
                         </article>
-                        <div class="read-more"><a href="#">READ MORE</a></div>
+                        <div class="read-more" <?php if($type[0] === "Careers") {
+                            ?>
+
+                                style="background-color: #4183d7"
+
+                            <?php 
+                            }?> ><a href="#">READ MORE</a></div>
                         <footer>
-                            <img src="Images/netmatters-ltd-VXAv.webp" alt="article author" class="poster-img">
-                            <p class="poster">Posted by Netmatters</p>
-                            <p class="date"> 11th February 2022</p>
+                            <img src="<?php echo $userImg[0] ?>" alt="article author" class="poster-img">
+                            <p class="poster">Posted by <?php echo $user[0] ?></p>
+                            <p class="date"> <?php echo $date[0] ?></p>
                         </footer> <!-- needs to update with poster, might not be css? -->
                     </div>
                 </div>
@@ -402,20 +428,20 @@
                 <div class="news-2">
                     <div class="overflow-img">
                         <div class="news-link">
-                            <a href="#">NEWS</a>
+                            <a href="#"><?php echo strToUpper($type[1]) ?></a>
                         </div>
-                        <a href="#"><img src="Images/hr-administrator-yA4G.webp" alt="Now hiring, hr administrator" class="news-img"></a>
+                        <a href="#"><img src="<?php echo $imgSrc[1] ?>" alt="<?php echo str_replace("-", " ", $titles[1]) ?>" class="news-img"></a>
                     </div>
                     <div class="news-height">
                         <article>
-                            <h3><a href="#">HR Administrator</a></h3>
-                            <p>Salary Range £19k-£22k + Bonuses Hours 40 hours per week, Monday – Friday (Core hours are 8-5 until...</p>
+                            <h3><a href="#"><?php echo str_replace("-", " ", $titles[1]) ?></a></h3>
+                            <p><?php echo substr($description[1], 0, 107) ?>...</p>
                         </article>
                         <div class="read-more"><a href="#">READ MORE</a></div>
                         <footer>
-                            <img src="Images/netmatters-ltd-VXAv.webp" alt="article author" class="poster-img">
-                            <p class="poster">Posted by Netmatters</p>
-                            <p class="date"> 11th February 2022</p>
+                            <img src="<?php echo $userImg[1] ?>" alt="article author" class="poster-img">
+                            <p class="poster">Posted by <?php echo $user[1] ?></p>
+                            <p class="date"> <?php echo $date[1] ?></p>
                         </footer> <!-- needs to update with poster, might not be css? -->
                     </div>
                 </div>
@@ -423,25 +449,24 @@
                 <div class="news-3">
                     <div class="overflow-img">
                         <div class="news-link">
-                            <a href="#">NEWS</a>
+                            <a href="#"><?php echo strToUpper($type[2]) ?></a>
                         </div>
-                        <a href="#"><img src="Images/junior-digital-marketing-82OT.webp" alt="Now hiring, Junior Digital Marketing Executive" class="news-img"></a>
+                        <a href="#"><img src="<?php echo $imgSrc[2] ?>" alt="<?php echo str_replace("-", " ", $titles[2]) ?>" class="news-img"></a>
                     </div> 
                     <div class="news-height">
                         <article>
-                            <h3><a href="#">Junior Digital Marketing Executive </a></h3>
-                            <p>Salary Range £18,000 - £23,000 Hours 40 hours per week, Monday – Friday Location Wymondham, Norfolk/...</p>
+                            <h3><a href="#"><?php echo str_replace("-", " ", $titles[2]) ?> </a></h3>
+                            <p><?php echo substr($description[2], 0, 107) ?>...</p>
                         </article>
                         <div class="read-more"><a href="#">READ MORE</a></div>
                         <footer>
-                            <img src="Images/netmatters-ltd-VXAv.webp" alt="article author" class="poster-img">
-                            <p class="poster">Posted by Netmatters</p>
-                            <p class="date"> 11th February 2022</p>
+                            <img src="<?php echo $userImg[2] ?>" alt="article author" class="poster-img">
+                            <p class="poster">Posted by <?php echo $user[2] ?></p>
+                            <p class="date"> <?php echo $date[2] ?></p>
                         </footer> <!-- needs to update with poster, might not be css? -->
                     </div>
                 </div>
-        </div>
-
+            </div>
         </div>
 
         <!-- Partners part 1 -->
