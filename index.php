@@ -386,86 +386,42 @@ require 'php/header.php';
 
         <div class="background-fix-3">
             <div class="news-wrapper">
-                <div class="news-1">
-                    <div class="overflow-img">
-                        <div class="news-link" <?php if($type[0] === "Careers") {
-                            ?>
 
-                                style="background-color: #4183d7"
+                <?php   
+                for($i=0; $i<count($news); $i++) {
+                echo "<div class='news-" . ((int)$i + 1) . "'>";
+                        echo '<div class="overflow-img">';
+                            echo '<div class="news-link"'; 
+                            if($news[$i]['type'] === "Careers") {
+                                    echo 'style="background-color: #4183d7 "';
+                            }
+                                echo "><a href='news/" . $news[$i]['title'] . ".php'>" . strToUpper($news[$i]["type"]) . "</a>";
+                            echo "</div>";
+                        echo "<a href='news/" . $news[$i]['title'] . ".php'><img src='" . $news[$i]['img'] . "' alt='" . str_replace("-", " ", $news[$i]['title']) . "' class='news-img'></a>";
+                        echo "</div>";
+                        echo "<div class='news-height'>";
+                            echo "<article>";
+                                echo "<h3><a href='news/" . $news[$i]['title'] . ".php'";
+                                if($news[$i]['type'] === "Careers") {
+                                    echo 'style="color: #4183d7 "';
+                                } 
+                                echo ">" . str_replace("-", " ", $news[$i]['title']) . "</a></h3>";
+                                echo "<p>" . substr($news[$i]['description'], 0, 107)  . "...</p>";
+                            echo "</article>";
+                            echo "<div class='read-more'"; 
+                            if($news[$i]['type'] === "Careers") {
+                                echo 'style="background-color: #4183d7 "';
+                            }
+                            echo "><a href='news/" . $news[$i]['title'] . ".php'>READ MORE</a></div>";
+                            echo "<footer>";
+                                echo "<img src='" . $news[$i]['user_img'] . "' alt='article author' class='poster-img'>";
+                                echo "<p class='poster'>Posted by " .  $news[$i]['user'] . "</p>";
+                                echo "<p class='date'>" . date('j F Y', strToTime($news[$i]['date_posted'])) . "</p>";
+                            echo "</footer>"; 
+                        echo "</div>";
+                    echo "</div>"; 
+                } ?>
 
-                            <?php 
-                            }?> >
-                            <a href="#"><?php echo strToUpper($type[0]); ?></a>
-                        </div>
-                        <a href="#"><img src="<?php echo $imgSrc[0] ?>" alt="<?php echo str_replace("-", " ", $titles[0]) ?>" class="news-img"></a>
-                    </div>
-                    <div class="news-height">
-                        <article>
-                            <h3 <?php if($type[0] === "Careers") {
-                            ?>
-
-                                style="color: #4183d7"
-
-                            <?php 
-                            }?> ><a href="#"><?php echo str_replace("-", " ", $titles[0]) ?></a></h3>
-                            <p> <?php echo substr($description[0], 0, 107) ?>... </p>
-                        </article>
-                        <div class="read-more" <?php if($type[0] === "Careers") {
-                            ?>
-
-                                style="background-color: #4183d7"
-
-                            <?php 
-                            }?> ><a href="#">READ MORE</a></div>
-                        <footer>
-                            <img src="<?php echo $userImg[0] ?>" alt="article author" class="poster-img">
-                            <p class="poster">Posted by <?php echo $user[0] ?></p>
-                            <p class="date"> <?php echo $date[0] ?></p>
-                        </footer> <!-- needs to update with poster, might not be css? -->
-                    </div>
-                </div>
-
-                <div class="news-2">
-                    <div class="overflow-img">
-                        <div class="news-link">
-                            <a href="#"><?php echo strToUpper($type[1]) ?></a>
-                        </div>
-                        <a href="#"><img src="<?php echo $imgSrc[1] ?>" alt="<?php echo str_replace("-", " ", $titles[1]) ?>" class="news-img"></a>
-                    </div>
-                    <div class="news-height">
-                        <article>
-                            <h3><a href="#"><?php echo str_replace("-", " ", $titles[1]) ?></a></h3>
-                            <p><?php echo substr($description[1], 0, 107) ?>...</p>
-                        </article>
-                        <div class="read-more"><a href="#">READ MORE</a></div>
-                        <footer>
-                            <img src="<?php echo $userImg[1] ?>" alt="article author" class="poster-img">
-                            <p class="poster">Posted by <?php echo $user[1] ?></p>
-                            <p class="date"> <?php echo $date[1] ?></p>
-                        </footer> <!-- needs to update with poster, might not be css? -->
-                    </div>
-                </div>
-
-                <div class="news-3">
-                    <div class="overflow-img">
-                        <div class="news-link">
-                            <a href="#"><?php echo strToUpper($type[2]) ?></a>
-                        </div>
-                        <a href="#"><img src="<?php echo $imgSrc[2] ?>" alt="<?php echo str_replace("-", " ", $titles[2]) ?>" class="news-img"></a>
-                    </div> 
-                    <div class="news-height">
-                        <article>
-                            <h3><a href="#"><?php echo str_replace("-", " ", $titles[2]) ?> </a></h3>
-                            <p><?php echo substr($description[2], 0, 107) ?>...</p>
-                        </article>
-                        <div class="read-more"><a href="#">READ MORE</a></div>
-                        <footer>
-                            <img src="<?php echo $userImg[2] ?>" alt="article author" class="poster-img">
-                            <p class="poster">Posted by <?php echo $user[2] ?></p>
-                            <p class="date"> <?php echo $date[2] ?></p>
-                        </footer> <!-- needs to update with poster, might not be css? -->
-                    </div>
-                </div>
             </div>
         </div>
 
