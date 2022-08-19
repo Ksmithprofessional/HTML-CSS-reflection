@@ -38,6 +38,12 @@
   line-height: 1.5rem;
 }
 
+.news-1 article p,
+.news-2 article p,
+.news-3 article p {
+  height: 55px;
+}
+
 .news-1 .read-more,
 .news-2 .read-more,
 .news-3 .read-more {
@@ -57,7 +63,8 @@
 .news-1 .read-more:hover,
 .news-2 .read-more:hover,
 .news-3 .read-more:hover {
-  background-color: #7949a3;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 .news-1 h3,

@@ -269,11 +269,13 @@
         & h3 {
 
             margin-top: 20px;
+            height: 48px;
         }
 
         & article p {
 
-            margin-top: 30px;
+            margin-top: 16px;
+            height: 66px;
         }
 
         & footer {
@@ -1189,8 +1191,13 @@
 
         & .read-more {
 
-            margin-top: 50px;
+            margin-top: 30px;
             margin-bottom: 0px;
+        }
+
+        & h3 {
+
+            height: unset;
         }
 
         & article {
@@ -1833,6 +1840,11 @@
 
             margin-top: 27px;
             font-size: 0.9rem;
+        }
+
+        & article p {
+
+            height: 66px;
         }
     }
 

@@ -42,6 +42,12 @@
     font-size: 0.8rem;
     line-height: 1.5rem;
 
+    & article p {
+
+        height: 55px;
+
+    }
+
     & .read-more {
 
         background-color: #926fb1;
@@ -58,7 +64,7 @@
 
         &:hover {
 
-            background-color: #7949a3;
+            filter: brightness(90%);
         }
     }
 
@@ -86,6 +92,11 @@
         border-top: 1px solid rgb(189, 189, 189);
         margin-top: 10px;
         line-height: 1rem;
+
+        // & p {
+
+        //     height: 16px;
+        // }
     }
 
     & h3,

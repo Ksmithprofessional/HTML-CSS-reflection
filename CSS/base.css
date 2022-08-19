@@ -322,6 +322,12 @@ input[type=checkbox]:focus {
   line-height: 1.5rem;
 }
 
+.news-1 article p,
+.news-2 article p,
+.news-3 article p {
+  height: 55px;
+}
+
 .news-1 .read-more,
 .news-2 .read-more,
 .news-3 .read-more {
@@ -341,7 +347,8 @@ input[type=checkbox]:focus {
 .news-1 .read-more:hover,
 .news-2 .read-more:hover,
 .news-3 .read-more:hover {
-  background-color: #7949a3;
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 .news-1 h3,
@@ -2030,6 +2037,81 @@ main,
   background-color: #fff;
 }
 
+.news-page-links {
+  display: none;
+  background-color: white;
+  font-size: 0.85rem;
+  height: 20px;
+  padding: 5px 0;
+}
+
+.news-page-links a {
+  font-weight: bold;
+}
+
+.news-page-links a:hover {
+  text-decoration: underline;
+}
+
+.news-page-links a,
+.news-page-links p {
+  display: inline-block;
+}
+
+.news-header {
+  margin-bottom: 50px;
+}
+
+.news-header h2 {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 20px 10px;
+  margin-bottom: 50px;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 0;
+  color: white;
+}
+
+.news-page-poster {
+  margin-left: 10px;
+  font-size: 0.9rem;
+}
+
+.news-type {
+  text-transform: uppercase;
+  margin: 10px;
+  font-size: 0.8rem;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+}
+
+.news-type:hover {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  cursor: pointer;
+}
+
+.news-page-img {
+  margin: 0 auto 50px;
+  width: 94vw;
+}
+
+.news-page-img img {
+  width: 100%;
+}
+
+.main-news {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(white));
+  background: linear-gradient(180deg, #f3f3f3 0%, white 100%);
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -2266,10 +2348,12 @@ a {
   .news-1 h3,
   .news-2 h3 {
     margin-top: 20px;
+    height: 48px;
   }
   .news-1 article p,
   .news-2 article p {
-    margin-top: 30px;
+    margin-top: 16px;
+    height: 66px;
   }
   .news-1 footer,
   .news-2 footer {
@@ -2981,8 +3065,12 @@ a {
   }
   .news-1 .read-more,
   .news-2 .read-more {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 0px;
+  }
+  .news-1 h3,
+  .news-2 h3 {
+    height: unset;
   }
   .news-1 article,
   .news-2 article {
@@ -3378,6 +3466,11 @@ a {
   .news-3 footer {
     margin-top: 27px;
     font-size: 0.9rem;
+  }
+  .news-1 article p,
+  .news-2 article p,
+  .news-3 article p {
+    height: 66px;
   }
   #name,
   #email {

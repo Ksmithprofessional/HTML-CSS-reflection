@@ -187,10 +187,12 @@
   .news-1 h3,
   .news-2 h3 {
     margin-top: 20px;
+    height: 48px;
   }
   .news-1 article p,
   .news-2 article p {
-    margin-top: 30px;
+    margin-top: 16px;
+    height: 66px;
   }
   .news-1 footer,
   .news-2 footer {
@@ -902,8 +904,12 @@
   }
   .news-1 .read-more,
   .news-2 .read-more {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 0px;
+  }
+  .news-1 h3,
+  .news-2 h3 {
+    height: unset;
   }
   .news-1 article,
   .news-2 article {
@@ -1299,6 +1305,11 @@
   .news-3 footer {
     margin-top: 27px;
     font-size: 0.9rem;
+  }
+  .news-1 article p,
+  .news-2 article p,
+  .news-3 article p {
+    height: 66px;
   }
   #name,
   #email {

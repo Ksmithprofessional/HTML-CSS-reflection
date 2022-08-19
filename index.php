@@ -395,13 +395,13 @@ require 'php/header.php';
                             if($news[$i]['type'] === "Careers") {
                                     echo 'style="background-color: #4183d7 "';
                             }
-                                echo "><a href='news/" . $news[$i]['title'] . ".php'>" . strToUpper($news[$i]["type"]) . "</a>";
+                                echo "><a href='news.php?title=" . $news[$i]['title'] . "'>" . strToUpper($news[$i]["type"]) . "</a>";
                             echo "</div>";
-                        echo "<a href='news/" . $news[$i]['title'] . ".php'><img src='" . $news[$i]['img'] . "' alt='" . str_replace("-", " ", $news[$i]['title']) . "' class='news-img'></a>";
+                        echo "<a href='news.php?title=" . $news[$i]['title'] . "'><img src='" . $news[$i]['img'] . "' alt='" . str_replace("-", " ", $news[$i]['title']) . "' class='news-img'></a>";
                         echo "</div>";
                         echo "<div class='news-height'>";
                             echo "<article>";
-                                echo "<h3><a href='news/" . $news[$i]['title'] . ".php'";
+                                echo "<h3><a href='news.php?title=" . $news[$i]['title'] . "'";
                                 if($news[$i]['type'] === "Careers") {
                                     echo 'style="color: #4183d7 "';
                                 } 
@@ -412,7 +412,7 @@ require 'php/header.php';
                             if($news[$i]['type'] === "Careers") {
                                 echo 'style="background-color: #4183d7 "';
                             }
-                            echo "><a href='news/" . $news[$i]['title'] . ".php'>READ MORE</a></div>";
+                            echo "><a href='news.php?title=" . $news[$i]['title'] . "'>READ MORE</a></div>";
                             echo "<footer>";
                                 echo "<img src='" . $news[$i]['user_img'] . "' alt='article author' class='poster-img'>";
                                 echo "<p class='poster'>Posted by " .  $news[$i]['user'] . "</p>";
