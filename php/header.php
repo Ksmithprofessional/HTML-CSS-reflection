@@ -4,7 +4,7 @@
 
 <!-- pop out menu -->
 <div class="pop-out-menu menu-not-visible">
-    <a href="#"><div class="contact-top">Contact Us</div></a>
+    <a href="contact.php"><div class="contact-top">Contact Us</div></a>
 
     <div class="bespoke-menu">
 
@@ -262,10 +262,10 @@
     <header class="sticky">
         <div class="header">
             <div class="center">
-                <a href="#"><img src="Images/f-logo.png" alt="Netmatters logo"></a>
+                <a href="index.php"><img src="Images/f-logo.png" alt="Netmatters logo"></a>
                 <a href="tel:#" class="phone small-phone"><i class="fas fa-phone-alt"></i></a>
                 <a href="#"><div class="support"><i class="fas fa-mouse"></i>Support</div></a>
-                <a href="#"><div class="contact"><i class="far fa-paper-plane"></i>Contact</div></a>
+                <a href="contact.php"><div class="contact"><i class="far fa-paper-plane"></i>Contact</div></a>
                 <div class="menu small-position">
                     <span class="menu-icon"></span>
                     <span class="menu-icon-2"></span>

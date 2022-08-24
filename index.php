@@ -406,7 +406,7 @@ require 'php/header.php';
                                     echo 'style="color: #4183d7 "';
                                 } 
                                 echo ">" . str_replace("-", " ", $news[$i]['title']) . "</a></h3>";
-                                echo "<p>" . substr($news[$i]['description'], 0, 107)  . "...</p>";
+                                echo "<p>" . substr(strip_tags($news[$i]['description']), 0, 107)  . "...</p>";
                             echo "</article>";
                             echo "<div class='read-more'"; 
                             if($news[$i]['type'] === "Careers") {

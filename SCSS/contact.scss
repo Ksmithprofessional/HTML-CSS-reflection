@@ -1,0 +1,47 @@
+.office-form {
+
+    width: 90vw;
+    margin: 50px auto;
+
+    & form {
+
+        background-color: #e6e7e9;
+        border: 3px solid #e6e7e9;
+        border-radius: 2%;
+
+        & fieldset {
+
+            width: 70%;
+            padding: 0;
+
+            & input[type=text] {
+
+                width: 80%;
+            }
+
+            & textarea {
+
+                width: 90%;
+                height: 100px;
+
+                border: none;
+                box-sizing: border-box;
+                margin: 5px 20px 20px 0px;
+                padding: 12px 8px;
+                min-width: 80vw;
+            }
+
+            & input[type=submit] {
+
+                background-color: #926fb1;
+                border-color: #926fb1;
+
+                &:hover {
+
+                    background-color: #7e57a0;
+                    border-color: #735093;
+                }
+            }
+        }
+    }
+}

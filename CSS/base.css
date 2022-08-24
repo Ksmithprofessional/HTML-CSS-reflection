@@ -2112,6 +2112,47 @@ main,
   background: linear-gradient(180deg, #f3f3f3 0%, white 100%);
 }
 
+.office-form {
+  width: 90vw;
+  margin: 50px auto;
+}
+
+.office-form form {
+  background-color: #e6e7e9;
+  border: 3px solid #e6e7e9;
+  border-radius: 2%;
+}
+
+.office-form form fieldset {
+  width: 70%;
+  padding: 0;
+}
+
+.office-form form fieldset input[type=text] {
+  width: 80%;
+}
+
+.office-form form fieldset textarea {
+  width: 90%;
+  height: 100px;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 5px 20px 20px 0px;
+  padding: 12px 8px;
+  min-width: 80vw;
+}
+
+.office-form form fieldset input[type=submit] {
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
+.office-form form fieldset input[type=submit]:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
