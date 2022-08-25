@@ -281,6 +281,22 @@
     width: 700px;
     margin: 0 auto;
   }
+  .contact-page,
+  .office-card {
+    width: 720px;
+  }
+  .contact-page {
+    margin: 0 auto;
+  }
+  .head p {
+    display: block;
+  }
+  .head h1 {
+    width: 100vw;
+  }
+  .office-form {
+    width: 720px;
+  }
 }
 
 @media screen and (min-width: 992px) {

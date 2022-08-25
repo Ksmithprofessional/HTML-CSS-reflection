@@ -435,3 +435,21 @@ dark.addEventListener('click', () => {
 // used to need this resize event listener due to absolute positioning screwing with the mobile header
 // don't need it anymore since i changed how the menu slides in and adding the entire page width seemed
 // to fix the issue completely.
+
+
+//contact page drop down
+
+const dropDown = document.querySelector('.drop-down');
+const dropDownInfo = document.querySelector('.drop-down-info');
+
+dropDown.addEventListener('click', () => {
+
+   if (dropDownInfo.style.display == 'none') {
+
+      dropDownInfo.style.display = 'block';
+      } else {
+
+         dropDownInfo.style.display = 'none';
+      }
+
+});

@@ -394,7 +394,37 @@
         grid-template-columns: 370px 1fr 1fr;
         width: 700px;
         margin: 0 auto;
-      }
+    }
+
+    .contact-page,
+    .office-card {
+
+        width: 720px;
+    }
+
+    .contact-page {
+
+        margin: 0 auto;
+    }
+
+    .head {
+
+        & p {
+
+            display: block;
+        }
+
+        & h1 {
+
+            width: 100vw;
+            // padding-left: 
+        }
+    }
+
+    .office-form {
+
+        width: 720px;
+    }
     
 }
 

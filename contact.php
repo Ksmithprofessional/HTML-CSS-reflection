@@ -23,7 +23,7 @@
 
     ?>
 
-        <!-- Cookie pop-up -->
+        <!-- Cookie pop-up, this should also probably go into a reusable file, but that'd mess with the javascript so i'll just copy it for now -->
         <dialog class="cookie-pop-up">
             <form class="cookies">
                 <h3>Cookies Policy</h3>
@@ -285,7 +285,7 @@
                     <p><a href="mailto:sales@netmatters.com">sales@netmatters.com</a> </p>
                     <p>Business hours: </p>
                     <p>Monday - Friday 07:00 - 18:00  </p>
-                    <p>Out of Hours IT Support</p>
+                    <p class="drop-down">Out of Hours IT Support</p>
                     <!-- Needs a down arrow -->
                 </strong>
 
@@ -304,57 +304,60 @@
             </div>
 
             <!-- Email form -->
+            <!-- <div class="move-up"> -->
+                <div class="office-form">
+                    <form action="contact.php" method="post">
+                            <fieldset>
+                                <span class="your-name">
+                                    <label for="your-name"><span class="asterisk">Your Name</span><br>
+                                        <input type="text" id="your-name" name="name" required>
+                                    </label>
+                                </span>
 
-            <div class="office-form">
-                <form action="contact.php" method="post">
-                        <fieldset>
-                            <span class="your-name">
-                                <label for="your-name"><span class="asterisk">Your Name</span><br>
-                                    <input type="text" id="your-name" name="name" required>
-                                </label>
-                            </span>
+                                <span class="company-name">
+                                    <label for="company-name">Company Name<br>
+                                        <input type="text" id="company-name" name="company" >
+                                    </label>
+                                </span>
 
-                            <span class="company-name">
-                                <label for="company-name">Company Name<br>
-                                    <input type="text" id="company-name" name="company" >
-                                </label>
-                            </span>
+                                <span class="your-email">
+                                    <label for="your-email"><span class="asterisk">Your Email</span><br>
+                                        <input type="text" id="your-email" name="email" required>
+                                    </label>
+                                </span>
 
-                            <span class="your-email">
-                                <label for="your-email"><span class="asterisk">Your Email</span><br>
-                                    <input type="text" id="your-email" name="email" required>
-                                </label>
-                            </span>
+                                <span class="your-phone">
+                                    <label for="your-phone"><span class="asterisk">Your Telephone Number</span><br>
+                                        <input type="text" id="your-phone" name="phone" required>
+                                    </label>
+                                </span>
 
-                            <span class="your-phone">
-                                <label for="your-phone"><span class="asterisk">Your Telephone Number</span><br>
-                                    <input type="text" id="your-phone" name="phone" required>
-                                </label>
-                            </span>
+                                <span class="subject">
+                                    <label for="subject"><span class="asterisk">Subject</span><br>
+                                        <input type="text" id="subject" name="subject" required>
+                                    </label>
+                                </span>
 
-                            <span class="subject">
-                                <label for="subject"><span class="asterisk">Subject</span><br>
-                                    <input type="text" id="subject" name="subject" required>
-                                </label>
-                            </span>
+                                <span class="message">
+                                    <label for="message"><span class="asterisk">Message</span><br>
+                                        <textarea id="message" name="message" required></textarea>
+                                    </label>
+                                </span>
 
-                            <span class="message">
-                                <label for="message"><span class="asterisk">Message</span><br>
-                                    <textarea id="message" name="message" required></textarea>
-                                </label>
-                            </span>
+                                <br>
+                                <input type="checkbox" id="marketing" name="marketing">
+                                <label for="marketing">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data. </label>
+                                
 
-                            <br>
-                            <input type="checkbox" id="marketing" name="marketing">
-                            <label for="marketing">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data. </label>
-                            
+                                <br>
+                                <input type="submit" name="submit" value="SEND ENQUIRY">
 
-                            <br>
-                            <input type="submit" name="submit" value="SEND ENQUIRY">
+                            </fieldset>
+                        </form>
+                </div>
 
-                        </fieldset>
-                    </form>
-            </div>
+            <!-- </div> -->
+            <!-- testing things with the drop down with this -->
 
         </div>
 

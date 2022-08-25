@@ -1,3 +1,134 @@
+.head {
+
+    & p {
+
+        display: none;
+        border-top: 1px solid black;
+        padding-top: 5px;
+    }
+
+    & h1 {
+
+        color: white;
+        background-color: #333645;
+        height: 88px;
+        padding-top: 22px;
+        box-sizing: border-box;
+        padding-left: 8px;
+        margin-top: 0px;
+        margin-bottom: 70px;
+        font-weight: normal;
+        font-size: 2.2rem;
+    }
+}
+
+.office-card {
+
+    width: 90vw;
+    margin: 10px auto;
+    border: 1px solid rgb(167, 167, 167);
+    border-top: none;
+    border-radius: 3%;
+    transition: all 0.5s ease;
+
+    &:hover {
+
+        transform: translate(0, -5px);
+    }
+
+    & img {
+
+        background-size: cover;
+        width:100%;
+    }
+
+    & address {
+
+        color: rgb(158, 158, 158);
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    & h3 {
+
+        margin-top: 25px;
+    }
+
+    & address,
+    & h3 {
+
+        padding-left: 20px;
+        font-style: normal;
+        font-weight: normal;
+
+        & a {
+
+            color: #926fb1;
+            font-size: 1.7rem;
+            font-weight: bold;
+        }
+    }
+
+    & .office-btn {
+
+        width: 100px;
+        height: 20px;
+        background-color: #926fb1;
+        color: white;
+        border: 1px solid #926fb1;
+        border-radius: 4%;
+        padding: 12px 20px;
+        margin: 15px 0 20px 20px;
+        font-size: 0.9rem;
+        text-align: center;
+
+        &:hover {
+
+            background-color: #7e57a0;
+            border-color: #735093;
+            cursor: pointer;
+        }
+    }
+}
+
+.office-info {
+
+    font-size: 1rem;
+    line-height: 2rem;
+    color: rgb(58, 58, 58);
+    width: 90vw;
+    margin: 0 auto;
+    
+
+    & a {
+
+        color: #926fb1;
+        font-size: 1.5rem;
+    }
+
+    & .drop-down-info {
+
+        color: rgb(114, 113, 113);
+        display: none;
+        transition: all 1s ease;
+    }
+
+    & .drop-down-hours {
+
+        font-weight: bold;
+        color: rgb(58, 58, 58);
+    }
+}
+
+// .move-up {
+
+//     z-index: 2;
+//     position: relative;
+//     background-color: white;
+//     margin-top: -330px;
+//     transition: all 3s ease;
+// }
+
 .office-form {
 
     width: 90vw;

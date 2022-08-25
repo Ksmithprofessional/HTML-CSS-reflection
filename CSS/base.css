@@ -2112,6 +2112,113 @@ main,
   background: linear-gradient(180deg, #f3f3f3 0%, white 100%);
 }
 
+.head p {
+  display: none;
+  border-top: 1px solid black;
+}
+
+.head h1 {
+  color: white;
+  background-color: #333645;
+  height: 88px;
+  padding-top: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 8px;
+  margin-top: 0px;
+  margin-bottom: 70px;
+  font-weight: normal;
+  font-size: 2.2rem;
+}
+
+.office-card {
+  width: 90vw;
+  margin: 10px auto;
+  border: 1px solid #a7a7a7;
+  border-top: none;
+  border-radius: 3%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.office-card:hover {
+  -webkit-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+}
+
+.office-card img {
+  background-size: cover;
+  width: 100%;
+}
+
+.office-card address {
+  color: #9e9e9e;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.office-card h3 {
+  margin-top: 25px;
+}
+
+.office-card address,
+.office-card h3 {
+  padding-left: 20px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.office-card address a,
+.office-card h3 a {
+  color: #926fb1;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.office-card .office-btn {
+  width: 100px;
+  height: 20px;
+  background-color: #926fb1;
+  color: white;
+  border: 1px solid #926fb1;
+  border-radius: 4%;
+  padding: 12px 20px;
+  margin: 15px 0 20px 20px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.office-card .office-btn:hover {
+  background-color: #7e57a0;
+  border-color: #735093;
+  cursor: pointer;
+}
+
+.office-info {
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #3a3a3a;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.office-info a {
+  color: #926fb1;
+  font-size: 1.5rem;
+}
+
+.office-info .drop-down-info {
+  color: #727171;
+  display: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.office-info .drop-down-hours {
+  font-weight: bold;
+  color: #3a3a3a;
+}
+
 .office-form {
   width: 90vw;
   margin: 50px auto;
@@ -2482,6 +2589,22 @@ a {
         grid-template-columns: 370px 1fr 1fr;
     width: 700px;
     margin: 0 auto;
+  }
+  .contact-page,
+  .office-card {
+    width: 720px;
+  }
+  .contact-page {
+    margin: 0 auto;
+  }
+  .head p {
+    display: block;
+  }
+  .head h1 {
+    width: 100vw;
+  }
+  .office-form {
+    width: 720px;
   }
 }
 
