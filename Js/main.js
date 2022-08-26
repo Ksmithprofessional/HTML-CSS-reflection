@@ -444,12 +444,18 @@ const dropDownInfo = document.querySelector('.drop-down-info');
 
 dropDown.addEventListener('click', () => {
 
-   if (dropDownInfo.style.display == 'none') {
+   if (dropDownInfo.style.height == '0px') {
 
-      dropDownInfo.style.display = 'block';
+      if (window.innerWidth >= 1260) {
+
+         dropDownInfo.style.height = '410px';
       } else {
 
-         dropDownInfo.style.display = 'none';
+      dropDownInfo.style.height = '330px';
+      }
+      } else {
+
+         dropDownInfo.style.height = '0px';
       }
 
 });

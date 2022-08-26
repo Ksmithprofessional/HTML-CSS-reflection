@@ -207,158 +207,170 @@
             </div>
         </div>
 
-        <!-- starts the main content -->
-        <div class="contact-page">
+        <div class="head"> 
+        <!-- title and nav moved outside of contact page to test the background on the h1-->
+            <p><a href="index.php"><strong>Home</strong></a> / Our Offices</p>
 
-            <div class="head"> 
-            <!-- title and nav -->
-                <p><a href="index.php"><strong>Home</strong></a> / Our Offices</p>
-
+            <div class="title-background">
                 <h1>Our Offices</h1>
-
             </div>
+        </div>
 
-            <div class="office-card"> 
-                <!-- all the cards for the offices -->
-                <img src="images/cambridge.jpg" alt="Cambridge Office">
-                <h3>Cambridge Office</h3>
-                <address>      
-                    Unit 1.28, <br>
-                    St John's Innovation Centre, <br>
-                    Cowley Road, Milton,<br>
-                    Cambridge, <br>
-                    CB4 0WS <br>
-                    <br>
-                    <a href="tel:#" class="tel"> 01223 37 57 72</a>
-                </address>
+        <!-- starts the main content -->
+        <div class="office-background">
+            <div class="contact-page">
 
-                <div class="office-btn">
-                    <span><a href="#">VIEW MORE</a></span>
-                </div>
 
-            </div>
+                <div class="card-grid">
+                    <div class="card-1">
+                        <div class="office-card"> 
+                            <!-- all the cards for the offices -->
+                            <img src="images/cambridge.jpg" alt="Cambridge Office">
+                            <h3>Cambridge Office</h3>
+                            <address>      
+                                Unit 1.28, <br>
+                                St John's Innovation Centre, <br>
+                                Cowley Road, Milton,<br>
+                                Cambridge, <br>
+                                CB4 0WS <br>
+                                <br>
+                                <a href="tel:#" class="tel"> 01223 37 57 72</a>
+                            </address>
 
-            <div class="office-card"> 
+                            <div class="office-btn">
+                                <span><a href="#">VIEW MORE</a></span>
+                            </div>
 
-                <img src="images/wymondham.jpg" alt="Wymondham Office">
-                <h3>Wymondham Office  </h3>
-                    <address>      
-                        Unit 15, <br>
-                        Penfold Drive, <br>
-                        Gateway 11 Business Park, <br>
-                        Wymondham, Norfolk, <br>
-                        NR18 0WZ <br>
-                        <br>
-                    <a href="tel:#" class="tel"> 01603 70 40 20</a>
-                    </address>
-
-                <div class="office-btn">
-                    <span><a href="#">VIEW MORE</a></span>
-                </div>
-
-            </div>
-
-            <div class="office-card"> 
-
-                <img src="images/yarmouth.jpg" alt="Great Yarmouth Office">
-                <h3>Great Yarmouth Office </h3>
-                    <address>      
-                        Suite F23, <br>
-                        Beacon Innovation Centre, <br>
-                        Beacon Park, Gorleston, <br>
-                        Great Yarmouth, Norfolk, <br>
-                        NR31 7RA <br>
-                        <br>
-                    <a href="tel:#" class="tel"> 01493 60 32 04</a>
-                    </address>
-
-                <div class="office-btn">
-                    <span><a href="#">VIEW MORE</a></span>
-                </div>
-
-            </div>
-
-            <div class="office-info">
-
-                <strong> 
-                    <p>Email us on: </p>
-                    <p><a href="mailto:sales@netmatters.com">sales@netmatters.com</a> </p>
-                    <p>Business hours: </p>
-                    <p>Monday - Friday 07:00 - 18:00  </p>
-                    <p class="drop-down">Out of Hours IT Support</p>
-                    <!-- Needs a down arrow -->
-                </strong>
-
-                <div class="drop-down-info">
-
-                    <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
-                    <div class="drop-down-hours">
-                        <p>Monday - Friday 18:00 - 22:00 </p>
-                        <p>Saturday 08:00 - 16:00</p>
-                        <p>Sunday 10:00 - 18:00</p>
+                        </div>
                     </div>
-                    
-                    <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. </p>
+
+                    <div class="card-2">
+                        <div class="office-card"> 
+
+                            <img src="images/wymondham.jpg" alt="Wymondham Office">
+                            <h3>Wymondham Office  </h3>
+                                <address>      
+                                    Unit 15, <br>
+                                    Penfold Drive, <br>
+                                    Gateway 11 Business Park, <br>
+                                    Wymondham, Norfolk, <br>
+                                    NR18 0WZ <br>
+                                    <br>
+                                <a href="tel:#" class="tel"> 01603 70 40 20</a>
+                                </address>
+
+                            <div class="office-btn">
+                                <span><a href="#">VIEW MORE</a></span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-3">
+                        <div class="office-card"> 
+
+                            <img src="images/yarmouth.jpg" alt="Great Yarmouth Office">
+                            <h3>Great Yarmouth Office </h3>
+                                <address>      
+                                    Suite F23, <br>
+                                    Beacon Innovation Centre, <br>
+                                    Beacon Park, Gorleston, <br>
+                                    Great Yarmouth, Norfolk, <br>
+                                    NR31 7RA <br>
+                                    <br>
+                                <a href="tel:#" class="tel"> 01493 60 32 04</a>
+                                </address>
+
+                            <div class="office-btn">
+                                <span><a href="#">VIEW MORE</a></span>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+
+                <div class="office-info">
+
+                    <strong> 
+                        <p>Email us on: </p>
+                        <p><a href="mailto:sales@netmatters.com">sales@netmatters.com</a> </p>
+                        <p>Business hours: </p>
+                        <p>Monday - Friday 07:00 - 18:00  </p>
+                        <p class="drop-down">Out of Hours IT Support</p>
+                        <!-- Needs a down arrow -->
+                    </strong>
+
+                    <div class="drop-down-info" style="height: 0px;">
+
+                        <p>Netmatters IT are offering an Out of Hours service for Emergency and Critical tasks.</p>
+                        <div class="drop-down-hours">
+                            <p>Monday - Friday 18:00 - 22:00 </p>
+                            <p>Saturday 08:00 - 16:00</p>
+                            <p>Sunday 10:00 - 18:00</p>
+                        </div>
+                        
+                        <p>To log a critical task, you will need to call our main line number and select Option 2 to leave an Out of Hours  voicemail. A technician will contact you on the number provided within 45 minutes of your call. </p>
+                    </div>
+
+                </div>
+
+                <!-- Email form -->
+                <!-- <div class="move-up"> -->
+                    <div class="office-form">
+                        <form action="contact.php" method="post">
+                                <fieldset>
+                                    <span class="your-name">
+                                        <label for="your-name"><span class="asterisk">Your Name</span><br>
+                                            <input type="text" id="your-name" name="name" required>
+                                        </label>
+                                    </span>
+
+                                    <span class="company-name">
+                                        <label for="company-name">Company Name<br>
+                                            <input type="text" id="company-name" name="company" >
+                                        </label>
+                                    </span>
+
+                                    <span class="your-email">
+                                        <label for="your-email"><span class="asterisk">Your Email</span><br>
+                                            <input type="text" id="your-email" name="email" required>
+                                        </label>
+                                    </span>
+
+                                    <span class="your-phone">
+                                        <label for="your-phone"><span class="asterisk">Your Telephone Number</span><br>
+                                            <input type="text" id="your-phone" name="phone" required>
+                                        </label>
+                                    </span>
+
+                                    <span class="subject">
+                                        <label for="subject"><span class="asterisk">Subject</span><br>
+                                            <input type="text" id="subject" name="subject" required>
+                                        </label>
+                                    </span>
+
+                                    <span class="message">
+                                        <label for="message"><span class="asterisk">Message</span><br>
+                                            <textarea id="message" name="message" required></textarea>
+                                        </label>
+                                    </span>
+
+                                    <br>
+                                    <input type="checkbox" id="marketing" name="marketing">
+                                    <label for="marketing">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data. </label>
+                                    
+
+                                    <br>
+                                    <input type="submit" name="submit" value="SEND ENQUIRY">
+
+                                </fieldset>
+                            </form>
+                    </div>
+
+                <!-- </div> -->
+                <!-- testing things with the drop down with this -->
 
             </div>
-
-            <!-- Email form -->
-            <!-- <div class="move-up"> -->
-                <div class="office-form">
-                    <form action="contact.php" method="post">
-                            <fieldset>
-                                <span class="your-name">
-                                    <label for="your-name"><span class="asterisk">Your Name</span><br>
-                                        <input type="text" id="your-name" name="name" required>
-                                    </label>
-                                </span>
-
-                                <span class="company-name">
-                                    <label for="company-name">Company Name<br>
-                                        <input type="text" id="company-name" name="company" >
-                                    </label>
-                                </span>
-
-                                <span class="your-email">
-                                    <label for="your-email"><span class="asterisk">Your Email</span><br>
-                                        <input type="text" id="your-email" name="email" required>
-                                    </label>
-                                </span>
-
-                                <span class="your-phone">
-                                    <label for="your-phone"><span class="asterisk">Your Telephone Number</span><br>
-                                        <input type="text" id="your-phone" name="phone" required>
-                                    </label>
-                                </span>
-
-                                <span class="subject">
-                                    <label for="subject"><span class="asterisk">Subject</span><br>
-                                        <input type="text" id="subject" name="subject" required>
-                                    </label>
-                                </span>
-
-                                <span class="message">
-                                    <label for="message"><span class="asterisk">Message</span><br>
-                                        <textarea id="message" name="message" required></textarea>
-                                    </label>
-                                </span>
-
-                                <br>
-                                <input type="checkbox" id="marketing" name="marketing">
-                                <label for="marketing">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data. </label>
-                                
-
-                                <br>
-                                <input type="submit" name="submit" value="SEND ENQUIRY">
-
-                            </fieldset>
-                        </form>
-                </div>
-
-            <!-- </div> -->
-            <!-- testing things with the drop down with this -->
-
         </div>
 
     <?php require 'php/footer.php' ?>

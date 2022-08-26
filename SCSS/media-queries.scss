@@ -402,6 +402,11 @@
         width: 720px;
     }
 
+    .office-background {
+
+        background-color: white;
+    }
+
     .contact-page {
 
         margin: 0 auto;
@@ -409,21 +414,52 @@
 
     .head {
 
-        & p {
+        border-top: 1px solid black;
 
-            display: block;
+        & p,
+        & h1 {
+
+            width: 720px;
+            margin: 0 auto;
         }
 
         & h1 {
 
-            width: 100vw;
-            // padding-left: 
+            padding-left: unset;
         }
+
+        & p {
+
+            display: block;
+        }
+    }
+
+    .office-info {
+
+        width: unset;
     }
 
     .office-form {
 
         width: 720px;
+        margin-top: unset;
+
+        & form {
+
+            height: fit-content;
+
+            & fieldset {
+
+                margin-top: unset;
+
+                & input[type="text"],
+                & textarea {
+
+                    width: 650px;
+                    min-width: unset;
+                }
+            }
+        }
     }
     
 }
@@ -1416,6 +1452,50 @@
         margin-left: -60px;
     }
 
+    .head {
+
+
+        & h1 {
+
+          display: none;
+        }
+
+        & p {
+
+            width: 950px;
+        }
+    }
+
+    .card-grid {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 40px;
+      
+    }
+
+    .office-background {
+
+        background: linear-gradient(180deg, #f3f3f3 0%, white 100%);
+        padding-top: 70px;
+    }
+
+    .contact-page {
+
+        width: 950px;
+    }
+
+    .office-card {
+
+        width: unset;
+    }
+
+    .office-form {
+
+        width: 950px;
+    }
+
 }
 
 // third 1260. search changes again, grid 3x4, news 3 in a row, footer in row
@@ -1976,5 +2056,68 @@
     .payment-code {
         width: 270px;
         margin-top: -50px;
+    }
+
+    .head {
+
+        & p {
+
+            width: 1180px;
+        }
+    }
+
+    .contact-page {
+
+        width: 1180px;
+    }
+
+    .office-info {
+
+        width: 350px;
+        float: right;
+    }
+
+    .office-form {
+
+        width: 770px;
+        margin: 20px 0 0;
+
+        & form {
+
+
+            & fieldset {
+
+                width: 740px;
+                padding-left: 5px;
+
+                & input[type="text"],
+                & textarea {
+
+                    width: 705px;
+                }
+
+                & .your-name,
+                & .company-name,
+                & .your-email,
+                & .your-phone {
+
+                    display: inline-block;
+                    width: 367px;
+                }
+
+                & input[id="your-name"],
+                & input[id="company-name"],
+                & input[id="your-email"],
+                & input[id="your-phone"] {
+
+                    width: 91%;
+                }
+
+                & label[for="marketing"] {
+
+                    width: 600px;
+                }
+            }
+        }
     }
 }

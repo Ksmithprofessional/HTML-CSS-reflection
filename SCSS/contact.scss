@@ -1,25 +1,38 @@
 .head {
 
+    background-color: white;
+
     & p {
 
         display: none;
-        border-top: 1px solid black;
-        padding-top: 5px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 0.9rem;
+        background-color: white;
     }
 
     & h1 {
 
         color: white;
-        background-color: #333645;
         height: 88px;
         padding-top: 22px;
         box-sizing: border-box;
         padding-left: 8px;
         margin-top: 0px;
-        margin-bottom: 70px;
         font-weight: normal;
         font-size: 2.2rem;
     }
+
+    & .title-background {
+
+        background-color: #333645;
+    }
+}
+
+.office-background {
+
+    padding-top: 70px;
+    padding-bottom: 50px;
 }
 
 .office-card {
@@ -109,7 +122,7 @@
     & .drop-down-info {
 
         color: rgb(114, 113, 113);
-        display: none;
+        overflow: hidden;
         transition: all 1s ease;
     }
 
@@ -132,7 +145,7 @@
 .office-form {
 
     width: 90vw;
-    margin: 50px auto;
+    margin: 50px auto 0;
 
     & form {
 

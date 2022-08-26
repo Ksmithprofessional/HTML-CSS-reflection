@@ -2112,23 +2112,37 @@ main,
   background: linear-gradient(180deg, #f3f3f3 0%, white 100%);
 }
 
+.head {
+  background-color: white;
+}
+
 .head p {
   display: none;
-  border-top: 1px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 0.9rem;
+  background-color: white;
 }
 
 .head h1 {
   color: white;
-  background-color: #333645;
   height: 88px;
   padding-top: 22px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding-left: 8px;
   margin-top: 0px;
-  margin-bottom: 70px;
   font-weight: normal;
   font-size: 2.2rem;
+}
+
+.head .title-background {
+  background-color: #333645;
+}
+
+.office-background {
+  padding-top: 70px;
+  padding-bottom: 50px;
 }
 
 .office-card {
@@ -2209,7 +2223,7 @@ main,
 
 .office-info .drop-down-info {
   color: #727171;
-  display: none;
+  overflow: hidden;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -2221,7 +2235,7 @@ main,
 
 .office-form {
   width: 90vw;
-  margin: 50px auto;
+  margin: 50px auto 0;
 }
 
 .office-form form {
@@ -2594,17 +2608,45 @@ a {
   .office-card {
     width: 720px;
   }
+  .office-background {
+    background-color: white;
+  }
   .contact-page {
     margin: 0 auto;
+  }
+  .head {
+    border-top: 1px solid black;
+  }
+  .head p,
+  .head h1 {
+    width: 720px;
+    margin: 0 auto;
+  }
+  .head h1 {
+    padding-left: unset;
   }
   .head p {
     display: block;
   }
-  .head h1 {
-    width: 100vw;
+  .office-info {
+    width: unset;
   }
   .office-form {
     width: 720px;
+    margin-top: unset;
+  }
+  .office-form form {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .office-form form fieldset {
+    margin-top: unset;
+  }
+  .office-form form fieldset input[type="text"],
+  .office-form form fieldset textarea {
+    width: 650px;
+    min-width: unset;
   }
 }
 
@@ -3374,6 +3416,35 @@ a {
     margin-top: -36px;
     margin-left: -60px;
   }
+  .head h1 {
+    display: none;
+  }
+  .head p {
+    width: 950px;
+  }
+  .card-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 40px;
+  }
+  .office-background {
+    background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(white));
+    background: linear-gradient(180deg, #f3f3f3 0%, white 100%);
+    padding-top: 70px;
+  }
+  .contact-page {
+    width: 950px;
+  }
+  .office-card {
+    width: unset;
+  }
+  .office-form {
+    width: 950px;
+  }
 }
 
 @media screen and (min-width: 1260px) {
@@ -3701,6 +3772,44 @@ a {
   .payment-code {
     width: 270px;
     margin-top: -50px;
+  }
+  .head p {
+    width: 1180px;
+  }
+  .contact-page {
+    width: 1180px;
+  }
+  .office-info {
+    width: 350px;
+    float: right;
+  }
+  .office-form {
+    width: 770px;
+    margin: 20px 0 0;
+  }
+  .office-form form fieldset {
+    width: 740px;
+    padding-left: 5px;
+  }
+  .office-form form fieldset input[type="text"],
+  .office-form form fieldset textarea {
+    width: 705px;
+  }
+  .office-form form fieldset .your-name,
+  .office-form form fieldset .company-name,
+  .office-form form fieldset .your-email,
+  .office-form form fieldset .your-phone {
+    display: inline-block;
+    width: 367px;
+  }
+  .office-form form fieldset input[id="your-name"],
+  .office-form form fieldset input[id="company-name"],
+  .office-form form fieldset input[id="your-email"],
+  .office-form form fieldset input[id="your-phone"] {
+    width: 91%;
+  }
+  .office-form form fieldset label[for="marketing"] {
+    width: 600px;
   }
 }
 /*# sourceMappingURL=base.css.map */
