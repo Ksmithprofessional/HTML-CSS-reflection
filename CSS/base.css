@@ -2221,6 +2221,11 @@ main,
   font-size: 1.5rem;
 }
 
+.office-info .drop-down:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .office-info .drop-down-info {
   color: #727171;
   overflow: hidden;
@@ -2272,6 +2277,21 @@ main,
 .office-form form fieldset input[type=submit]:hover {
   background-color: #7e57a0;
   border-color: #735093;
+}
+
+.contact-page iframe {
+  width: 90vw;
+}
+
+.contact-page .map {
+  width: 90vw;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  width: 90vw;
+  margin: 0 auto;
 }
 
 body {
@@ -2647,6 +2667,18 @@ a {
   .office-form form fieldset textarea {
     width: 650px;
     min-width: unset;
+  }
+  .contact-page iframe {
+    width: unset;
+  }
+  .contact-page .map {
+    width: unset;
+  }
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: unset;
+    margin: unset;
   }
 }
 
@@ -3445,6 +3477,29 @@ a {
   .office-form {
     width: 950px;
   }
+  .office-form form fieldset {
+    width: 900px;
+  }
+  .office-form form fieldset .your-name,
+  .office-form form fieldset .company-name,
+  .office-form form fieldset .your-email,
+  .office-form form fieldset .your-phone {
+    display: inline-block;
+    width: 447px;
+  }
+  .office-form form fieldset #your-name,
+  .office-form form fieldset #company-name,
+  .office-form form fieldset #your-email,
+  .office-form form fieldset #your-phone {
+    width: 95%;
+  }
+  .office-form form fieldset textarea,
+  .office-form form fieldset #subject {
+    width: 875px;
+  }
+  .office-form form fieldset label[for="marketing"] {
+    width: 840px;
+  }
 }
 
 @media screen and (min-width: 1260px) {
@@ -3779,6 +3834,19 @@ a {
   .contact-page {
     width: 1180px;
   }
+  .contact-page iframe {
+    width: 366px;
+    height: 300px;
+  }
+  .contact-page .map {
+    width: 366px;
+  }
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: unset;
+    margin: unset;
+  }
   .office-info {
     width: 350px;
     float: right;
@@ -3791,22 +3859,21 @@ a {
     width: 740px;
     padding-left: 5px;
   }
-  .office-form form fieldset input[type="text"],
+  .office-form form fieldset #subject,
   .office-form form fieldset textarea {
-    width: 705px;
+    width: 710px;
   }
   .office-form form fieldset .your-name,
   .office-form form fieldset .company-name,
   .office-form form fieldset .your-email,
   .office-form form fieldset .your-phone {
-    display: inline-block;
     width: 367px;
   }
-  .office-form form fieldset input[id="your-name"],
-  .office-form form fieldset input[id="company-name"],
-  .office-form form fieldset input[id="your-email"],
-  .office-form form fieldset input[id="your-phone"] {
-    width: 91%;
+  .office-form form fieldset #your-name,
+  .office-form form fieldset #company-name,
+  .office-form form fieldset #your-email,
+  .office-form form fieldset #your-phone {
+    width: 92%;
   }
   .office-form form fieldset label[for="marketing"] {
     width: 600px;

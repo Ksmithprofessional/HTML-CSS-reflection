@@ -119,6 +119,15 @@
         font-size: 1.5rem;
     }
 
+    & .drop-down {
+
+        &:hover {
+
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
     & .drop-down-info {
 
         color: rgb(114, 113, 113);
@@ -188,4 +197,26 @@
             }
         }
     }
+}
+
+.contact-page {
+
+    & iframe {
+
+        width: 90vw;
+    }
+
+    & .map {
+
+        width: 90vw;
+        
+    }
+}
+
+.card-1,
+.card-2,
+.card-3 {
+
+    width: 90vw;
+    margin: 0 auto;
 }

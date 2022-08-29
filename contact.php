@@ -242,6 +242,15 @@
                             </div>
 
                         </div>
+
+                        <div>
+                            <iframe frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=52.23575007228743~0.1521632159941646&lvl=15.265312686895411&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+                            </iframe>
+                            <div class="map" style="white-space: nowrap; text-align: center; padding: 6px 0;">
+                                <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=52.23575007228743~0.1521632159941646&amp;sty=r&amp;lvl=15.265312686895411&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
+                                <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=52.23575007228743~0.1521632159941646&amp;sty=r&amp;lvl=15.265312686895411&amp;rtp=~pos.52.23575007228743_0.1521632159941646____&amp;FORM=MBEDLD">Get Directions</a>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="card-2">
@@ -263,6 +272,15 @@
                                 <span><a href="#">VIEW MORE</a></span>
                             </div>
 
+                        </div>
+
+                        <div>
+                            <iframe frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=52.57504096155529~1.12490094112718&lvl=14.734687313104587&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+                            </iframe>
+                            <div style="white-space: nowrap; text-align: center; padding: 6px 0;">
+                                <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=52.57504096155529~1.12490094112718&amp;sty=r&amp;lvl=14.734687313104587&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
+                                <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=52.57504096155529~1.12490094112718&amp;sty=r&amp;lvl=14.734687313104587&amp;rtp=~pos.52.57504096155529_1.12490094112718____&amp;FORM=MBEDLD">Get Directions</a>
+                            </div>
                         </div>
                     </div>
 
@@ -286,6 +304,15 @@
                             </div>
 
                         </div>
+
+                        <div>
+                            <iframe frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=52.55597687162222~1.7074728012003106&lvl=15&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
+                            </iframe>
+                            <div style="white-space: nowrap; text-align: center; padding: 6px 0;">
+                                <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=52.55597687162222~1.7074728012003106&amp;sty=r&amp;lvl=15&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
+                                <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=52.55597687162222~1.7074728012003106&amp;sty=r&amp;lvl=15&amp;rtp=~pos.52.55597687162222_1.7074728012003106____&amp;FORM=MBEDLD">Get Directions</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -296,7 +323,7 @@
                         <p><a href="mailto:sales@netmatters.com">sales@netmatters.com</a> </p>
                         <p>Business hours: </p>
                         <p>Monday - Friday 07:00 - 18:00  </p>
-                        <p class="drop-down">Out of Hours IT Support</p>
+                        <p class="drop-down">Out of Hours IT Support  <i class="fa-solid fa-angle-down"></i></p>
                         <!-- Needs a down arrow -->
                     </strong>
 

@@ -107,6 +107,11 @@
   font-size: 1.5rem;
 }
 
+.office-info .drop-down:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .office-info .drop-down-info {
   color: #727171;
   overflow: hidden;
@@ -158,5 +163,20 @@
 .office-form form fieldset input[type=submit]:hover {
   background-color: #7e57a0;
   border-color: #735093;
+}
+
+.contact-page iframe {
+  width: 90vw;
+}
+
+.contact-page .map {
+  width: 90vw;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  width: 90vw;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=contact.css.map */

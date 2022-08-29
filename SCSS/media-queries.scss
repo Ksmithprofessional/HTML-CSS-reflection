@@ -461,6 +461,28 @@
             }
         }
     }
+
+    .contact-page {
+
+        & iframe {
+    
+            width: unset;
+        }
+    
+        & .map {
+    
+            width: unset;
+            
+        }
+    }
+    
+    .card-1,
+    .card-2,
+    .card-3 {
+    
+        width: unset;
+        margin: unset;
+    }
     
 }
 
@@ -1494,6 +1516,42 @@
     .office-form {
 
         width: 950px;
+
+        & form {
+
+            & fieldset {
+
+                width: 900px;
+
+                & .your-name,
+                & .company-name,
+                & .your-email,
+                & .your-phone {
+
+                    display: inline-block;
+                    width: 447px;
+                }
+
+                & #your-name,
+                & #company-name,
+                & #your-email,
+                & #your-phone {
+
+                    width: 95%;
+                }
+
+                & textarea,
+                & #subject {
+
+                    width: 875px;
+                }
+
+                & label[for="marketing"] {
+
+                    width: 840px;
+                }
+            }
+        }
     }
 
 }
@@ -2069,6 +2127,25 @@
     .contact-page {
 
         width: 1180px;
+
+        & iframe {
+
+            width: 366px;
+            height: 300px;
+        }
+
+        & .map {
+
+            width: 366px;
+        }
+    }
+    
+    .card-1,
+    .card-2,
+    .card-3 {
+    
+        width: unset;
+        margin: unset;
     }
 
     .office-info {
@@ -2090,10 +2167,10 @@
                 width: 740px;
                 padding-left: 5px;
 
-                & input[type="text"],
+                & #subject,
                 & textarea {
 
-                    width: 705px;
+                    width: 710px;
                 }
 
                 & .your-name,
@@ -2101,16 +2178,16 @@
                 & .your-email,
                 & .your-phone {
 
-                    display: inline-block;
+                    // display: inline-block;
                     width: 367px;
                 }
 
-                & input[id="your-name"],
-                & input[id="company-name"],
-                & input[id="your-email"],
-                & input[id="your-phone"] {
+                & #your-name,
+                & #company-name,
+                & #your-email,
+                & #your-phone {
 
-                    width: 91%;
+                    width: 92%;
                 }
 
                 & label[for="marketing"] {
@@ -2120,4 +2197,6 @@
             }
         }
     }
+
+
 }
