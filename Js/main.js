@@ -463,3 +463,31 @@ dropDown.addEventListener('click', () => {
 
 //form validation 
 
+const formSubmit = document.querySelector('#submit');
+const form = document.querySelector('.office-form');
+
+form.addEventListener('submit', (e) => {
+
+   e.preventDefault();
+
+// null?
+    let enquiryEmail = document.querySelector('input[id="your-email "]').value;
+    const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    console.log(enquiryEmail);
+
+    if(!enquiryEmail.match(regex)) {
+
+      e.preventDefault();
+      document.querySelector('.error-1').innerHTML = `Invalid email address`;
+      console.log(email);
+      // test to see whether the email address actually shows up on failure
+
+  } if(enquiryEmail === '') {
+
+      e.preventDefault();
+      document.querySelector('.error-1').innerHTML = `We can't email you if you don't put in an email address!`;
+
+  };
+
+});

@@ -367,7 +367,7 @@
 
                                 <span class="your-email">
                                     <label for="your-email"><span class="asterisk">Your Email</span><br>
-                                        <input type="text" id="your-email" name="email" required>
+                                        <input type="text" id="your-email" name="email">
                                     </label>
                                 </span>
 
@@ -395,11 +395,11 @@
                                 
 
                                 <br>
-                                <input type="submit" name="submit" value="SEND ENQUIRY">
+                                <input id="submit" type="submit" name="submit" value="SEND ENQUIRY">
 
                             </fieldset>
 
-                            <span class="error"></span>
+                            <span class="error-1"></span>
 
                             <p><span class="asterisk"></span>Fields Required</p>
                         </form>
