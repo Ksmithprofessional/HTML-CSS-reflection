@@ -23,12 +23,14 @@
 
     if(isset($_GET['title'])) {
 
+        $url = filter_input(INPUT_GET, 'title', FILTER_SANITIZE_STRING);
+
         include 'php/news-db.php';
 
         try {
             $sql = "SELECT * FROM news WHERE title=?";
             $results = $pdo->prepare($sql);
-            $results->bindParam(1, $_GET['title']);
+            $results->bindParam(1, $url);
             $results->execute();
             $news = $results->fetch(PDO::FETCH_ASSOC);
         

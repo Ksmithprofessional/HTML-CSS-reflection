@@ -12,6 +12,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"> 
     <title>Netmatters | Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
+
+    <!-- Reference to the Bing Maps SDK, seems to have to all be inline for it to work? -->
+    <script type='text/javascript'
+            src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[AlsY6QF0dyS91gxLRfIA5Mhv8tCOBm6AdwGBgoQZ8nHqI5WssCQC4q0TpfifPsi6]' 
+            async defer></script>
+    
+    <script type='text/javascript'>
+    function GetMap()
+    {
+        var map = new Microsoft.Maps.Map('.myMap1', {
+
+            center: new Microsoft.Maps.Location(52.234882, 0.153417),
+            zoom: 16
+        });
+
+        var map = new Microsoft.Maps.Map('.myMap2', {
+
+            center: new Microsoft.Maps.Location(52.577505, 1.133993),
+            zoom: 16
+        });
+
+        var map = new Microsoft.Maps.Map('.myMap3',{
+
+            center: new Microsoft.Maps.Location(52.555857, 1.712949),
+            zoom: 16
+        });
+    }
+    </script>
 </head>
 <body>
 
@@ -243,14 +271,7 @@
 
                         </div>
 
-                        <div>
-                            <iframe frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=52.23575007228743~0.1521632159941646&lvl=15.265312686895411&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
-                            </iframe>
-                            <div class="map" style="white-space: nowrap; text-align: center; padding: 6px 0;">
-                                <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=52.23575007228743~0.1521632159941646&amp;sty=r&amp;lvl=15.265312686895411&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
-                                <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=52.23575007228743~0.1521632159941646&amp;sty=r&amp;lvl=15.265312686895411&amp;rtp=~pos.52.23575007228743_0.1521632159941646____&amp;FORM=MBEDLD">Get Directions</a>
-                            </div>
-                        </div>
+                        <div class="myMap1" style="position:relative;width:100%;height:300px;z-index:1"></div>
                     </div>
 
                     <div class="card-2">
@@ -274,14 +295,7 @@
 
                         </div>
 
-                        <div>
-                            <iframe frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=52.57504096155529~1.12490094112718&lvl=14.734687313104587&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
-                            </iframe>
-                            <div style="white-space: nowrap; text-align: center; padding: 6px 0;">
-                                <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=52.57504096155529~1.12490094112718&amp;sty=r&amp;lvl=14.734687313104587&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
-                                <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=52.57504096155529~1.12490094112718&amp;sty=r&amp;lvl=14.734687313104587&amp;rtp=~pos.52.57504096155529_1.12490094112718____&amp;FORM=MBEDLD">Get Directions</a>
-                            </div>
-                        </div>
+                        <div class="myMap2" style="position:relative;width:100%;height:300px;z-index:1"></div>
                     </div>
 
                     <div class="card-3">
@@ -305,14 +319,7 @@
 
                         </div>
 
-                        <div>
-                            <iframe frameborder="0" src="https://www.bing.com/maps/embed?h=400&w=500&cp=52.55597687162222~1.7074728012003106&lvl=15&typ=d&sty=r&src=SHELL&FORM=MBEDV8" scrolling="no">
-                            </iframe>
-                            <div style="white-space: nowrap; text-align: center; padding: 6px 0;">
-                                <a id="largeMapLink" target="_blank" href="https://www.bing.com/maps?cp=52.55597687162222~1.7074728012003106&amp;sty=r&amp;lvl=15&amp;FORM=MBEDLD">View Larger Map</a> &nbsp; | &nbsp;
-                                <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=52.55597687162222~1.7074728012003106&amp;sty=r&amp;lvl=15&amp;rtp=~pos.52.55597687162222_1.7074728012003106____&amp;FORM=MBEDLD">Get Directions</a>
-                            </div>
-                        </div>
+                        <div class="myMap3" style="position:relative;width:100%;height:300px;z-index:1"></div>
                     </div>
                 </div>
 
@@ -345,53 +352,57 @@
                 <!-- <div class="move-up"> -->
                     <div class="office-form">
                         <form action="contact.php" method="post">
-                                <fieldset>
-                                    <span class="your-name">
-                                        <label for="your-name"><span class="asterisk">Your Name</span><br>
-                                            <input type="text" id="your-name" name="name" required>
-                                        </label>
-                                    </span>
+                            <fieldset>
+                                <span class="your-name">
+                                    <label for="your-name"><span class="asterisk">Your Name</span><br>
+                                        <input type="text" id="your-name" name="name" required>
+                                    </label>
+                                </span>
 
-                                    <span class="company-name">
-                                        <label for="company-name">Company Name<br>
-                                            <input type="text" id="company-name" name="company" >
-                                        </label>
-                                    </span>
+                                <span class="company-name">
+                                    <label for="company-name">Company Name<br>
+                                        <input type="text" id="company-name" name="company" >
+                                    </label>
+                                </span>
 
-                                    <span class="your-email">
-                                        <label for="your-email"><span class="asterisk">Your Email</span><br>
-                                            <input type="text" id="your-email" name="email" required>
-                                        </label>
-                                    </span>
+                                <span class="your-email">
+                                    <label for="your-email"><span class="asterisk">Your Email</span><br>
+                                        <input type="text" id="your-email" name="email" required>
+                                    </label>
+                                </span>
 
-                                    <span class="your-phone">
-                                        <label for="your-phone"><span class="asterisk">Your Telephone Number</span><br>
-                                            <input type="text" id="your-phone" name="phone" required>
-                                        </label>
-                                    </span>
+                                <span class="your-phone">
+                                    <label for="your-phone"><span class="asterisk">Your Telephone Number</span><br>
+                                        <input type="text" id="your-phone" name="phone" required>
+                                    </label>
+                                </span>
 
-                                    <span class="subject">
-                                        <label for="subject"><span class="asterisk">Subject</span><br>
-                                            <input type="text" id="subject" name="subject" required>
-                                        </label>
-                                    </span>
+                                <span class="subject">
+                                    <label for="subject"><span class="asterisk">Subject</span><br>
+                                        <input type="text" id="subject" name="subject" required>
+                                    </label>
+                                </span>
 
-                                    <span class="message">
-                                        <label for="message"><span class="asterisk">Message</span><br>
-                                            <textarea id="message" name="message" required></textarea>
-                                        </label>
-                                    </span>
+                                <span class="message">
+                                    <label for="message"><span class="asterisk">Message</span><br>
+                                        <textarea id="message" name="message" required></textarea>
+                                    </label>
+                                </span>
 
-                                    <br>
-                                    <input type="checkbox" id="marketing" name="marketing">
-                                    <label for="marketing">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data. </label>
-                                    
+                                <br>
+                                <input type="checkbox" id="marketing" name="marketing">
+                                <label for="marketing">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data. </label>
+                                
 
-                                    <br>
-                                    <input type="submit" name="submit" value="SEND ENQUIRY">
+                                <br>
+                                <input type="submit" name="submit" value="SEND ENQUIRY">
 
-                                </fieldset>
-                            </form>
+                            </fieldset>
+
+                            <span class="error"></span>
+
+                            <p><span class="asterisk"></span>Fields Required</p>
+                        </form>
                     </div>
 
                 <!-- </div> -->

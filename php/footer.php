@@ -4,7 +4,7 @@
 
     <!-- Email sign up form -->
 
-    <form action= "index.php" method="post">
+    <form action="#" method="post">
             <fieldset>
                 <legend>Email Newsletter Sign-Up</legend>
                 <span class="name">
@@ -28,6 +28,7 @@
                 <input type="submit" name= "submit" value="Subscribe">
 
             </fieldset>
+            
         </form>
 
         

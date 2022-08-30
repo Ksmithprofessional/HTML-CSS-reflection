@@ -42,7 +42,7 @@
     border: 1px solid rgb(167, 167, 167);
     border-top: none;
     border-radius: 3%;
-    transition: all 0.5s ease;
+    transition: transform 0.5s ease;
 
     &:hover {
 
@@ -155,6 +155,7 @@
 
     width: 90vw;
     margin: 50px auto 0;
+    position: relative;
 
     & form {
 
@@ -197,19 +198,37 @@
             }
         }
     }
+
+    & p {
+
+        position: absolute;
+        bottom: 43px;
+        right: 35px;
+    }
 }
 
 .contact-page {
 
     & iframe {
 
-        width: 90vw;
+        width: 100%;
+        height: 300px;
     }
 
     & .map {
 
-        width: 90vw;
+        width: 100%;
         
+    }
+
+    & #embedMap {
+
+        width: 100%;
+    }
+
+    & .mapboxg1-canvas {
+
+        width: 100%;
     }
 }
 

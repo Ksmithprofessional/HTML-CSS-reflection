@@ -1554,6 +1554,19 @@
         }
     }
 
+    .contact-page {
+
+        & iframe {
+    
+            width: 100%;
+        }
+
+        & .map {
+
+            width: 100%;
+        }
+    }
+
 }
 
 // third 1260. search changes again, grid 3x4, news 3 in a row, footer in row
