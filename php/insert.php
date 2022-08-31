@@ -2,6 +2,9 @@
 
 include 'emails-db.php';
 
+$error1 = "";
+$error2 = "";
+
     if(isset($_POST['submit'])) {
 
 
@@ -21,27 +24,29 @@ include 'emails-db.php';
             $marketing = 'off';
         }; 
 
-        if(!isset($subject)) {
+
+        if(!isset($_POST["subject"]) && !isset($_POST["phone"]) && !isset($_POST["message"]) && isset($_POST["name"]) && isset($_POST["email"])) {
         
             $sql = "INSERT INTO emails (full_name, email_address, marketing) VALUES ('$name', '$email', '$marketing')";
             if (mysqli_query($conn, $sql)) {
-                echo "<p class='email-success'>Thank you for signing up for the newsletter!</p>";
-                var_dump($name);
-                } else {
+                $error2 = "Thank you for signing up to the newsletter!";
+            } else {
                 echo "Error: " . $sql . ":-" . mysqli_error($conn);
-                }
+            }
         
             $conn->close();
 
-        } else {
+        } 
+        
+        if(isset($_POST["subject"]) && isset($_POST["phone"]) && isset($_POST["message"]) && isset($_POST["name"]) && isset($_POST["email"])) {
 
             $sql = "INSERT INTO queries (name, company, email_address, phone_no, subject, message, marketing) VALUES ('$name', '$company', '$email', '$phone', '$subject', '$message', '$marketing')";
             if (mysqli_query($conn, $sql)) {
-                
-                } else {
+                $error1 = "Thank you for your query!";
+            } else {
                 echo "Error: " . $sql . ":-" . mysqli_error($conn);
-                }
-        
+            }
+    
             $conn->close();
 
         }

@@ -350,12 +350,14 @@
 
                 <!-- Email form -->
                 <!-- <div class="move-up"> -->
+
+                <?php include 'php/insert.php'; ?>
                     <div class="office-form">
-                        <form action="contact.php" method="post">
+                        <form id="query-form" action="contact.php" method="post">
                             <fieldset>
                                 <span class="your-name">
                                     <label for="your-name"><span class="asterisk">Your Name</span><br>
-                                        <input type="text" id="your-name" name="name" required>
+                                        <input type="text" id="your-name" name="name">
                                     </label>
                                 </span>
 
@@ -373,19 +375,19 @@
 
                                 <span class="your-phone">
                                     <label for="your-phone"><span class="asterisk">Your Telephone Number</span><br>
-                                        <input type="text" id="your-phone" name="phone" required>
+                                        <input type="text" id="your-phone" name="phone" >
                                     </label>
                                 </span>
 
                                 <span class="subject">
                                     <label for="subject"><span class="asterisk">Subject</span><br>
-                                        <input type="text" id="subject" name="subject" required>
+                                        <input type="text" id="subject" name="subject" >
                                     </label>
                                 </span>
 
                                 <span class="message">
                                     <label for="message"><span class="asterisk">Message</span><br>
-                                        <textarea id="message" name="message" required></textarea>
+                                        <textarea id="message" name="message" ></textarea>
                                     </label>
                                 </span>
 
@@ -399,7 +401,7 @@
 
                             </fieldset>
 
-                            <span class="error-1"></span>
+                            <span class="error-1"><?php echo $error1 ?></span>
 
                             <p><span class="asterisk"></span>Fields Required</p>
                         </form>
@@ -419,6 +421,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="Js/main.js"></script>
+    <script src="Js/contact.js"></script>
 
 </body>
 </html>

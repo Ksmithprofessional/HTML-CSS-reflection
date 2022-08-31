@@ -437,57 +437,37 @@ dark.addEventListener('click', () => {
 // to fix the issue completely.
 
 
-//contact page drop down
-
-const dropDown = document.querySelector('.drop-down');
-const dropDownInfo = document.querySelector('.drop-down-info');
-
-dropDown.addEventListener('click', () => {
-
-   if (dropDownInfo.style.height == '0px') {
-
-      if (window.innerWidth >= 1260) {
-
-         dropDownInfo.style.height = '410px';
-      } else {
-
-      dropDownInfo.style.height = '330px';
-      }
-      } else {
-
-         dropDownInfo.style.height = '0px';
-      }
-
-});
-
-
 //form validation 
 
 const formSubmit = document.querySelector('#submit');
-const form = document.querySelector('.office-form');
+const newsletter = document.getElementById('newsletter-form');
 
-form.addEventListener('submit', (e) => {
+newsletter.addEventListener('submit', (e) => {
 
-   e.preventDefault();
+   let name = document.querySelector('input[id="name"]').value;
+   let email = document.querySelector('input[id="email"]').value;
+   const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-// null?
-    let enquiryEmail = document.querySelector('input[id="your-email "]').value;
-    const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
-    console.log(enquiryEmail);
-
-    if(!enquiryEmail.match(regex)) {
+   if(name === "") {
 
       e.preventDefault();
-      document.querySelector('.error-1').innerHTML = `Invalid email address`;
-      console.log(email);
+      document.querySelector('.error-2').innerHTML = `Please enter a name`;
+      
+   }
+   
+   if(!email.match(regex)) {
+
+      e.preventDefault();
+      document.querySelector('.error-2').innerHTML = `Invalid email address`;
+      // console.log(email);
       // test to see whether the email address actually shows up on failure
 
-  } if(enquiryEmail === '') {
+   } if(email === '') {
 
       e.preventDefault();
-      document.querySelector('.error-1').innerHTML = `We can't email you if you don't put in an email address!`;
+      document.querySelector('.error-2').innerHTML = `We can't email you if you don't put in an email address!`;
 
-  };
-
+   };
+   
 });
+

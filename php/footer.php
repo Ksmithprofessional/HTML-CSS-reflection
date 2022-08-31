@@ -4,18 +4,18 @@
 
     <!-- Email sign up form -->
 
-    <form action="#" method="post">
+        <form id="newsletter-form" action="#" method="post">
             <fieldset>
                 <legend>Email Newsletter Sign-Up</legend>
                 <span class="name">
                     <label for="name"><span class="asterisk">Your Name</span><br>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name">
                     </label>
                 </span>
 
                 <span class="email">
                     <label for="email"><span class="asterisk">Your Email</span><br>
-                        <input type="text" id="email" name="email" required>
+                        <input type="text" id="email" name="email">
                     </label>
                 </span>
 
@@ -27,17 +27,11 @@
                 <br>
                 <input type="submit" name= "submit" value="Subscribe">
 
+                <span class="error-2"><?php echo $error2 ?></span>
+
             </fieldset>
             
         </form>
-
-        
-
-        <?php
-
-            include 'php/insert.php';
-        
-        ?>
         
 
     </main>
