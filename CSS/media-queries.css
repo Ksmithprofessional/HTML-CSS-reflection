@@ -337,6 +337,33 @@
     width: unset;
     margin: unset;
   }
+  .main-news .news-page-img,
+  .main-news .news-article {
+    width: 740px;
+  }
+  .news-header .news-title h2 {
+    width: 740px;
+    margin: 0 auto;
+  }
+  .news-page-poster-type {
+    width: 740px;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .news-type {
+    float: right;
+    margin-top: -55px;
+  }
+  .news-links-background-fix {
+    background-color: white;
+    border-top: 1px solid black;
+  }
+  .news-page-links {
+    display: block;
+    width: 740px;
+    margin: 0 auto;
+    padding-bottom: 22px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -1163,6 +1190,46 @@
   .contact-page .map {
     width: 100%;
   }
+  .news-page-links,
+  .news-page-poster-type {
+    width: 920px;
+  }
+  .news-page-poster-type {
+    padding-top: 10px;
+  }
+  .news-header .news-title {
+    background-color: unset !important;
+  }
+  .news-header .news-title h2 {
+    padding-bottom: 0px;
+    color: black;
+    width: 920px;
+  }
+  .main-news {
+    background: -webkit-gradient(linear, left top, left bottom, from(#f3f3f3), to(white));
+    background: linear-gradient(180deg, #f3f3f3 0%, white 100%);
+    padding-top: 25px;
+  }
+  .main-news .news-page-img,
+  .main-news .news-article {
+    width: 920px;
+  }
+  .main-news .news-article hr {
+    width: 920px;
+  }
+  .big-list-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 75px;
+  }
+  .skill-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (min-width: 1260px) {
@@ -1540,6 +1607,19 @@
   }
   .office-form form fieldset label[for="marketing"] {
     width: 600px;
+  }
+  .news-page-links,
+  .news-page-poster-type {
+    width: 1180px;
+  }
+  .news-header .news-title h2 {
+    width: 1180px;
+  }
+  .main-news .news-article {
+    width: 1180px;
+  }
+  .main-news .news-article hr {
+    width: 1180px;
   }
 }
 /*# sourceMappingURL=media-queries.css.map */

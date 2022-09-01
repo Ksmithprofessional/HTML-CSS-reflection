@@ -483,7 +483,60 @@
         width: unset;
         margin: unset;
     }
+
+    .main-news {
+
+        & .news-page-img,
+        & .news-article {
+
+            width: 740px;
+        }
+
+    }
+
+    .news-header {
+
+        & .news-title {
+
+            & h2 {
+
+                width: 740px;
+                margin: 0 auto;
+            }
+        }
+    }
     
+    .news-page-poster-type {
+
+        width: 740px;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
+    .news-type {
+
+        float: right;
+        margin-top: -55px
+    }
+
+    .news-links-background-fix {
+
+        background-color: white;
+        border-top: 1px solid black;
+    }
+
+    .news-page-links {
+
+        display: block;
+        width: 740px;
+        margin: 0 auto;
+        padding-bottom: 22px;
+    }
+
+    // .job-description {
+
+    //     width: 740px;
+    // }
 }
 
 // second 992. support/contact header appear, search changes again, drop down header appears,
@@ -1567,6 +1620,72 @@
         }
     }
 
+
+    .news-page-links,
+    .news-page-poster-type {
+
+        width: 920px;
+    }
+
+    .news-page-poster-type {
+
+        padding-top: 10px;
+    }
+
+    .news-header {
+
+        .news-title {
+
+            background-color: unset !important;
+
+            & h2 {
+
+                padding-bottom: 0px;
+                color: black;
+                width: 920px;
+            }
+
+        }
+    }
+
+    .main-news {
+
+        background: linear-gradient(180deg, #f3f3f3 0%, white 100%);
+        padding-top: 25px;
+
+        & .news-page-img,
+        & .news-article {
+
+            width: 920px;
+        }
+
+        & .news-article {
+            
+            & hr {
+
+                width: 920px;
+            }
+        }
+    }
+
+    // .job-description {
+
+    //     width: 920px;
+    // }
+
+    .big-list-grid {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 75px;
+    }
+    
+    .skill-list {
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 // third 1260. search changes again, grid 3x4, news 3 in a row, footer in row
@@ -2212,4 +2331,34 @@
     }
 
 
+    .news-page-links,
+    .news-page-poster-type {
+
+        width: 1180px;
+    }
+
+    .news-header {
+
+        .news-title {
+
+            & h2 {
+
+                width: 1180px;
+            }
+
+        }
+    }
+
+    .main-news {
+
+        & .news-article {
+
+            width: 1180px;
+            
+                & hr {
+    
+                    width: 1180px;
+                }
+        }
+    }
 }

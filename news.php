@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet"> 
     <title>Netmatters | Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
 </head>
 <body>
@@ -226,32 +227,37 @@
             </div>
         </div>
 
-    <div class="news-page-links">
-        <a href="index.php">Home</a>
-        <p> / </p>
-        <a href="#"> <?php echo $news['type']; ?> </a>
-        <p> / </p>
-        <p><?php echo str_replace("-", " ", $news['title']); ?></p>
+    <div class="news-links-background-fix">
+        <div class="news-page-links">
+            <a href="index.php">Home</a>
+            <p> / </p>
+            <a href="#"> <?php echo $news['type']; ?> </a>
+            <p> / </p>
+            <p><?php echo str_replace("-", " ", $news['title']); ?></p>
 
+        </div>
     </div>
 
     <div class="main-news">
         <div class="news-header">
-            <h2 <?php if($news['type'] === 'Careers') {?>
+            <div class="news-title" <?php if($news['type'] === 'Careers') {?>
                 style="background-color: #4183d7 "
-            <?php } elseif($news['type'] === 'News') {?> 
-                style="background-color: #926fb1 "
-             <?php } ?>><?php echo str_replace("-", " ", $news['title']); ?></h2>
-            <div class="news-page-poster">
-                <img src=' <?php echo $news['user_img']; ?> ' alt='article author' class='poster-img' style="margin-top: 4px">
-                <p class='poster'>Posted by  <?php echo $news['user']; ?></p>
-                <p class='date'><?php echo date('j F Y', strToTime($news['date_posted'])); ?> </p>
+                <?php } elseif($news['type'] === 'News') {?> 
+                    style="background-color: #926fb1 "
+                <?php } ?>><h2><?php echo str_replace("-", " ", $news['title']); ?></h2>
             </div>
-            <span class="news-type" <?php if($news['type'] === 'Careers') {?>
-                style="background-color: #4183d7 "
-            <?php } elseif($news['type'] === 'News') {?> 
-                style="background-color: #926fb1 "
-             <?php } ?>><a href="#"><?php echo $news['type']; ?></a></span>
+            <div class="news-page-poster-type">
+                <div class="news-page-poster">
+                    <img src=' <?php echo $news['user_img']; ?> ' alt='article author' class='poster-img' style="margin-top: 4px">
+                    <p class='poster'>Posted by  <?php echo $news['user']; ?></p>
+                    <p class='date'><?php echo date('j F Y', strToTime($news['date_posted'])); ?> </p>
+                </div>
+                <span class="news-type" <?php if($news['type'] === 'Careers') {?>
+                    style="background-color: #4183d7 "
+                <?php } elseif($news['type'] === 'News') {?> 
+                    style="background-color: #926fb1 "
+                <?php } ?>><a href="#"><?php echo $news['type']; ?></a></span>
+            </div>
         </div>
 
         <div class="news-page-img">
@@ -264,6 +270,8 @@
             </article>
         </div>
     </div>
+    <?php include 'php/insert.php'; ?>
+
     <?php require 'php/footer.php' ?>
 
     </div>
