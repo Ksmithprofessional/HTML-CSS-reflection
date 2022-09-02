@@ -353,49 +353,51 @@
                     <div class="office-form">
                         <form id="query-form" action="contact.php" method="post">
                             <fieldset>
-                                <span class="your-name">
-                                    <label for="your-name"><span class="asterisk">Your Name</span><br>
-                                        <input type="text" id="your-name" name="name">
-                                    </label>
-                                </span>
+                                <div class="office-form-top">
+                                    <span class="your-name">
+                                        <label for="your-name"><span class="asterisk">Your Name</span><br>
+                                            <input type="text" id="your-name" name="name">
+                                        </label>
+                                    </span>
 
-                                <span class="company-name">
-                                    <label for="company-name">Company Name<br>
-                                        <input type="text" id="company-name" name="company" >
-                                    </label>
-                                </span>
+                                    <span class="company-name">
+                                        <label for="company-name">Company Name<br>
+                                            <input type="text" id="company-name" name="company" >
+                                        </label>
+                                    </span>
 
-                                <span class="your-email">
-                                    <label for="your-email"><span class="asterisk">Your Email</span><br>
-                                        <input type="text" id="your-email" name="email">
-                                    </label>
-                                </span>
+                                    <span class="your-email">
+                                        <label for="your-email"><span class="asterisk">Your Email</span><br>
+                                            <input type="text" id="your-email" name="email">
+                                        </label>
+                                    </span>
 
-                                <span class="your-phone">
-                                    <label for="your-phone"><span class="asterisk">Your Telephone Number</span><br>
-                                        <input type="text" id="your-phone" name="phone" >
-                                    </label>
-                                </span>
+                                    <span class="your-phone">
+                                        <label for="your-phone"><span class="asterisk">Your Telephone Number</span><br>
+                                            <input type="text" id="your-phone" name="phone" >
+                                        </label>
+                                    </span>
 
-                                <span class="subject">
-                                    <label for="subject"><span class="asterisk">Subject</span><br>
-                                        <input type="text" id="subject" name="subject" >
-                                    </label>
-                                </span>
+                                    <span class="subject">
+                                        <label for="subject"><span class="asterisk">Subject</span><br>
+                                            <input type="text" id="subject" name="subject" >
+                                        </label>
+                                    </span>
+                                </div>
 
-                                <span class="message">
-                                    <label for="message"><span class="asterisk">Message</span><br>
-                                        <textarea id="message" name="message" ></textarea>
-                                    </label>
-                                </span>
+                                    <span class="message">
+                                        <label for="message"><span class="asterisk">Message</span><br>
+                                            <textarea id="message" name="message" ></textarea>
+                                        </label>
+                                    </span>
 
-                                <br>
-                                <input type="checkbox" id="marketing" name="marketing">
-                                <label for="marketing">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data. </label>
-                                
+                                    <br>
+                                    <input type="checkbox" id="marketing" name="marketing">
+                                    <label for="marketing">Please tick this box if you wish to receive marketing information from us. Please see our <a href="#">Privacy Policy</a> for more information on how we use your data. </label>
+                                    
 
-                                <br>
-                                <input id="submit" type="submit" name="submit" value="SEND ENQUIRY">
+                                    <br>
+                                    <input id="submit" type="submit" name="submit" value="SEND ENQUIRY">
 
                             </fieldset>
 

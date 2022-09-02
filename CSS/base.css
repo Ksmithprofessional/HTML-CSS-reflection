@@ -2331,6 +2331,11 @@ main,
   right: 35px;
 }
 
+.office-form-top {
+  width: inherit;
+  max-width: 600px;
+}
+
 .contact-page iframe {
   width: 100%;
   height: 300px;
@@ -3593,6 +3598,9 @@ a {
   }
   .contact-page .map {
     width: 100%;
+  }
+  .office-form-top {
+    max-width: unset;
   }
   .news-page-links,
   .news-page-poster-type {
