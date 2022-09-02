@@ -44,8 +44,6 @@
 <body>
 
     <?php 
-    ini_set('display_errors', '1');
-    error_reporting(E_ALL);
 
     require 'php/header.php';
 
@@ -253,7 +251,7 @@
                     <div class="card-1">
                         <div class="office-card"> 
                             <!-- all the cards for the offices -->
-                            <img src="images/cambridge.jpg" alt="Cambridge Office">
+                            <img src="Images/cambridge.jpg" alt="Cambridge Office">
                             <h3>Cambridge Office</h3>
                             <address>      
                                 Unit 1.28, <br>
@@ -277,7 +275,7 @@
                     <div class="card-2">
                         <div class="office-card"> 
 
-                            <img src="images/wymondham.jpg" alt="Wymondham Office">
+                            <img src="Images/wymondham.jpg" alt="Wymondham Office">
                             <h3>Wymondham Office  </h3>
                                 <address>      
                                     Unit 15, <br>
@@ -301,7 +299,7 @@
                     <div class="card-3">
                         <div class="office-card"> 
 
-                            <img src="images/yarmouth.jpg" alt="Great Yarmouth Office">
+                            <img src="Images/yarmouth.jpg" alt="Great Yarmouth Office">
                             <h3>Great Yarmouth Office </h3>
                                 <address>      
                                     Suite F23, <br>
