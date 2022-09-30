@@ -15,7 +15,7 @@
 
     <!-- Reference to the Bing Maps SDK, seems to have to all be inline for it to work? -->
     <script type='text/javascript'
-            src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[AlsY6QF0dyS91gxLRfIA5Mhv8tCOBm6AdwGBgoQZ8nHqI5WssCQC4q0TpfifPsi6]' 
+            src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AhYtDhbRSajucaCLJ6T8o0d0CLrYiUh5J0BI3UWHJxK3mYTinjDy_7MNjEio4W1p' 
             async defer></script>
     
     <script type='text/javascript'>
